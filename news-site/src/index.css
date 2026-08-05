@@ -1,0 +1,138 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f1ede2;
+  --surface: #e8e1cd;
+  --surface-2: #ddd4b8;
+  --ink: #1b2130;
+  --ink-soft: #565c6f;
+  --ink-faint: #83879a;
+  --accent: #a5701f;
+  --accent-strong: #8a5a15;
+  --rule: rgba(27, 33, 48, 0.16);
+  --rule-strong: rgba(27, 33, 48, 0.32);
+  --up: #2e6b4e;
+  --down: #9c3b2e;
+  --board-bg: #171307;
+  --board-fg: #e0a94b;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #11141c;
+    --surface: #171b26;
+    --surface-2: #1f2432;
+    --ink: #ece6d6;
+    --ink-soft: #a7a89c;
+    --ink-faint: #6f7382;
+    --accent: #e0a94b;
+    --accent-strong: #f0c374;
+    --rule: rgba(236, 230, 214, 0.14);
+    --rule-strong: rgba(236, 230, 214, 0.28);
+    --up: #55a479;
+    --down: #e2695a;
+    --board-bg: #0b0d06;
+    --board-fg: #f0c374;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #11141c;
+  --surface: #171b26;
+  --surface-2: #1f2432;
+  --ink: #ece6d6;
+  --ink-soft: #a7a89c;
+  --ink-faint: #6f7382;
+  --accent: #e0a94b;
+  --accent-strong: #f0c374;
+  --rule: rgba(236, 230, 214, 0.14);
+  --rule-strong: rgba(236, 230, 214, 0.28);
+  --up: #55a479;
+  --down: #e2695a;
+  --board-bg: #0b0d06;
+  --board-fg: #f0c374;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f1ede2;
+  --surface: #e8e1cd;
+  --surface-2: #ddd4b8;
+  --ink: #1b2130;
+  --ink-soft: #565c6f;
+  --ink-faint: #83879a;
+  --accent: #a5701f;
+  --accent-strong: #8a5a15;
+  --rule: rgba(27, 33, 48, 0.16);
+  --rule-strong: rgba(27, 33, 48, 0.32);
+  --up: #2e6b4e;
+  --down: #9c3b2e;
+  --board-bg: #171307;
+  --board-fg: #e0a94b;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Newsreader', Georgia, 'Iowan Old Style', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-mono-data {
+  font-family: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.rule {
+  border-color: var(--rule);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+.balance {
+  text-wrap: balance;
+}
+
+.overflow-x-auto {
+  scrollbar-width: thin;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
