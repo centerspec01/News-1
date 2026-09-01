@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manutenção Preventiva — Cozinha Industrial</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230d7a6f'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif'%3E%F0%9F%94%A7%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f2f5f6;
+    --panel:#ffffff;
+    --border:#dde3e6;
+    --text:#1f2a30;
+    --muted:#5c6b73;
+    --accent:#0d7a6f;
+    --accent-dark:#0a5f57;
+    --accent-light:#e3f3f1;
+    --danger:#c0392b;
+    --danger-bg:#fbe4e1;
+    --warn:#b8730a;
+    --warn-bg:#fdecd0;
+    --ok:#1f7a3d;
+    --ok-bg:#e2f4e7;
+    --pending:#5c6b73;
+    --pending-bg:#e9edee;
+    --radius:8px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+  }
+  header{
+    background:linear-gradient(135deg,var(--accent-dark),var(--accent));
+    color:#fff;
+    padding:20px 24px;
+  }
+  header h1{margin:0;font-size:1.4rem;}
+  header p{margin:4px 0 0;font-size:.9rem;opacity:.9;}
+
+  .layout{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    padding:16px;
+    max-width:1400px;
+    margin:0 auto;
+  }
+  .sidebar{
+    width:260px;
+    flex:0 0 260px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:14px;
+    position:sticky;
+    top:16px;
+  }
+  .sidebar h2{margin:0 0 10px;font-size:1rem;color:var(--accent-dark);}
+  #add-unit-form{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+  #add-unit-form input{
+    padding:8px 10px;border:1px solid var(--border);border-radius:6px;font-size:.9rem;
+  }
+  #add-unit-form button{
+    padding:8px 10px;border:none;border-radius:6px;background:var(--accent);color:#fff;
+    font-size:.85rem;cursor:pointer;font-weight:600;
+  }
+  #add-unit-form button:hover{background:var(--accent-dark);}
+
+  #unit-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;}
+  #unit-list li{
+    display:flex;align-items:center;justify-content:space-between;gap:6px;
+    padding:8px 10px;border-radius:6px;cursor:pointer;font-size:.9rem;
+    border:1px solid transparent;
+  }
+  #unit-list li:hover{background:var(--accent-light);}
+  #unit-list li.active{background:var(--accent-light);border-color:var(--accent);font-weight:600;}
+  #unit-list li .unit-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  #unit-list li button{
+    border:none;background:transparent;color:var(--muted);cursor:pointer;font-size:.95rem;
+    line-height:1;padding:2px 4px;
+  }
+  #unit-list li button:hover{color:var(--danger);}
+  #unit-list .empty-hint{color:var(--muted);font-size:.85rem;padding:6px 2px;}
+
+  main{flex:1;min-width:0;}
+
+  #empty-state{
+    background:var(--panel);border:1px dashed var(--border);border-radius:var(--radius);
+    padding:40px 20px;text-align:center;color:var(--muted);
+  }
+
+  .unit-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .unit-header input.unit-title-input{
+    font-size:1.25rem;font-weight:700;border:1px solid transparent;background:transparent;
+    padding:4px 6px;border-radius:6px;color:var(--text);width:auto;min-width:200px;flex:0 1 auto;
+  }
+  .unit-header input.unit-title-input:hover,
+  .unit-header input.unit-title-input:focus{border-color:var(--border);background:var(--panel);}
+  .unit-header .hint{font-size:.75rem;color:var(--muted);}
+  #delete-unit-btn{
+    margin-left:auto;border:1px solid var(--danger);color:var(--danger);background:#fff;
+    border-radius:6px;padding:6px 10px;font-size:.8rem;cursor:pointer;
+  }
+  #delete-unit-btn:hover{background:var(--danger-bg);}
+
+  .stats-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+  .stat-card{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:10px 14px;min-width:120px;flex:1;
+  }
+  .stat-card .num{font-size:1.4rem;font-weight:700;}
+  .stat-card .lbl{font-size:.75rem;color:var(--muted);}
+  .stat-card.overdue .num{color:var(--danger);}
+  .stat-card.soon .num{color:var(--warn);}
+  .stat-card.ok .num{color:var(--ok);}
+  .stat-card.pending .num{color:var(--pending);}
+
+  .columns{display:flex;gap:16px;align-items:flex-start;}
+  .catalog-panel{
+    width:340px;flex:0 0 340px;background:var(--panel);border:1px solid var(--border);
+    border-radius:var(--radius);padding:14px;max-height:78vh;overflow-y:auto;
+  }
+  .plan-panel{
+    flex:1;min-width:0;background:var(--panel);border:1px solid var(--border);
+    border-radius:var(--radius);padding:14px;
+  }
+  .catalog-panel h3, .plan-header h3{margin:0 0 10px;font-size:1rem;color:var(--accent-dark);}
+  #catalog-search{
+    width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:6px;
+    margin-bottom:10px;font-size:.85rem;
+  }
+  details.category-group{margin-bottom:8px;border:1px solid var(--border);border-radius:6px;overflow:hidden;}
+  details.category-group summary{
+    padding:8px 10px;background:#f7f9fa;cursor:pointer;font-weight:600;font-size:.85rem;
+    color:var(--accent-dark);list-style:none;
+  }
+  details.category-group summary::-webkit-details-marker{display:none;}
+  details.category-group summary::before{content:"▸ ";}
+  details.category-group[open] summary::before{content:"▾ ";}
+  .catalog-item{
+    display:flex;align-items:center;gap:8px;padding:6px 10px;font-size:.85rem;
+    border-top:1px solid var(--border);
+  }
+  .catalog-item:hover{background:var(--accent-light);}
+  .catalog-item.selected{background:var(--accent-light);}
+  .catalog-item label{flex:1;cursor:pointer;}
+  .catalog-item input[type=checkbox]{width:16px;height:16px;cursor:pointer;flex:0 0 auto;}
+  .catalog-empty{padding:10px;color:var(--muted);font-size:.85rem;}
+
+  .custom-add{display:flex;gap:6px;margin-top:12px;}
+  .custom-add input{flex:1;padding:8px 10px;border:1px solid var(--border);border-radius:6px;font-size:.85rem;}
+  .custom-add button{
+    padding:8px 10px;border:none;border-radius:6px;background:var(--accent);color:#fff;
+    font-size:.8rem;cursor:pointer;font-weight:600;white-space:nowrap;
+  }
+  .custom-add button:hover{background:var(--accent-dark);}
+
+  .plan-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .plan-header .actions{margin-left:auto;display:flex;gap:8px;}
+  .plan-header button{
+    padding:7px 12px;border:1px solid var(--accent);background:#fff;color:var(--accent-dark);
+    border-radius:6px;font-size:.8rem;cursor:pointer;font-weight:600;
+  }
+  .plan-header button:hover{background:var(--accent-light);}
+
+  table#plan-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.85rem;}
+  table#plan-table th{
+    text-align:left;padding:8px;border-bottom:2px solid var(--border);color:var(--muted);
+    font-size:.75rem;text-transform:uppercase;letter-spacing:.03em;
+  }
+  table#plan-table td{padding:8px;border-bottom:1px solid var(--border);vertical-align:middle;}
+  table#plan-table tr:hover{background:#fafcfc;}
+  .equip-name{font-weight:600;}
+  .equip-cat{display:block;font-size:.72rem;color:var(--muted);font-weight:400;}
+  select.period-select{padding:5px 6px;border:1px solid var(--border);border-radius:5px;font-size:.8rem;}
+  input.period-days{width:56px;padding:5px 6px;border:1px solid var(--border);border-radius:5px;font-size:.8rem;margin-left:4px;}
+  input.last-date{padding:5px 6px;border:1px solid var(--border);border-radius:5px;font-size:.8rem;}
+  .next-due{white-space:nowrap;font-weight:600;}
+  .status-badge{
+    display:inline-block;padding:3px 9px;border-radius:999px;font-size:.72rem;font-weight:700;
+    white-space:nowrap;
+  }
+  .status-overdue{background:var(--danger-bg);color:var(--danger);}
+  .status-soon{background:var(--warn-bg);color:var(--warn);}
+  .status-ok{background:var(--ok-bg);color:var(--ok);}
+  .status-pending{background:var(--pending-bg);color:var(--pending);}
+  .remove-btn{border:none;background:transparent;color:var(--muted);cursor:pointer;font-size:.9rem;}
+  .remove-btn:hover{color:var(--danger);}
+  #plan-empty-msg{color:var(--muted);font-size:.9rem;padding:16px 4px;}
+
+  @media (max-width:900px){
+    .layout{flex-direction:column;}
+    .sidebar{width:100%;flex:none;position:static;}
+    .columns{flex-direction:column;}
+    .catalog-panel{width:100%;flex:none;max-height:none;}
+  }
+
+  @media print{
+    header, .sidebar, .catalog-panel, .plan-header .actions, #delete-unit-btn, .remove-btn, .unit-header .hint{display:none !important;}
+    body{background:#fff;}
+    .layout{padding:0;display:block;}
+    .plan-panel{border:none;padding:0;}
+    select, input{border:none !important;background:transparent !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Organizador de Manutenção Preventiva</h1>
+  <p>Cozinhas industriais — cadastre unidades, selecione os equipamentos e acompanhe os prazos de manutenção.</p>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Unidades</h2>
+    <form id="add-unit-form">
+      <input id="new-unit-name" placeholder="Nome da unidade (ex: Restaurante Centro)" required>
+      <button type="submit">+ Adicionar unidade</button>
+    </form>
+    <ul id="unit-list"></ul>
+  </aside>
+
+  <main>
+    <div id="empty-state">
+      Nenhuma unidade cadastrada ainda.<br>
+      Use o campo ao lado para adicionar a primeira unidade.
+    </div>
+
+    <div id="unit-content" hidden>
+      <div class="unit-header">
+        <input type="text" id="unit-title-input" class="unit-title-input" maxlength="80">
+        <span class="hint">as alterações são salvas automaticamente</span>
+        <button id="delete-unit-btn" type="button">Excluir unidade</button>
+      </div>
+
+      <div class="stats-row" id="stats-row"></div>
+
+      <div class="columns">
+        <section class="catalog-panel">
+          <h3>Catálogo de equipamentos</h3>
+          <input id="catalog-search" placeholder="Buscar equipamento...">
+          <div id="catalog-list"></div>
+          <div class="custom-add">
+            <input id="custom-equip-name" placeholder="Outro equipamento (não listado)">
+            <button id="add-custom-equip" type="button">+ Adicionar</button>
+          </div>
+        </section>
+
+        <section class="plan-panel">
+          <div class="plan-header">
+            <h3>Plano de manutenção da unidade</h3>
+            <div class="actions">
+              <button id="export-csv" type="button">Exportar CSV</button>
+              <button id="print-plan" type="button">Imprimir</button>
+            </div>
+          </div>
+          <table id="plan-table">
+            <thead>
+              <tr>
+                <th>Equipamento</th>
+                <th>Periodicidade</th>
+                <th>Última manutenção</th>
+                <th>Próxima manutenção</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="plan-tbody"></tbody>
+          </table>
+          <p id="plan-empty-msg" hidden>Nenhum equipamento selecionado ainda. Marque itens no catálogo ao lado.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- Catálogo mestre de equipamentos ----------
+  const CATALOG = [
+    // Refrigeração e Conservação
+    {id:"camara-fria-resfriados", name:"Câmara fria de resfriados", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"camara-fria-congelados", name:"Câmara fria de congelados", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"refrigerador-industrial", name:"Refrigerador industrial (porta cega)", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"freezer-horizontal", name:"Freezer horizontal", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"freezer-vertical", name:"Freezer vertical", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"balcao-refrig-expositor", name:"Balcão refrigerado expositor", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"balcao-refrig-preparo", name:"Balcão refrigerado de preparo (saladette)", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"expositor-bebidas", name:"Expositor de bebidas refrigerado", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"maquina-gelo-cubos", name:"Máquina de gelo em cubos", category:"Refrigeração e Conservação", days:30, label:"Mensal"},
+    {id:"maquina-gelo-escamas", name:"Máquina de gelo em escamas", category:"Refrigeração e Conservação", days:30, label:"Mensal"},
+    {id:"blast-chiller", name:"Ultracongelador (blast chiller)", category:"Refrigeração e Conservação", days:90, label:"Trimestral"},
+    {id:"adega-climatizada", name:"Adega climatizada", category:"Refrigeração e Conservação", days:180, label:"Semestral"},
+
+    // Cocção
+    {id:"fogao-industrial", name:"Fogão industrial a gás", category:"Cocção", days:180, label:"Semestral"},
+    {id:"forno-combinado", name:"Forno combinado (combi oven)", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"forno-conveccao", name:"Forno de convecção", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"forno-pizza", name:"Forno de lastro / pizza", category:"Cocção", days:180, label:"Semestral"},
+    {id:"chapa-bifeteira", name:"Chapa bifeteira / chapa lisa", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"fritadeira-eletrica", name:"Fritadeira elétrica", category:"Cocção", days:30, label:"Mensal"},
+    {id:"fritadeira-gas", name:"Fritadeira a gás", category:"Cocção", days:30, label:"Mensal"},
+    {id:"char-broiler", name:"Char-broiler / grelha a carvão-gás", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"salamandra", name:"Salamandra / grill superior", category:"Cocção", days:180, label:"Semestral"},
+    {id:"banho-maria", name:"Banho-maria elétrico", category:"Cocção", days:180, label:"Semestral"},
+    {id:"panela-basculante", name:"Panela basculante", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"caldeirao-vapor", name:"Caldeirão a vapor", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"cook-chill", name:"Cook & chill (resfriador rápido)", category:"Cocção", days:90, label:"Trimestral"},
+    {id:"fogao-inducao", name:"Fogão de indução industrial", category:"Cocção", days:180, label:"Semestral"},
+    {id:"rotisserie", name:"Rôtisserie (grelhador rotativo)", category:"Cocção", days:180, label:"Semestral"},
+    {id:"microondas-industrial", name:"Micro-ondas industrial", category:"Cocção", days:180, label:"Semestral"},
+    {id:"fryer-ar", name:"Fritadeira de ar (air fryer industrial)", category:"Cocção", days:90, label:"Trimestral"},
+
+    // Preparo e Processamento
+    {id:"processador-alimentos", name:"Processador de alimentos", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"cutter", name:"Multiprocessador / cutter", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"liquidificador-industrial", name:"Liquidificador industrial", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"batedeira-planetaria", name:"Batedeira industrial (planetária)", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"amassadeira", name:"Amassadeira de massas", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"cilindro-massas", name:"Cilindro de massas", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"moedor-carne", name:"Moedor de carne", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"serra-fita", name:"Serra fita para carnes", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"fatiadora-frios", name:"Fatiadora de frios e embutidos", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"descascador-legumes", name:"Descascador de legumes", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"cortador-legumes", name:"Cortador de legumes (fatiador)", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"espremedor-frutas", name:"Espremedor de frutas industrial", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"extrator-suco", name:"Extrator de suco", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"ralador-industrial", name:"Ralador industrial", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"maquina-macarrao", name:"Máquina de macarrão", category:"Preparo e Processamento", days:180, label:"Semestral"},
+    {id:"seladora-vacuo", name:"Seladora a vácuo", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"embaladora-vacuo-camara", name:"Embaladora a vácuo de câmara", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+    {id:"maquina-cafe-expresso", name:"Máquina de café expresso profissional", category:"Preparo e Processamento", days:30, label:"Mensal"},
+    {id:"moedor-cafe", name:"Moedor de café", category:"Preparo e Processamento", days:90, label:"Trimestral"},
+
+    // Lavagem e Higienização
+    {id:"lava-loucas-industrial", name:"Lava-louças industrial (esteira/capota)", category:"Lavagem e Higienização", days:90, label:"Trimestral"},
+    {id:"lavadora-panelas", name:"Lavadora de panelas industrial", category:"Lavagem e Higienização", days:90, label:"Trimestral"},
+    {id:"ducha-pre-lavagem", name:"Ducha de pré-lavagem de alta pressão", category:"Lavagem e Higienização", days:180, label:"Semestral"},
+    {id:"triturador-residuos", name:"Triturador de resíduos orgânicos", category:"Lavagem e Higienização", days:90, label:"Trimestral"},
+    {id:"osmose-reversa", name:"Osmose reversa / filtro de água", category:"Lavagem e Higienização", days:90, label:"Trimestral"},
+    {id:"dosador-quimicos", name:"Dosador de produtos químicos", category:"Lavagem e Higienização", days:90, label:"Trimestral"},
+    {id:"lavadora-fardamentos", name:"Lavadora de fardamentos industrial", category:"Lavagem e Higienização", days:180, label:"Semestral"},
+
+    // Exaustão, Climatização e Utilidades
+    {id:"coifa-exaustao", name:"Coifa / sistema de exaustão (filtros)", category:"Exaustão, Climatização e Utilidades", days:30, label:"Mensal"},
+    {id:"dutos-exaustao", name:"Sistema de dutos de exaustão (limpeza profunda)", category:"Exaustão, Climatização e Utilidades", days:180, label:"Semestral"},
+    {id:"ar-condicionado", name:"Ar condicionado / climatizador", category:"Exaustão, Climatização e Utilidades", days:90, label:"Trimestral"},
+    {id:"bomba-agua", name:"Bomba d'água", category:"Exaustão, Climatização e Utilidades", days:180, label:"Semestral"},
+    {id:"boiler", name:"Boiler / aquecedor de água", category:"Exaustão, Climatização e Utilidades", days:180, label:"Semestral"},
+    {id:"pressurizador", name:"Pressurizador de água", category:"Exaustão, Climatização e Utilidades", days:180, label:"Semestral"},
+    {id:"nobreak", name:"Nobreak", category:"Exaustão, Climatização e Utilidades", days:180, label:"Semestral"},
+    {id:"gerador", name:"Gerador de energia", category:"Exaustão, Climatização e Utilidades", days:90, label:"Trimestral"},
+    {id:"quadro-eletrico", name:"Quadro elétrico geral", category:"Exaustão, Climatização e Utilidades", days:365, label:"Anual"},
+    {id:"central-glp", name:"Central de gás GLP", category:"Exaustão, Climatização e Utilidades", days:365, label:"Anual"},
+
+    // Distribuição e Armazenamento Térmico
+    {id:"balcao-self-quente", name:"Balcão self-service quente", category:"Distribuição e Armazenamento Térmico", days:90, label:"Trimestral"},
+    {id:"balcao-self-frio", name:"Balcão self-service frio", category:"Distribuição e Armazenamento Térmico", days:90, label:"Trimestral"},
+    {id:"estufa-alimentos", name:"Estufa para alimentos", category:"Distribuição e Armazenamento Térmico", days:90, label:"Trimestral"},
+    {id:"carro-termico", name:"Carro térmico de transporte", category:"Distribuição e Armazenamento Térmico", days:180, label:"Semestral"},
+    {id:"carro-isotermico", name:"Carro isotérmico", category:"Distribuição e Armazenamento Térmico", days:180, label:"Semestral"},
+    {id:"torradeira-industrial", name:"Torradeira industrial", category:"Distribuição e Armazenamento Térmico", days:180, label:"Semestral"},
+    {id:"sanduicheira", name:"Sanduicheira / grill de contato", category:"Distribuição e Armazenamento Térmico", days:180, label:"Semestral"},
+
+    // Segurança e Instalações
+    {id:"extintores", name:"Extintores de incêndio", category:"Segurança e Instalações", days:365, label:"Anual"},
+    {id:"hidrantes", name:"Sistema de hidrantes", category:"Segurança e Instalações", days:365, label:"Anual"},
+    {id:"detectores-fumaca-gas", name:"Detectores de fumaça/gás", category:"Segurança e Instalações", days:180, label:"Semestral"},
+    {id:"balanca-industrial", name:"Balança industrial (calibração)", category:"Segurança e Instalações", days:365, label:"Anual"},
+    {id:"termometros-sensores", name:"Termômetros e sensores de temperatura (calibração)", category:"Segurança e Instalações", days:180, label:"Semestral"},
+  ];
+
+  const CATEGORY_ORDER = [...new Set(CATALOG.map(c => c.category))];
+
+  const PERIOD_PRESETS = [
+    [7, "Semanal"], [15, "Quinzenal"], [30, "Mensal"], [60, "Bimestral"],
+    [90, "Trimestral"], [180, "Semestral"], [365, "Anual"]
+  ];
+
+  // ---------- Utilidades ----------
+  function uid(){
+    return (crypto.randomUUID ? crypto.randomUUID() : "id-" + Date.now() + "-" + Math.random().toString(16).slice(2));
+  }
+  function todayISO(){ return new Date().toISOString().slice(0,10); }
+  function addDaysISO(iso, days){
+    const d = new Date(iso + "T00:00:00");
+    d.setDate(d.getDate() + Number(days));
+    return d.toISOString().slice(0,10);
+  }
+  function daysBetweenISO(a, b){
+    const da = new Date(a + "T00:00:00");
+    const db = new Date(b + "T00:00:00");
+    return Math.round((db - da) / 86400000);
+  }
+  function formatBR(iso){
+    if(!iso) return "—";
+    const [y,m,d] = iso.split("-");
+    return `${d}/${m}/${y}`;
+  }
+  function periodLabelFromDays(days){
+    const preset = PERIOD_PRESETS.find(p => p[0] === Number(days));
+    return preset ? preset[1] : `${days} dias`;
+  }
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
+
+  // ---------- Estado / persistência ----------
+  const STORAGE_KEY = "pmk_state_v1";
+  let state = loadState();
+
+  function loadState(){
+    try{
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if(raw){
+        const parsed = JSON.parse(raw);
+        if(parsed && Array.isArray(parsed.units)) return parsed;
+      }
+    }catch(e){ /* estado corrompido, recomeça vazio */ }
+    return { units: [], activeUnitId: null };
+  }
+  function saveState(){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch(e){ console.warn("Não foi possível salvar o estado localmente.", e); }
+  }
+  function getActiveUnit(){
+    return state.units.find(u => u.id === state.activeUnitId) || null;
+  }
+
+  // ---------- DOM refs ----------
+  const $unitList = document.getElementById("unit-list");
+  const $addUnitForm = document.getElementById("add-unit-form");
+  const $newUnitName = document.getElementById("new-unit-name");
+  const $emptyState = document.getElementById("empty-state");
+  const $unitContent = document.getElementById("unit-content");
+  const $unitTitleInput = document.getElementById("unit-title-input");
+  const $deleteUnitBtn = document.getElementById("delete-unit-btn");
+  const $statsRow = document.getElementById("stats-row");
+  const $catalogList = document.getElementById("catalog-list");
+  const $catalogSearch = document.getElementById("catalog-search");
+  const $customEquipName = document.getElementById("custom-equip-name");
+  const $addCustomEquip = document.getElementById("add-custom-equip");
+  const $planTbody = document.getElementById("plan-tbody");
+  const $planEmptyMsg = document.getElementById("plan-empty-msg");
+  const $planTable = document.getElementById("plan-table");
+  const $exportCsv = document.getElementById("export-csv");
+  const $printPlan = document.getElementById("print-plan");
+
+  // ---------- Ações: unidades ----------
+  $addUnitForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = $newUnitName.value.trim();
+    if(!name) return;
+    const unit = { id: uid(), name, items: {} };
+    state.units.push(unit);
+    state.activeUnitId = unit.id;
+    $newUnitName.value = "";
+    saveState();
+    renderAll();
+  });
+
+  $unitList.addEventListener("click", function(e){
+    const delBtn = e.target.closest("[data-del-unit]");
+    if(delBtn){
+      e.stopPropagation();
+      const id = delBtn.getAttribute("data-del-unit");
+      const unit = state.units.find(u => u.id === id);
+      if(unit && confirm(`Excluir a unidade "${unit.name}"? Essa ação não pode ser desfeita.`)){
+        state.units = state.units.filter(u => u.id !== id);
+        if(state.activeUnitId === id){
+          state.activeUnitId = state.units.length ? state.units[0].id : null;
+        }
+        saveState();
+        renderAll();
+      }
+      return;
+    }
+    const li = e.target.closest("[data-select-unit]");
+    if(li){
+      state.activeUnitId = li.getAttribute("data-select-unit");
+      saveState();
+      renderAll();
+    }
+  });
+
+  $unitTitleInput.addEventListener("change", function(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const name = $unitTitleInput.value.trim();
+    unit.name = name || unit.name;
+    saveState();
+    renderSidebar();
+    renderUnitHeader();
+  });
+
+  $deleteUnitBtn.addEventListener("click", function(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    if(confirm(`Excluir a unidade "${unit.name}"? Essa ação não pode ser desfeita.`)){
+      state.units = state.units.filter(u => u.id !== unit.id);
+      state.activeUnitId = state.units.length ? state.units[0].id : null;
+      saveState();
+      renderAll();
+    }
+  });
+
+  // ---------- Ações: catálogo ----------
+  $catalogSearch.addEventListener("input", renderCatalog);
+
+  $catalogList.addEventListener("change", function(e){
+    const cb = e.target.closest("input[type=checkbox][data-catalog-id]");
+    if(!cb) return;
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const catId = cb.getAttribute("data-catalog-id");
+    const cat = CATALOG.find(c => c.id === catId);
+    if(!unit.items[catId]){
+      unit.items[catId] = {
+        selected: cb.checked, name: cat.name, category: cat.category,
+        days: cat.days, label: cat.label, custom: false, lastDate: null
+      };
+    } else {
+      unit.items[catId].selected = cb.checked;
+    }
+    saveState();
+    renderCatalog();
+    renderPlan();
+    renderStats();
+  });
+
+  $addCustomEquip.addEventListener("click", addCustomEquipment);
+  $customEquipName.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); addCustomEquipment(); }
+  });
+  function addCustomEquipment(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const name = $customEquipName.value.trim();
+    if(!name) return;
+    const id = "custom-" + uid();
+    unit.items[id] = {
+      selected: true, name, category: "Personalizado",
+      days: 90, label: "Trimestral", custom: true, lastDate: null
+    };
+    $customEquipName.value = "";
+    saveState();
+    renderPlan();
+    renderStats();
+  }
+
+  // ---------- Ações: plano (tabela) ----------
+  $planTbody.addEventListener("change", function(e){
+    const unit = getActiveUnit();
+    if(!unit) return;
+
+    const select = e.target.closest("select.period-select");
+    if(select){
+      const id = select.getAttribute("data-id");
+      const item = unit.items[id];
+      if(!item) return;
+      if(select.value !== "custom"){
+        item.days = Number(select.value);
+        item.label = periodLabelFromDays(item.days);
+        saveState();
+        renderPlan();
+        renderStats();
+      }
+      return;
+    }
+
+    const daysInput = e.target.closest("input.period-days");
+    if(daysInput){
+      const id = daysInput.getAttribute("data-id");
+      const item = unit.items[id];
+      if(!item) return;
+      let val = parseInt(daysInput.value, 10);
+      if(isNaN(val) || val < 1) val = 1;
+      if(val > 3650) val = 3650;
+      item.days = val;
+      item.label = periodLabelFromDays(val);
+      saveState();
+      renderPlan();
+      renderStats();
+      return;
+    }
+
+    const dateInput = e.target.closest("input.last-date");
+    if(dateInput){
+      const id = dateInput.getAttribute("data-id");
+      const item = unit.items[id];
+      if(!item) return;
+      item.lastDate = dateInput.value || null;
+      saveState();
+      renderPlan();
+      renderStats();
+    }
+  });
+
+  $planTbody.addEventListener("click", function(e){
+    const btn = e.target.closest("[data-remove-id]");
+    if(!btn) return;
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const id = btn.getAttribute("data-remove-id");
+    const item = unit.items[id];
+    if(!item) return;
+    if(item.custom){
+      delete unit.items[id];
+    } else {
+      item.selected = false;
+    }
+    saveState();
+    renderCatalog();
+    renderPlan();
+    renderStats();
+  });
+
+  $exportCsv.addEventListener("click", function(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const rows = [["Equipamento","Categoria","Periodicidade (dias)","Última manutenção","Próxima manutenção","Status"]];
+    getSelectedRows(unit).forEach(({item, nextDue, status}) => {
+      rows.push([
+        item.name, item.category, item.days,
+        item.lastDate ? formatBR(item.lastDate) : "",
+        nextDue ? formatBR(nextDue) : "",
+        status.text
+      ]);
+    });
+    const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g,'""')}"`).join(";")).join("\r\n");
+    const blob = new Blob(["﻿" + csv], {type: "text/csv;charset=utf-8;"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `plano-manutencao-${slugify(unit.name)}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  $printPlan.addEventListener("click", function(){ window.print(); });
+
+  function slugify(str){
+    return str.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
+      .replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"") || "unidade";
+  }
+
+  // ---------- Cálculo de status ----------
+  function computeStatus(item){
+    if(!item.lastDate){
+      return { key:"pending", cls:"status-pending", text:"Registrar 1ª manutenção", priority:1, nextDue:null };
+    }
+    const nextDue = addDaysISO(item.lastDate, item.days);
+    const diff = daysBetweenISO(todayISO(), nextDue);
+    if(diff < 0){
+      return { key:"overdue", cls:"status-overdue", text:`Atrasada há ${-diff} dia(s)`, priority:0, nextDue };
+    }
+    if(diff <= 7){
+      return { key:"soon", cls:"status-soon", text: diff === 0 ? "Vence hoje" : `Vence em ${diff} dia(s)`, priority:2, nextDue };
+    }
+    return { key:"ok", cls:"status-ok", text:`Em dia (${diff} dias)`, priority:3, nextDue };
+  }
+
+  function getSelectedRows(unit){
+    return Object.entries(unit.items)
+      .filter(([, item]) => item.selected)
+      .map(([id, item]) => {
+        const status = computeStatus(item);
+        return { id, item, nextDue: status.nextDue, status };
+      })
+      .sort((a, b) => {
+        if(a.status.priority !== b.status.priority) return a.status.priority - b.status.priority;
+        if(a.nextDue && b.nextDue) return a.nextDue.localeCompare(b.nextDue);
+        if(a.nextDue) return -1;
+        if(b.nextDue) return 1;
+        return a.item.name.localeCompare(b.item.name);
+      });
+  }
+
+  // ---------- Render ----------
+  function renderAll(){
+    renderSidebar();
+    const unit = getActiveUnit();
+    if(!unit){
+      $emptyState.hidden = false;
+      $unitContent.hidden = true;
+      return;
+    }
+    $emptyState.hidden = true;
+    $unitContent.hidden = false;
+    renderUnitHeader();
+    renderCatalog();
+    renderPlan();
+    renderStats();
+  }
+
+  function renderSidebar(){
+    if(state.units.length === 0){
+      $unitList.innerHTML = `<li class="empty-hint">Nenhuma unidade cadastrada.</li>`;
+      return;
+    }
+    $unitList.innerHTML = state.units.map(u => `
+      <li data-select-unit="${u.id}" class="${u.id === state.activeUnitId ? 'active' : ''}">
+        <span class="unit-name">${escapeHtml(u.name)}</span>
+        <button type="button" data-del-unit="${u.id}" title="Excluir unidade">&times;</button>
+      </li>
+    `).join("");
+  }
+
+  function renderUnitHeader(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    $unitTitleInput.value = unit.name;
+  }
+
+  function renderCatalog(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const query = $catalogSearch.value.trim().toLowerCase();
+
+    const groups = CATEGORY_ORDER.map(cat => {
+      const items = CATALOG.filter(c => c.category === cat &&
+        (!query || c.name.toLowerCase().includes(query)));
+      return { cat, items };
+    }).filter(g => g.items.length > 0);
+
+    if(groups.length === 0){
+      $catalogList.innerHTML = `<div class="catalog-empty">Nenhum equipamento encontrado para "${escapeHtml(query)}".</div>`;
+      return;
+    }
+
+    $catalogList.innerHTML = groups.map(g => `
+      <details class="category-group" open>
+        <summary>${escapeHtml(g.cat)} (${g.items.length})</summary>
+        ${g.items.map(c => {
+          const selected = !!(unit.items[c.id] && unit.items[c.id].selected);
+          return `
+            <div class="catalog-item ${selected ? 'selected' : ''}">
+              <input type="checkbox" id="chk-${c.id}" data-catalog-id="${c.id}" ${selected ? 'checked' : ''}>
+              <label for="chk-${c.id}">${escapeHtml(c.name)}</label>
+            </div>
+          `;
+        }).join("")}
+      </details>
+    `).join("");
+  }
+
+  function renderPlan(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const rows = getSelectedRows(unit);
+
+    if(rows.length === 0){
+      $planTable.hidden = true;
+      $planEmptyMsg.hidden = false;
+      $planTbody.innerHTML = "";
+      return;
+    }
+    $planTable.hidden = false;
+    $planEmptyMsg.hidden = true;
+
+    $planTbody.innerHTML = rows.map(({id, item, nextDue, status}) => `
+      <tr>
+        <td>
+          <span class="equip-name">${escapeHtml(item.name)}</span>
+          <span class="equip-cat">${escapeHtml(item.category)}</span>
+        </td>
+        <td>
+          <select class="period-select" data-id="${id}">
+            ${PERIOD_PRESETS.map(([d,l]) => `<option value="${d}" ${item.days===d?'selected':''}>${l} (${d}d)</option>`).join("")}
+            <option value="custom" ${!PERIOD_PRESETS.some(p=>p[0]===item.days) ? 'selected' : ''}>Personalizado</option>
+          </select>
+          <input type="number" class="period-days" data-id="${id}" min="1" max="3650" value="${item.days}" title="dias">
+        </td>
+        <td>
+          <input type="date" class="last-date" data-id="${id}" value="${item.lastDate || ''}">
+        </td>
+        <td class="next-due">${nextDue ? formatBR(nextDue) : '—'}</td>
+        <td><span class="status-badge ${status.cls}">${status.text}</span></td>
+        <td><button type="button" class="remove-btn" data-remove-id="${id}" title="Remover da unidade">&times;</button></td>
+      </tr>
+    `).join("");
+  }
+
+  function renderStats(){
+    const unit = getActiveUnit();
+    if(!unit) return;
+    const rows = getSelectedRows(unit);
+    const counts = { overdue:0, soon:0, ok:0, pending:0 };
+    rows.forEach(r => counts[r.status.key]++);
+
+    $statsRow.innerHTML = `
+      <div class="stat-card"><div class="num">${rows.length}</div><div class="lbl">Equipamentos na unidade</div></div>
+      <div class="stat-card overdue"><div class="num">${counts.overdue}</div><div class="lbl">Manutenções atrasadas</div></div>
+      <div class="stat-card soon"><div class="num">${counts.soon}</div><div class="lbl">Vencendo em até 7 dias</div></div>
+      <div class="stat-card ok"><div class="num">${counts.ok}</div><div class="lbl">Em dia</div></div>
+      <div class="stat-card pending"><div class="num">${counts.pending}</div><div class="lbl">Sem 1ª manutenção registrada</div></div>
+    `;
+  }
+
+  renderAll();
+})();
+</script>
+</body>
+</html>
