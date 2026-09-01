@@ -23,9 +23,60 @@
     --ok-bg:#e2f4e7;
     --pending:#5c6b73;
     --pending-bg:#e9edee;
+    --panel-alt:#f7f9fa;
+    --row-hover:#fafcfc;
     --radius:8px;
   }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#12191b;
+      --panel:#1b2427;
+      --border:#2c3a3e;
+      --text:#e7edee;
+      --muted:#93a7ad;
+      --accent:#2bb4a4;
+      --accent-dark:#1f8f82;
+      --accent-light:#1a3430;
+      --danger:#ff8a7a;
+      --danger-bg:#3a201d;
+      --warn:#e6ab4a;
+      --warn-bg:#3a2d14;
+      --ok:#5cd88a;
+      --ok-bg:#173622;
+      --pending:#93a7ad;
+      --pending-bg:#232f33;
+      --panel-alt:#212b2e;
+      --row-hover:#1f292c;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12191b;
+    --panel:#1b2427;
+    --border:#2c3a3e;
+    --text:#e7edee;
+    --muted:#93a7ad;
+    --accent:#2bb4a4;
+    --accent-dark:#1f8f82;
+    --accent-light:#1a3430;
+    --danger:#ff8a7a;
+    --danger-bg:#3a201d;
+    --warn:#e6ab4a;
+    --warn-bg:#3a2d14;
+    --ok:#5cd88a;
+    --ok-bg:#173622;
+    --pending:#93a7ad;
+    --pending-bg:#232f33;
+    --panel-alt:#212b2e;
+    --row-hover:#1f292c;
+  }
+  :root{color-scheme:light dark;}
+  :root[data-theme="light"]{color-scheme:light;}
+  :root[data-theme="dark"]{color-scheme:dark;}
   *{box-sizing:border-box;}
+  input, select, button, textarea{font:inherit;color:var(--text);}
+  input[type=text], input[type=number], input[type=date], input:not([type]), select{
+    background:var(--panel);
+  }
   body{
     margin:0;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -101,7 +152,7 @@
   .unit-header input.unit-title-input:focus{border-color:var(--border);background:var(--panel);}
   .unit-header .hint{font-size:.75rem;color:var(--muted);}
   #delete-unit-btn{
-    margin-left:auto;border:1px solid var(--danger);color:var(--danger);background:#fff;
+    margin-left:auto;border:1px solid var(--danger);color:var(--danger);background:var(--panel);
     border-radius:6px;padding:6px 10px;font-size:.8rem;cursor:pointer;
   }
   #delete-unit-btn:hover{background:var(--danger-bg);}
@@ -134,7 +185,7 @@
   }
   details.category-group{margin-bottom:8px;border:1px solid var(--border);border-radius:6px;overflow:hidden;}
   details.category-group summary{
-    padding:8px 10px;background:#f7f9fa;cursor:pointer;font-weight:600;font-size:.85rem;
+    padding:8px 10px;background:var(--panel-alt);cursor:pointer;font-weight:600;font-size:.85rem;
     color:var(--accent-dark);list-style:none;
   }
   details.category-group summary::-webkit-details-marker{display:none;}
@@ -161,7 +212,7 @@
   .plan-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
   .plan-header .actions{margin-left:auto;display:flex;gap:8px;}
   .plan-header button{
-    padding:7px 12px;border:1px solid var(--accent);background:#fff;color:var(--accent-dark);
+    padding:7px 12px;border:1px solid var(--accent);background:var(--panel);color:var(--accent-dark);
     border-radius:6px;font-size:.8rem;cursor:pointer;font-weight:600;
   }
   .plan-header button:hover{background:var(--accent-light);}
@@ -172,7 +223,7 @@
     font-size:.75rem;text-transform:uppercase;letter-spacing:.03em;
   }
   table#plan-table td{padding:8px;border-bottom:1px solid var(--border);vertical-align:middle;}
-  table#plan-table tr:hover{background:#fafcfc;}
+  table#plan-table tr:hover{background:var(--row-hover);}
   .equip-name{font-weight:600;}
   .equip-cat{display:block;font-size:.72rem;color:var(--muted);font-weight:400;}
   select.period-select{padding:5px 6px;border:1px solid var(--border);border-radius:5px;font-size:.8rem;}
