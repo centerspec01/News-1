@@ -1,0 +1,1507 @@
+{
+ "updated": "2026-11-26T15:12:43.229Z",
+ "cities": {
+  "sao-paulo": [
+   {
+    "title": "Santo André passa a contar com Delegacia de Defesa da Mulher 24 horas",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSUxIdTVYTTR0NWdQTG54dHBUWjBQU1Boa1I0LWR1YS03Vlk0ODkzWGV2U2g2a0x2R25zR0ZrUGNoRGpJQ0JKWFFVNXhqMnFlRG9fZzBBUGs0aXlWdlFSbUtCWERjcEJiTXMwQ3EzVkNSa3JRcEJkWmRmRm1TaG5PMnZycHY5QQ?oc=5",
+    "source": "www.agenciasp.sp.gov.br",
+    "date": "2026-11-26T15:05:51.000Z"
+   },
+   {
+    "title": "São Paulo x Remo: horário e o que está em jogo",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE81aERXYUt5UHhpRDVaVlYwOWtZZ2cyQnpFckpua1V0eFgzejhhcXg2WVVWczNVZDlmb0JNLXJRQ2JiOXNIOVdxN2doMUNMTi1EdFFuYkNmSnR0bWl1Qmx4U2gydGpNTGV6SUhFSXlSejczNFdCNjdSaGNkNkc?oc=5",
+    "source": "ES Brasil",
+    "date": "2026-11-26T15:04:05.000Z"
+   },
+   {
+    "title": "São Paulo se despede da Taça das Favelas Brasil 2026 após eliminações nas quartas de final",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcGpxVUZBa3RNYy15ZDh2VGg0dUxoR2syaGVtUjFDWHlob2NWaE96c0ZXTm5NdnI3Z25SbVZzNUJGVUtYMm0wZEV6S2N0RkFyejlQdmtGSGxMR2xuNFY3d3d6RTMxYkM3LVdVTHNwdzN1WjVXWHZrNnZneXhvY1JRbkRIVlVuMFUxUUNpZTlUWU41ME1nN1VDUEZlaTZSamZVdFVXcy10ck53WlhQeXltTFc1M3IxQ2VTQWM3QklFQnFXUQ?oc=5",
+    "source": "Taça das Favelas SP",
+    "date": "2026-11-26T14:57:27.000Z"
+   },
+   {
+    "title": "Apostolado da Oração da Região Belém rende graças a Deus pelas atividades realizadas no ano",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNkRKbGdOSnJNVEFaM0JWcHJQZVV1bkoyS0t0Q1ZmSHlaRm5vSWt4VlczV0Iydjl5QWJJOU9SS1ZMT0ZoamwydENNckhwOXhFaE5xbnd2NXgzeER0enZBeHdTTE9MOC1VMzJZVWU3Qy0wTXZ0ODBUazdaUnZtRGZQWFE4VjNVekxTd0M3azNxSG1jdGh4Q3pRNmUxRWNqSkZWd3ZkalFKcUJwX2ZSV0RSNFY2bG43LWsyN3dCZENkNHRGQndpOWc?oc=5",
+    "source": "Jornal O São Paulo",
+    "date": "2026-11-26T14:56:39.000Z"
+   },
+   {
+    "title": "Córrego Camarazal",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeWVvZXRSd3NkSEl1UDFsYjVSOEdmYWdIU2VCQkpmcUR3a01fcXZkb19YeFdJYmdieGk4aUpUWFk1WHY1Rk4tbnVtb2hRWWJNR0J6Wk5KZ3MyWEFoZVlWeFpjVThnTXBDLUlmM2RiT25Zb1hPR3lXVnBVUUxKb19iLVRGZkJjWkg3amx2TW43bW0yRGtSZkhJWVE5TTJ3STVCaHhUcTh5b1NTMERoZDFDTUVfcEhCRl9i?oc=5",
+    "source": "Estadão Expresso São Paulo",
+    "date": "2026-11-26T14:56:16.000Z"
+   },
+   {
+    "title": "Virada Inclusiva 2026: Saiba como chegar ao Memorial da América Latina para o show de abertura",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84eTQyR1VocXpHem9jcW5uTjB3bjExV1pVRXFzX2MybEUwMDVPbmhKMk5JQnhrMU1YTzZWN1BIcEV0RmxJVHJteS1ZM0ktNnYyRW1hem14TDYyRmpMWHB5d2RjR0JXVHo0SmFzR2RnbnFFdGYtTllTRQ?oc=5",
+    "source": "agenciasp.sp.gov.br",
+    "date": "2026-11-26T14:48:59.000Z"
+   }
+  ],
+  "rio": [
+   {
+    "title": "Foi",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KLWRLS3NwXzB6bVlNWkd0bGJ4RTJOZFcxZFRIRVA1LUlCLU01bDBXSGNqbHpkX1NySEdPOXdBNkZhQTdsMWFEck9mRlQzN3lNeHZoa1BZMUJTRWpWcVdMcA?oc=5",
+    "source": "Alerj",
+    "date": "2026-11-26T15:10:00.000Z"
+   },
+   {
+    "title": "Aumento de Covid-19 no RJ: Secretaria de Saúde volta a divulgar boletim com panorama de casos no estado",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNMW0zNzRycDBaMHVPcGd6Yk0yWUhiYURHM1R3WmpJV0gzOENLUUdMV1NjclAydUpKaXlKVVhPaS1DTnYzWHlGM2tSbWROc2swRDZkSlZBVjdha2xZUUdrMld1WWhFbHdHaC1SYkMxa2hpX2l6QnZJVExaa1ZhUDAyM2pNWHJjdHhDdzh2OXZvWkJNRXE1WHZZWmxUWUs2NXlPTXd3V1lMV0cwUnFxQWZOZUkxSTN4YkFiSnI2UDFMbEg0SkZwQ2szd01LQlNES1dZMFY1Q1NfTTNYVzlIY3VNT01ZVzd3TFnSAfYBQVVfeXFMTnpuVGFuRlY0aEc0UElWRTJxaDNBTkN6WWRDenBzN2lwODVVVUlPdElqcVN2TWNCUVZPaFpqNjlIMnRHY0N0RjAwSGVHVnRDaTI4UmR6aW90T3JXdHBXeHFjcUhiUzZxTWRlWFJid0ExeERMdmRlcHVsOXI2N0E5enJyaEFFQVJLbGVaWk1fTWhySG5aQW16RGk5MFBlMzdFeGZxVmdpMTk0TWZ0aUgtb3ZWeTEtYjVHWjdYZFV1MUpOeGROdVhBQklQb2xaSHVwTGYycGRtQmhUNTVGanhVckdSUGlEQjBRQ09KdzBIcExBSWszWmZ3?oc=5",
+    "source": "Extra online",
+    "date": "2026-11-26T14:53:26.000Z"
+   },
+   {
+    "title": "5 anos após morte de Kathlen, Rio soma 5,3 mil baleados em ações policiais",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVklLQWFtLV85SUJuclg2UldXaXFSbnNPdEJ2MUEtZUdLS1ZVNzB0NTg3Qk1uMWNkMXRDa0ZDbXN6UEpodk9OTEhoQ25SSFpGN2l0d1NrdmlXNnpxVjhuVlF4Y2RENlozTUt3QU5VRlkzaU9WMFlGN3hHMUJlTGpOc2RKd3VObnRaLXl3bFhZUnc4OVRrRGRVS1JYOTBpakNUVjdIVHFod2pldWxhSjRtREE5Zlp2eWs3V0NmRmtEM0RhMXV0dm5ZOGtRRUVFNzJYajFvSWJjT0ZIMkk2?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-26T14:52:16.000Z"
+   },
+   {
+    "title": "Seleção feminina da Alemanha inicia treinos no Rio para amistosos contra Argentina e Peru",
+    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQRVpZblFvTzJIQjM5M1V4S09FTWdXRFdpU1NWU3NIaTNWSm4zaFVfYzZXZlZuWWFsSXJVVTFNeFVQR2Zza0lHSnJHRnBnLWZoUDJRdDFIYTY3RDhweTU1MHM2QlVwc256Tld4QXlUbzh3SzNtQVdha1ZySTh3WVczZ3ppS3BSQlNYODUtd2pvTi1kWUc4WUlNUXlTcmJERXZtUGZTT0VVM2tYa1JkT2RITVBrcUZ0OEtpSVFGY1h0TzlmTXltdUY0TUE1dWpJMXhWOERBeEdXQ2p3NmFFNERyZi11XzlrWUR6NXZIY1ZvaTB1bTFkYmxkNtIBhwJBVV95cUxPaFNLbm9IMHk1MVpvcEw5eWlOb3NkakxBQWNTOG9la1U3V2NKajJ1cnlCUTI1VFB6Nnl0cUhLYlY1cEJHT3hUMGtrNThaV1NBTW5Cc01UX3BHNkx3TWJCbXh3NzBzY3R5MkFDYmQyMGllOWoxWFphMTFIVXh6Uzl1eTJIME1SaGdvUXptUW5ORWMzUmFfeVFNQWd5R3ZlQjdGekwtRUtka0dFWlVfeU1QRDZvV1FSYkVGWm9JbHVyb3h5MlQ3QkxJMm1pbGRLOEM5anJpZTRqR1BRZC14ZzBMcEp0TzRTUUJQYTlqOWRRbGNfMGxjeC1zSzBubjJNYXNMTnpGbXo1MA?oc=5",
+    "source": "ge",
+    "date": "2026-11-26T14:50:53.000Z"
+   },
+   {
+    "title": "Vereadores do Rio recebem chaves dos gabinetes do Edifício Serrador nesta quinta-feira",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOa3VxeXA2VVI4UzRnalFNZm9XMVNoMEIwd20yOU51ZGVUd29DRmx6cmdOVXF5XzNuNFIyU0xyMVBFQ1dNdjdSN25yVVNRckFnXzJzSmRnX01SYnh0R2tqaWZ1S29ycUc2NWgtM091ZzRIUFNuSll4VmJSZlFEaFREdWRIS3hLQzlURGphbmRhUDlWcERiX0w1R2R4UEFXRm42TjA0bFRETnZDWkpIZlZ0YVdKX0ltWUVpbnY0WkpSbFk1WjFRMGZHbFdUTE9VRVdaVU00cGNyQdIB5gFBVV95cUxQRkN0UGVfTFE3RVF0R2UyZ1hEOFBRbllYRU1iQ0FjOENMWWZTR29rZGxQMnpYdVpGUmNrYWhITVdGenB0MlRjVnpvNDhhRDBnUlFKTWZvcmpUX1FfMHc1dFc1RGFOamhZTDZSaS1Qc05KZUwtQ29iMnZCczNISS00eWkyQ2lMX1lBajl3a19wc3F4bDNKY05qWmx5UTh6MkxEOEdwcVlTbXQ5MjZFenVWMDFuU0U4cUktbWY0YkJFNGZ3ZENGMk1SbTZNbTR2LWpYQ1podWQtdE1KY1ZxOG1UdzZGY2owUQ?oc=5",
+    "source": "O GLOBO",
+    "date": "2026-11-26T14:48:00.000Z"
+   },
+   {
+    "title": "Quais são as mudanças nas rotas de helicópteros no Rio",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KdDZMVmdQSW56S0gxcGdWeVpDdlhfTVAyeU9WSXpEZS1Mb1E2eXE5NjZrOVRzbTEwb3BCclB1MHVoLVBaanp5RnlaNHBvVzFGZmFzX1BSb3JmVkJPNjZtSGRxa0Q1U3JrZUc5Vm1LRDBFM2x3?oc=5",
+    "source": "VEJA RIO",
+    "date": "2026-11-26T14:47:33.000Z"
+   }
+  ],
+  "brasilia": [
+   {
+    "title": "ÁUDIO: Inema participa de oficina nacional para aprimorar o monitoramento da seca no Brasil",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNDh0QVBHS3Jqa3NlR3NpUS1zcW5fbmgtM0RLSzFFRU9rZTJFRXNiR2Qzd0J3MGo5VnNpWjhtdnJlOHVpOXdTbG9RckxteDFacHRoNzg0c0xFZk9QQzQ4ZXFfWHhDOWdzbTY2and5QnhpWWJrazlqUWFxTXptdFU2OVRReE1yMjVGVTFGNGlCVUpjZEU2T2x5ay1VWGxVLW9wWkhFOTkyZHNTajFrU2k2bXlOOVd5bkdLNTNfT3JWU013Tm5ZV1hJcmpEcnFhQQ?oc=5",
+    "source": "ba.gov.br",
+    "date": "2026-11-26T15:01:12.000Z"
+   },
+   {
+    "title": "Edilene Lobo ganha força no governo para vaga no STF",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVXQ3azVXeXI2X3ZnejVVbVExVHB0amgyV1AyOVo0NjIxU1poaDdMeHVpWGlyYnFQX1lCWkZaUTBDQXRBMmRQTHUzelVjVUl3eGhZWGxkbXBONktlNFdGTjFsWGgwRTd6dmVuZ2c3dWJDc3NpWXpFWmtvYjBONXRWMG01NUFNek43bVU1NTY5cw?oc=5",
+    "source": "Brasil 247",
+    "date": "2026-11-26T14:48:43.000Z"
+   },
+   {
+    "title": "Alckmin critica novas tarifas propostas pelos EUA e afirma que governo trabalhará para revertê-las",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOeDg0a2k5dG5jMjZubVAxQjEtNHp1YXNLY0xiY0UyM05nMFUwX3FLWFBqVXB3VWE1c05HbE42WXNJZTZ5akdBbU91NkJjQjlvZDZRQmcyd3lZRU55TEw4UUVFV1B3MHdlTngwTnc5Z2FnZ2thZkU0WnZ0SFBHMzZib1dUaW0tX1RWVGloLWRpQ2ZyTVJORzBONzZkZHg5QzF5ZS1DejdRRnFLN1dOcGtSYUZxY3RTNHBLQzVtZEREOVhiOUthQl9TVmE0djZFdw?oc=5",
+    "source": "Vero Notícias",
+    "date": "2026-11-26T14:40:00.000Z"
+   },
+   {
+    "title": "Alckmin é favorito para assumir novo Ministério de Segurança",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOE9aeGpON0ZNU1RIUFR5Yld2NEplZDN6dUFtU2ZPMjBJeEI2NnA5T0VHdzdPSkRRc1Y3el93VnpDMkFtMGk1VFlwWnBEMzRuajQ3UnZTdjVkME1DRzNSZlhOcE1TYkF4WGZJZzhoTjY1dG4xZHJSQlVWQk14ckU3TmxJc013d2RGdG5NeG5RX0NpRzJKRnlfdlJCWl9yejYxX1lJR3VJcks?oc=5",
+    "source": "Canal MyNews",
+    "date": "2026-11-26T14:30:00.000Z"
+   },
+   {
+    "title": "A mulher que ganhou força no governo Lula para vaga no STF",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdkdxcDVXdXhOclFQZUU2WGRCMkxhUFJ1cGVhMzhFRlZ1RWNGNjYzakdCemlpLXNNYmVqRnI0dUwxU2RWMnlRVmIzUUQ0YVo5eXFwWGR6UHZfZ29ETi01dEVZSU1haHhsLWQyMHRJZXRfNGFDQ29jZUNGcjI3YWEzamVYVHg5cGlxRlFiY1E5SEMwQnRoc3BGQ2RUakVwTTAtRnFqUEQtSUdKWE54UWhpa2NpemExbzRFM2toUNIBywFBVV95cUxOSHdGUGtmanVDZzFrb2VQVnJaYU5IYTl4ckx5OTF4NjhOZUtVZktvQVdoRDhYRGZUSWhaV2pvNUEyQm92RldJbjJPZmNZbXlQWnhfTWNjUlNxTkktZ01JWW1SOElTS0FQN2YtWXRLSnJTZjlvMGtvUHpmMnRsamxDQUltRThHVXM0NkdIYlZxM0tEYzNxZlhpSFBQT1Zva2dLMEk3QmpKZGpxTmY2NXNVdUpBYkJFLXQ0dHE0Z2Zvck9SR3ZxMEMwT0lNWQ?oc=5",
+    "source": "O GLOBO",
+    "date": "2026-11-26T14:23:25.000Z"
+   },
+   {
+    "title": "Durigan diz que governo buscará superávit primário crescente de 0,5% a 2% do PIB",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTVhtNlQyazRRMU1vWHRpc2FjeC1qS3hzeUJ0WkRTaEtSV08tUnVqV3dsaFZGNVdxN2hHNnlKelFaUzZPS3Nob1diMWlBYzhzWmlNQnItQjlMY29zUnFZdnd3U0RabUJrQlR1a1A5bDhveHN3cWl4akR6eG9CRGFqRzJnSUJHVXBLRDd4Vnc5dXVYWmI3Z2hiZG1rTWVwd29VZk1sNFM0QmF5RGdYdEVpVjI2WWJwNWpIMk5XTC1nUkFSUUpiWjRz?oc=5",
+    "source": "Jornal de Brasília",
+    "date": "2026-11-26T14:13:06.000Z"
+   }
+  ],
+  "buenos-aires": [
+   {
+    "title": "Como a Argentina influenciou o som do BaianaSystem: 'A música quebra todas as barreiras'",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZDhhcGpwZmZYOWNNRjFuX1Vfbk53dk8zbjc3OFZ4ekdmRWluRGlwTjVNYWUzOWMxYXE1U1JtM284eVQ4ZXVyLTVOX01oMHAzQUs2TFIxT2diRzVDcFNoT0toWWZSNk1DVDNGdFY0ajFGZVhsOE5PbWd4cDZ3NzhabDI5dWhuZmNQanlncW1xbFRWMzBjOTBEVFphakg0VDJGak9JQ1RpQzVJUEltM1BxV3dBSkowT0ZWYVg1cG9CUFcxN3RubDJXMEduY1dXUS1OSWlWZVBGV0RlV2htbncxZFpBbjVKLUhhN0N4YXR6b3Iwd1FucWVCb2pIRW9sRTZubFE?oc=5",
+    "source": "Terra",
+    "date": "2026-11-26T15:09:00.000Z"
+   },
+   {
+    "title": "‘Votei em Milei e estou sem teto’: jornal espanhol retrata o drama em Buenos Aires",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQS1rb0dmalhvdWwtQWRhWVN6SGxORS1lMmRpZEhjSElURHVpUTZwOEQyOUE3VmlyVlFROU5EOHhYdUUtMXY2amphS3NDY0VpZnhfWjFYX0YwX2ZMSHFFVXV6TDJPY0kxcmZEVnJNLW05Qm1sNEN2Z2Q3cEcyMkVRTEtkaFhSQkV1ekpnS3lQZGZ3ajdnblVQZG5jbE81b0gxQzZQa2x3blE3aDhFbk5lNHFmajUzY3VDSmc?oc=5",
+    "source": "CartaCapital",
+    "date": "2026-11-26T14:19:00.000Z"
+   },
+   {
+    "title": "Mulheres protestam em Buenos Aires contra feminicídios e cortes de Milei em políticas públicas",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQc3Q0bWM4VkpWdElKZ2g5MkJIRGVMYUFCUkpUVXc0QlNDbVRuQkdSbWluallpN1daSkgxbUVZaTdIS2NoWlBpTWYyZjlvOFQzSXAxYkp4YWVLVXRnRWdfSFFqald4WXhOTUtneUx4elpUNHIzRzlWYWo0OWloMDJobzhCd01FMVAzWm1QcVpfc0xISkJzdDJKbGFXTDhfZXppVnlSRjIwcGhVY19mYzViLWU5X1pWMXJCaVJPWFRuaVJvWi12U2xKWmhIdFBMLWwxNlE?oc=5",
+    "source": "Brasil 247",
+    "date": "2026-11-26T07:30:02.000Z"
+   },
+   {
+    "title": "'Recessão é definição arbitrária', diz ministro de Milei após queda na economia da Argentina",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQLWFVN3RjdFBwVDZ5MWF6TlI3ZjBfNTNLMW8wcTZmV0FPLWgyelFRYzRzWTRwS241SU1SdU5hSGxrdi0zSmVrU0pJRXFZaDVGYnNCVl9xTnczSXNzSEVXWHQzV3BLUy05bGdvWldfUm9nNTg1ZzNESkpIWDFnZFkwZnVvQ2doVkRUUHBmNUNzOU5hUzRZTGZOYVJYdWE1SVJSMlFCM0MybnFOeEpEY01UWEx2bmZwUXNaY0l4YWdQRzR2aXRsbGtyZ0NBamNYTmFOakNZWFVNWjDSAd4BQVVfeXFMT0xpX3MybjFSVTA0VXg2a3ZGdk5Mb2xISGtucjY3QkNmQmhyUFJHQllBamlCTTZaQVFiTG9fUkJyRlZHVnBTWHhRbGktN01yZGF1Y1ZyYVEtQTRETURsYkdmNFo1TlBUTXFXbnJBbHc1czlQY3V3bkt4d2RmUW16ZnB5X01SVnp2ZGxkT1FZdWM5dDg5akUxYmlGbGc2MF8zUWVGc2Q2aUpGTS1tdlFCVTJSc21xemJrYlhFRmdObktiUThxLVRZUmVPUWs2NGt4ajl0T2xSVzJsYm42Zkd3?oc=5",
+    "source": "Estado de Minas",
+    "date": "2026-11-26T02:36:00.000Z"
+   },
+   {
+    "title": "Tectos e ventiladores caem em salas de aula de Buenos Aires",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPb2drZ1p1QlJfT3d5Wi1NLXo4NHNVMU9LdVB1V0hjTnNYX0N1dnFrSzBQc0VQdTlDUlJiYXdZNGlkSF9BYV9UZ1FaaDBrSTl2WTZFRWk2S0p0UU9NZ1EzRDRCWDZDdEJWamFvNXNOVE5PU2ltVzcyVHFjVFNneEE3UkRuT2REcTZybFd3TUxwZWJuc1UtQ3lqdVlIRmxZY2tV?oc=5",
+    "source": "AbrilAbril",
+    "date": "2026-11-25T22:33:46.000Z"
+   },
+   {
+    "title": "Prefeitura Naval Argentina visita o Museu do Holocausto de Buenos Aires",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMUNlUzFQRGZLUF9KalhySTlWR3JKQmhLZkxSOHVPWVI3YTlGNVlBZHJOSmEzd2hkTE5JYVBwZ2JHQjZ2bFJUY3ViNTJicGdJM2JGWnZCU3FXQVpPbWtIdnVZR0RabkxYakNfVDRveC1PbDc1VkZqUE9KQ3VuYUJVYUJuQVh0QXVXZlVjUnU0LVFTbmM3ejN2UWxjLVBzbE9oSTBhVUpIZFc1S1Y3Ny1RNHVKNnJpMktxbzZwck4yTGZzejBITTV3?oc=5",
+    "source": "Data Portuaria",
+    "date": "2026-11-25T22:25:12.000Z"
+   }
+  ],
+  "santiago": [
+   {
+    "title": "Valter Walker acerta José Aldo em briga durante gravações do Hype Fighting Championship no Chile",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR2s0UEVqR2JOZE5LMDJCQnIzNW1objdLLV92NTNNYzJNTzZaMGpXbFd2YnJ3SVZrc19veVpVZjdFMHJiNG9UR3g3dGdJUEpIN1hTaENyb1FKYVB4ZzdmQ2VJbXRoXzBqS1pReGlmRFpIQ0tlNzNHWTduaWh3ZExyUGk2MG1iRVZLR1VCUHQzVWtOdm81Z0RQRVpRVkcwaFhLTGNEMkVZaXVjMlBOdlotczRnZ19JTmdlWEVEZHJMYVNNeU9wbERpS3NoZm5PLU93?oc=5",
+    "source": "Mix Vale",
+    "date": "2026-11-26T14:11:45.000Z"
+   },
+   {
+    "title": "América do Sul na Black Friday! Passagens para Santiago, Buenos Aires e mais destinos a partir de R$ 937 ida e volta",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZlhKVXpPaUlidHRURk1rVXpuVEFRRWg4Tmk0T3E1aWlYVFhUdGRlV2Q0Q0FNVGlkczlPZklUR1c3V2dTbVhxNzFkdTh5ZFhVLWFnR09WVzJvNTJjUGpzbU9BQ05FempWTWJDeHhMSkZhd1dULVdVT21fX3FZaEl5Y1RqdkxtQlZCalVkZ00yRHpfN0dTdUhaUQ?oc=5",
+    "source": "Melhores Destinos",
+    "date": "2026-11-26T13:43:00.000Z"
+   },
+   {
+    "title": "Bom demais! Hotéis na Argentina, Chile e Peru com até 50% OFF na Black Friday Accor – diárias a partir de R$ 152",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYzR2VVpYakVGam96SldKdW1zYjgwZEcwQWZwRWtPV016ZG8yb1g0ejZpOFE1UE1pY1N5bWswQU5QX25ZMlBSZ0tOSmhIdkEtdUdjajdtZXAzRHhLUEFhaW1STGlVMnAxTk9hTmpjNUJrRjA1SEtrZzVTSEYtcjViOGx1TGVFbUtDdU1MeEptWGNpd0FsekFKYVdTSUw?oc=5",
+    "source": "Melhores Destinos",
+    "date": "2026-11-26T10:39:00.000Z"
+   },
+   {
+    "title": "50 Best América Latina 2026: Brasil tem seis restaurantes na lista estendida",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNX3NIMnMwSktiYnBQWXpXWFc3NlJJMDlPWTZydHBLd3c2bXVHM1hrN3Vxc1ZkRmE3NjBHS2c3cFRLLWNnZDI3WE1NdnJyZVRiVVE5azlQRER6ZU44SGQ3TmhxcFREaWxJdFhqRFg5UjJRZmlDTEJuN2hDa2E0MF9wQWdFVWJkLVM4dms3SnF6NUdnN1p6TWF6UFlSY1ZXWkQtbjBnTkgzMHF2dXZMbFM2SlZUeDlsc1hFZERCTUdQZlpzU2JrZ0xGZlNxcm1kUkNB0gHWAUFVX3lxTE9NbmM4azdQRk5wV0RJcEQ1VEgzRjJqNlQtbFFINThvUkYyMmRnTUQtMFVOTGFKNzdweVJmUzdQako3QXVZTGlhSWdnR08zanZrUVdGd1JDZF8zVGV2WU1IYjh3LWZMeEtjZWVTYW53YTM3S3FuSWxhYjg5NmltSkhaMmRXSlJVX25xQmlzcXBsYVFNLWNiS2pwY1dxcWliUWNmaGY2YndnUS1sYk9BY1ZwVFY0UVk3ZW5mWW4zbVVkVFRyR1ZMYlRKc0gwenBRQ3VIWGwxV0E?oc=5",
+    "source": "Estadão",
+    "date": "2026-11-26T09:01:42.000Z"
+   },
+   {
+    "title": "Undercroft : confirmada no festival Rage Against Racism na Alemanha",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3BrdmFlbS1XWVlHZGJLdEUyRTlrWnNBeFJhVHJSRVRZM2RhTE5KcjdhWHhLdkY1ckpGT1d4bnBxMl9Eb29YdWNKb2FtRmxLb2NnTmdrWnRmOFVxUjhpRUNyLU5SdXlWVS1WVXVmZkNuc3BHZGFIbGJGdEg5Vzg5QlRjZUtLNFNWejBNY1B5OEluUzVPMkV3?oc=5",
+    "source": "Cultura em Peso",
+    "date": "2026-11-26T08:00:00.000Z"
+   },
+   {
+    "title": "Depois de esgotar ingressos em Santiago, AI Builder Tour da HostGator chega a São Paulo com foco em IA aplicada aos negócios",
+    "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOTFdCMnNoRDh4bFI4TjU2N1l0VkhiSEhkb0sxdnQ1ZTlSVEtVQ0xlWTZmZXlKU2NfajE1LUdHRUJ5MnM3LXdDdzM5eVpIYUdFTDFNaUVoTlF1TmRGSkdvcDFoLXN1dDZqNkRKdTBHVHZfQlF3SmYtZU5kZmFyaFhwekpLVHIzTjZsSWc5bVVwYU5IRHpybjRUdmVsSkNaTVl6OGJ1Q0pMalRIdE01Qy1udDZzajlSUmpsM2dsekZ1N01vRklyZEt3bkttWFNsUVZkX3FyM2NWd3ZtaGI5ak9jWHBFRW1RQkRsdm5SSnJWaTFyZHk4OVB5SFV4X0ZTT3ZSZ0t2c3llVFBmckRZd0ZMV0NiVW9qak5MYlFKUmNSV01obk0wdE9HSzVoWQ?oc=5",
+    "source": "Terra",
+    "date": "2026-11-26T06:06:04.000Z"
+   }
+  ],
+  "lima": [
+   {
+    "title": "Empresário afirma que atacante do Fluminense quer voltar para o Peru",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTjJWTzV4Q3FmeWtBNmp4Mzc3UGdKMFRKZ2V6MENGVmM5dEg5VXc2RmhlS2tWbDdzTjVSbDhYVEgwU2RjUWlEb0FsWk1SaFUyMFdhN3NSa3duM2xKTy1mYXgzRm80SHlFWThDbmF0aEhBejFQWG96bVVabXZ1eEJoWm9HSlFLbDVsQVpKS3NwXy1tU3hvLUc3Rk44OFRpWTMzZl8yZHpFY0lBVGNRRU84d3hTb1VaakE1aVJZQ0RUNWo0MXpvMXlUTWdSONIB0AFBVV95cUxQMWxMVE9TRWtWeEhGMHh4ZURZV2UxZlBpWE5LcDVIU0tsMGJScW5Kc0poZWRSOXVUWWhudy0wMVkyYXZfMjhSTUlNdWtnSENWMkhQTmFDWFlSenYyWDJaNEpyVjEwOXZnLWRUWmRpbXpZUFpIQVhIMkNlMzh3QUk2Rkd4Uk9nR3pZOXNMRWxFY2NNelpOVFVSNk04REhUY3BhWExyWEdKOWlnaEpaTU1mNVpiN3gweEd6TDI4d0lUQVZSZE54QXREVWxFYWxaUzFy?oc=5",
+    "source": "O Dia",
+    "date": "2026-11-26T15:01:09.000Z"
+   },
+   {
+    "title": "\"Se tiver que ganhar menos, ganha menos\": empresário de Serna fala sobre possível saída do Fluminense",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObTR4VXVLTEhha0duN1V3ZHBCVE5Mb1M1NGl5Y3NRWGpCNjZxQ3dNRF94ZFZ3Mm5TanEtX3hsNFhtZmtzd2FlWFdCdEhkLXk4SmhfNTkxMTJkOTZiUjUxZWNjZTNPNUxtN2tMU2FOSm16T2I3eTE1eVVwZmN4aTdLRTB2eUUxNnZoY0haTHhORXBhR3FIMUxjVDNGTzdhZk8wUFZzWmVodUVReVFqQjZZcjdzbnZZZmphdUNlQnN3?oc=5",
+    "source": "NETFLU",
+    "date": "2026-11-26T14:03:12.000Z"
+   },
+   {
+    "title": "Com expectativa de ainda mais corredores brasileiros, Maratona de Lima passa a contar com inscrições no Brasil",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWUx4bjAtVjJQWk90U3k4NU45U0ZVTHJlZGkxSkZoVklxQnpOTnc0YXV4UjhXUGs3VzRsamhFRS1kaWxvM0R2enpVVjVHa1hkNEZWRUZhSEs0QVZMVTRheWZVMHlkMkM4UmM5T0pueWg0MXRwYXNSb2k0MnplMUljWXhxV3l1T1d1alpfYkxkc21INU1rbU1DbmNIdmdyZnhwVFVzazYyMHhydWptMDk0MkwxbzRDNVVtVWFFTzY3TzFSa3BIVkpqY1VndkM?oc=5",
+    "source": "webrun.com.br",
+    "date": "2026-11-26T13:30:47.000Z"
+   },
+   {
+    "title": "Ônus e bônus: Final da Libertadores coloca Palmeiras diante de duas marcas históricas",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaFRsa0toOGx1U0pCWEpUQ19hZ0cxcGJEaU1iYW9LNUV6Q1VtcU04R1hvZXY0cW1aa3JqZ2tucjEwRkJvVUc2bWpfVjRDdml0YnVCZFVBTDk3REVVWXpXSGV1NjFjbk9IV0Z2WTlNZW1kc21GWXY1a1lYQTJLZGxROVc1Q01heE1FMnRFRG9iR2lwOTl3SW1GeTgySTVjdTBRMW1tb3F6TG9pSmYwaEZTZVlnODA5TjlDR0pjSlR2TmJFYXl5WjUyNnpNV2pCTVR5cnZYc1ZVb0JwUQ?oc=5",
+    "source": "Bolavip Brasil",
+    "date": "2026-11-26T12:18:56.000Z"
+   },
+   {
+    "title": "Papa é atingido no rosto por terço lançado da multidão durante visita ao Peru",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRktfN291cXJEZlV2dS1JWlFLamlOVXVmeHBpX3ViRm1DSUdvYVpEdEZURGhPbE9fRldtVlFibnc3aDlaQ3RsdTdiTU5EX2pNV1lYOFc0dGR6OGFVWXFZYVdnNkZjS0k0cmlCMUNuRE9nZzdnZzhGMk9sZkF3ZXFCbDdkTTdrQ1ZEYndKVGVpbEg3aE4yc0xnVW1DMG9iUzdBSHBLcUZiczREN0Jxc0xWSkhDOEJSRFJZR3dnbjVJVUM1VVVMNE4xZnlzcVRZazRGejlR?oc=5",
+    "source": "Sou Notícia",
+    "date": "2026-11-26T11:33:02.000Z"
+   },
+   {
+    "title": "Bom demais! Hotéis na Argentina, Chile e Peru com até 50% OFF na Black Friday Accor – diárias a partir de R$ 152",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYzR2VVpYakVGam96SldKdW1zYjgwZEcwQWZwRWtPV016ZG8yb1g0ejZpOFE1UE1pY1N5bWswQU5QX25ZMlBSZ0tOSmhIdkEtdUdjajdtZXAzRHhLUEFhaW1STGlVMnAxTk9hTmpjNUJrRjA1SEtrZzVTSEYtcjViOGx1TGVFbUtDdU1MeEptWGNpd0FsekFKYVdTSUw?oc=5",
+    "source": "Melhores Destinos",
+    "date": "2026-11-26T10:39:00.000Z"
+   }
+  ],
+  "bogota": [
+   {
+    "title": "PLANO DE LULA PARA REDUZIR INFLUÊNCIA DO DÓLAR GANHA NOVO OBSTÁCULO APÓS COLÔMBIA REJEITAR ADESÃO AO BRICS",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMjVrMjFVVVdpSEVuZEVnM2pjdHNyaG1zS0g0VFJMcW5SSGZuSG1tN1IyOWVlamlIendQblJ3NnZOQ1I3UFBCc0o5NVBFbUlkMjZ1ZXBUdWlybE9vU2ctZzlydk83YmhmQ1JNa0FjRXA1QWhWcWFGMlAta2xpVU8zS1ZieXBLRXV0Rm42VkQzT1oxVWc3andSU1VxaUJ5M3ZBeEkyRnU2ejNXSllHZk9aSEc4TDBjSW1vZEhVbWszQWVRT1l2TlZWdjZxY0EzZFB1Sk1EV1lSZjNoX3M?oc=5",
+    "source": "Diário 360 Notícias",
+    "date": "2026-11-26T14:59:00.000Z"
+   },
+   {
+    "title": "São Paulo e Bogotá compartilham experiências em políticas públicas de assistência social e requalificação urbana",
+    "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQQkM0WUQyZ1M3ZkF0dldzVDg4V0Q5S2c2MGZ2V0RMcGowN3BMZ2pmc0hhcjdEQ2VibVhMekEtZFFZMnVGVUlRdU5LU2ItUS1BX0haNmxPdWpwd1AwZEJZckR4bFlsWkFvY3dCcHlIWWU2c3RIZ09uc2oxeUpYVllCaWFmV204SFM0eXR1ekkwNDJMa3lySUlCdTR1WW1ZczBaYktFWFZqUTc3TlVQUENrYm9PaWRxMzRqWlJJZlBpX2ZkelBJS0hVZ1RvNm42OUsweVpUcUozaXdUQ0ZWNzdDZ0RvU3JqaUFzT2FvSmhPNzQ2QW5ydW1mZ1BNZE5GZktHNHRQN3ZPNnhER296ajFWeThtSk9WUEJscHNuUVlWNTFJd2NyblpvX3V4SGNZU1E?oc=5",
+    "source": "Prefeitura de São Paulo",
+    "date": "2026-11-26T14:19:50.000Z"
+   },
+   {
+    "title": "Bogotá fecha portas ao Sul Global: mudança de rumo isola país de alternativas de crédito",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95UzBDRm9NZDBQa0NSNkVwV1g1eFRlRlpkWDBMUjdvZFdfcE9MRi0xMnowd21lWWZfMTZjTGpxWnk2Wk9KSFpvNi1ad3EwWjgzR3RaeHk1a1o0ckU5b3hDbnA5aVgwUTJCWU1jV3hZRmNOTXh3?oc=5",
+    "source": "Правда.Ру",
+    "date": "2026-11-26T13:00:00.000Z"
+   },
+   {
+    "title": "Colômbia descarta adesão ao Brics e ao Novo Banco de Desenvolvimento",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbDdqamdZQnR6NGhEX2NyUmY2R18zN0RLRnl2MDVJbVRxdHV4S1h1WkFzaF9fLWx3bDJwSUU4NnFDTi1qYkxQWWptaGdEai1pUjRWRU43cjJmUHFvWUVHRm5qVzJ5SG5RVklkZ0R0SmFiUU11WmVHd2p3MWloSWFRdlJocDFWTzRiMHcxbGpsekhXV09BV2hEdWNhYnBYUWJ1Zkk0WHBPNk5lOEVyUHhMSC1kOGdKTDhlNnY3UTNaR3XSAcABQVVfeXFMTWw3ampnWUJ0ejRoRF9jclJmNkdfMzdES0Z5djA1SW1UcXR1eEtYdVpBc2hfXy1sd2wycElFODZxQ04tamJMUFlqbWhnRGotaVI0VkVON3IyZlBxb1lFR0ZualcyeUhuUVZJZGdEdEphYlFNdVplR3dqdzFpaElhUXZSaHAxVk80YjB3MWxqbHpIV1dPQVdoRHVjYWJwWFFidWZJNFhwTzZOZThFclB4TEgtZDhnSkw4ZTZ2N1EzWkd1?oc=5",
+    "source": "BOL",
+    "date": "2026-11-26T11:35:12.000Z"
+   },
+   {
+    "title": "Veja o que visitar em Bogotá, meca da arte, do design e da gastronomia",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeHlwSjJINmY0ZDBVOWUxN2pqZXFROWxfaUZiUDlQZm9WSlNwNW1jWFlXbVc1ZVU4MkxrTWVIWnVFY1RKVFBmcUljdDdyVm9kV0w5eHN4T3dONVBaOS1NbWl4OE5pXzJ5OHFkdmZOMHJFZ1NlNldzblF0b2VRdm9oNFpHdk5NbUNoeTc1dUMyVGlFUWIwS2o5RlpFXzhSajNwYUNxVmNBZWd1c3g0T2pyMS1yZ3R4S1psdlRPaA?oc=5",
+    "source": "Folha de S.Paulo",
+    "date": "2026-11-26T02:00:00.000Z"
+   },
+   {
+    "title": "The 50 Best Restaurants Latin America 2026: seis casas brasileiras estão na lista estendida",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQME02UlktQ0c4S2tmMktvVTVyVzhvY2t4dGNQVlJLVlJxS0N6cVBOWTR3VUdMMmVQQVFHVzZHeHMtVTd5cm9VNDNUNHctWHdDVmdYTW11S1FZckpzVVcwanl3X0o5QmhPazhDMExtWnROcmpXTi1pSVZqbkJwVld3S1l4RmN2c1daaHFuQXFJWHVfZ9IBkgFBVV95cUxQME02UlktQ0c4S2tmMktvVTVyVzhvY2t4dGNQVlJLVlJxS0N6cVBOWTR3VUdMMmVQQVFHVzZHeHMtVTd5cm9VNDNUNHctWHdDVmdYTW11S1FZckpzVVcwanl3X0o5QmhPazhDMExtWnROcmpXTi1pSVZqbkJwVld3S1l4RmN2c1daaHFuQXFJWHVfZw?oc=5",
+    "source": "Folha PE",
+    "date": "2026-11-25T22:43:01.000Z"
+   }
+  ],
+  "cidade-mexico": [
+   {
+    "title": "Alstom renova contrato de US$20mi para manutenção de locomotivas na Cidade do México",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSFh2UFdxcUhDZUlKNzhOQUlxVFVmVFZWNXlMMUYtZ2plWldXLXNHdm4wWkw5SGhpUzB2VEtfVEJ2c1k4NXE2YVp0c3VQQkt5eHlOMDZpMjFuRnhiZDlKbk9XcmF4azQ0VVRWUk5KUGtPbmp1NGlqZWVPbnV3UGNQQzJRbzBGZDktd2pTTngtMkdFSGJQRnlsQmFjTWpVYmJTdUZGSTJQeHhXNGtOTE52OEozeFY2ZThLcV9SdmVMWQ?oc=5",
+    "source": "BNamericas",
+    "date": "2026-11-26T15:08:04.000Z"
+   },
+   {
+    "title": "Felipe Junqueira conquista mais duas medalhas nos Jogos Pan-Americanos da Virtus no México",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQWmphcElSRmZCOUV6VnBKaE1DZHcxQXcwd0NVUV84ODVZWlpSTE1lNkY4T0hFMWF0czJLa2tueDgtaXJyc1owb252amhoemw4WXNOUjR6ZXJnR214N1FVelhnTGh3dFplTGwwSm9fWFZiTHRmaGN1ZmFBNTNiaG1kVDRucUhtdDh6b3lkNm11OWFwajE5cVNNYmJ1azI5bGxUODlCVnhDaDVPTDFXemV4ZTRnT3VsbDRpT2JHbV8tQ0YzN2hDclFQRnVLTXpySFp2ak4xWUl4U1VJUWR6RDFDVEY2TmRSZw?oc=5",
+    "source": "Portal da Cidade - Casa Branca / SP",
+    "date": "2026-11-26T13:58:00.000Z"
+   },
+   {
+    "title": "Caribe mais barato! Black Friday da Arajet tem ofertas de passagens aéreas",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PR0s4aHZfQXI5RU1Vc2F3YklaR21mOTJLTXBNbXJUcDFxdWxQbzhRcUlBZUd6X2hKbEhWbUFZSHR3cEs4aGhIdlp6NEJaZi14bjFIQlIydUJqNmNSaG45MkxCUWtyS2Fi?oc=5",
+    "source": "travel.com.br",
+    "date": "2026-11-26T13:24:12.000Z"
+   },
+   {
+    "title": "Haas confirma Bearman e fecha grid com Rafael Câmara em 2027",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaXV0WnVIdUMwdWRkX3dJTGxISkhldnBXZHFndlZCLVFsTWxpVWpOUEw4YU1Oa21qNVNmc0EtNVlfYkxOUUpXcVRFMFdxUV80bWMzcC1sZkkwd3hSamNwQXVzUzFUQWUwU1dBeXdhWEdBaU03end0S1c5NWc1ei1OSUd1ckRZYmFoR0tlUG56SkZhRjRZaTM2S0VRNlpIbjhIUWtwdHpSbFp5clpzQ3NjM3prQQ?oc=5",
+    "source": "TV Sim Brasil",
+    "date": "2026-11-26T13:23:50.000Z"
+   },
+   {
+    "title": "Rafael Câmara ganha novo parceiro na Haas para 2027",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPck9kMko5bHdUQXFUZVVSWV9CYlRBd1FaRnVUZ19DNXVHRFdhSXBvbkF1QlNDaWUwT3JPN192VnZ1Y0pXdDZUZC0ybnNMWHlTQmNKakNFNkVUTHdJbjB2a01ERG1ibjFmbndTR3hfNTBKV0V3TldNQnk2MUUtRVVZblBOekc3VkhyY3E3OWMxeUtMc2FURVNWT1ltWDhFb3c?oc=5",
+    "source": "SportBuzz",
+    "date": "2026-11-26T12:26:40.000Z"
+   },
+   {
+    "title": "O paradoxo dos juros baixos: o caso Banregio no México e a lição para o Brasil",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOc29mU2dDR3VMalBpbkZlSGZLamVtNUxIX1htZmtsenRWdTlPNk9DTGhMbVBYUkFKWTU3ZFl0MGhqZEdPN1A2S1JlaFhzVE4yaldoQ3ptcVlFVWQ2V09DdnZjSXZYV0RLV0ZZeEQ2amc5Y0RjaVpnYWZKWS1RM3huZmZPWG5yMmdGLUpvYXB3b2kyMlpqNHJqOFBjX0pXVHNqZ3Z2OVdoZEJKU2Vo?oc=5",
+    "source": "Exame",
+    "date": "2026-11-26T12:04:49.000Z"
+   }
+  ],
+  "nova-york": [
+   {
+    "title": "New York Times pede que fotógrafos evitem o Photoshop 2027 por causa da IA",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObXB1MUhwelExTmNZWXRTY1d6OWkxb1JibXlJem5FMk1uaGVDQ3ptNHJYbkYyTVlidWhZb2Q1WlZrb2pXVGhmNHFjV25pTG51RGVSb2k0c2NuYW9zb1VyWmstZGo2U1kyRUt0QVlHX1pMalFlUUpUb2hGVHhfN2ZiQVdkRW1uMmFMdVMyRkNzUVB5SVllcXh2dlhnWjJlT25sVXZxUnZYVnQ3QQ?oc=5",
+    "source": "Paraíba Business",
+    "date": "2026-11-26T14:50:00.000Z"
+   },
+   {
+    "title": "Condia Mendes relata experiência na Maratona de Nova York",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONzJXYXJUYlFnNGsxVlJBM2g2OW1ORG1yamd1dG9hNVloWXZydjBvblRqT3RoR2hYYXgzOG1FclgzTENuMDlsdEJkS0JGaE90WGNrbUd3ZHpWajI4UVU0T3NWSWctcmtGWXdjSHM2eEt3c25TeFBMZTVpODhPRUNTOGlnd2dCdm9u?oc=5",
+    "source": "GAZ",
+    "date": "2026-11-26T14:25:00.000Z"
+   },
+   {
+    "title": "Previsão de tempestade adia desfile de Ação de Graças em Nova York pela 1ª vez em cem anos",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbVhyS01EamJRbDJzREJaSDVTdENjUWsyZ3poZzZPdlhIZHllNU5hM2ZtbVlRd1YyWmczQ19CSUd5bjQzUzhRVUM1Q1p2RVdMOGtfYkhXVzZJLUpxRk03WmlROWc4R1VfLWFZR09uaFhFaGlBNk80U0lfNHhwbFY2aUxNWjJhdER4YnFMWF9XZ1ZmZ0pBTEFnN0hWVVN0c2ZWZl8tLVdHLUtFdllnT0kzUm93YmNpQUR6cjVId1RfY1I?oc=5",
+    "source": "VEJA",
+    "date": "2026-11-26T14:16:27.000Z"
+   },
+   {
+    "title": "Açúcar dispara 3,85% em Nova York com previsão de menor safra da Índia em dez anos e preço sobe no Brasil",
+    "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQQjBOYk1jcTFfSUVUYVp3LVJFa2hhbXFySS0zMjFsZjlOUFJYN2ZOR0ZPNG1fQUhNUm1FRDNKYXJMd2JkbzJUOHNoWHJ4ZEJKdzkyMkRNbUFmNG94NXRyT1Z6RjhSUDJ1V0NzRkhuX0dmZFNYSzNUekZmVElhSWlTeWNPTU9aM0Q4LXBqYUlkbXFuOUVZVmg4ZHlNZWY5QWFGdDBWT01RSkNrV2tERXlfLTlYTEg1aFBZX2ZDa01UWnQ2YlYzOVlGNmJ1MTQ4eTh6bWJvMzVtczFkQjZjenRQQ3JPUXpZMDBmUmtYYnRCZjFvTVVrYW9wU0NUMTZZY2ZSUXRuWjlpNlNzLXBkaDRUaGhPTkcxQWc?oc=5",
+    "source": "Portal do Agronegócio",
+    "date": "2026-11-26T14:10:00.000Z"
+   },
+   {
+    "title": "Falhas de segurança levam Nova York a barrar brinquedos infantis com IA",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRWRLbUgybkptNG9CdUo0X2txMVk0czF6RDUtRUsyRVNyd2k0cEhNZnhMeWwyS1l2ZGRNMkVZeTlqaWp5ajhDMDNxR0UxWTREYWpiSHVzU2dQV2ZZOXNPelNpMWdZMU9VMV9CNVRLamRmSURpckNmZnctdFR5T3VNQVJPek1ocTYtM1BkSU1kV1FDdEFjRjBrVk9uSUJ4b1h2ZHJ3NUp3UEo?oc=5",
+    "source": "SITEPD",
+    "date": "2026-11-26T14:07:01.000Z"
+   },
+   {
+    "title": "Evil Twin Music leva Luciana Alamo para Nova York",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfM0lERF93bGF0YXVQSTk4bm9pQUxmMWRlVERWMDNBRWRtdWhaQmVwZGRFZTFEZFhObEYtTGRhaU5CaktXM1kyS3RrMVRReHR6TTBGSzB2X2M2NTJTYkp3c1plcVpud2FXb1AzTllzYWJwMFk0Yzhv?oc=5",
+    "source": "Live MKT News",
+    "date": "2026-11-26T13:42:51.000Z"
+   }
+  ],
+  "washington": [
+   {
+    "title": "China ameaça reagir a novas tarifas dos EUA; União Europeia, Japão e Brasil também criticam medida",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMy1lY1pUNk5CTDRwLTZJZnlpalVOWTBTYXA0YjZ5Nk5BSXRjczVlZUlKbWdYeWpaN0lzcG1JcXhwMjFNMjJCRmlYaGdiUTh5bWxrcm1Ga1hrSE56bDFMRXloMnI5TS1UaThrX2JNajFrbHVCcm5OWDhha1dIdnNqOEJ3NkhLc1F0b3pfVmk5R1h3d3hMc0hIalMtRDRubHNSQkdiN091LXk4TGxnLWU1OXdRNGN1ZzRILTZ0R01hWl9PeXVXX2NpNWcwYzF4MHFLV2h1RFllRl9jcjF4b0R3aWNfTnVyMlJM?oc=5",
+    "source": "RFI",
+    "date": "2026-11-26T11:55:44.000Z"
+   },
+   {
+    "title": "Trump recebe US$ 300 milhões para financiar projetos em Washington; Governo se recusa a divulgar doadores",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOT2k1ZUdkOTZTMVpRbkJfejFPQlAzNjdPUWFGMy1NQWZLTEtuS1pIenlSanEycm1McnJDVmotS1R5dlBMby04eV9ESlZnalVnaXFDRXZiM0x0UHl4SUo3QS1sV3pHbmxNQnBKOS1PVXFFWHJfN0txTGlhc1BiWEc0ODQ5cVpTM19CcHlJWVFjR2JlRFd6VGxNNGl3cnB0b3d6ZlQ3Y0hvZkprRmM5M293bUxjZ3pfNUxDUm5GWVBjZXBRdzJKUlF3Q2lEMDhyS29FYWwwYS1XcHBsbVJYdmV3UXlyOTk3ZS1IVkZ0RNIB-wFBVV95cUxNQmhuVkdabUgtdkNpM0tEZWR4ZUp0MlBRQVpSeDFVX3ZqLVcwd2RZaDBJOXRXUnBmOE1oT3pJT1NtOHpIYTQyMFVkenpmNWpsY2V6SGp2S3k1bXExZTFfbDFuVEJBMlhQTTY0TS1mNHVIY3o5TUdNRVIyQ1l3TVlXUzE3NFhqR2JUeGdwbnZidVJtZExKaGs1V0FFUXpFLXd3TFhucEhlOHdaal9GN1E0SXhSN2hYTEY0REJnQjdHMGJ3RDVHZ0J2UEh5dDFrU21hVDhjU1R2c254cmdOclFFdS13emx2UDN6RmJ5akZQVlpZWS1WY25CQ2FSbw?oc=5",
+    "source": "CBN",
+    "date": "2026-11-26T11:49:43.000Z"
+   },
+   {
+    "title": "Estados Unidos: Musk promete duas ações da SpaceX a cada criança",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa1JGRzB0cVQxUkIweHRZWFpLdW83dk05WkNmWktJTS15QVFubE0wYnpITUdCQ2pLT21uTUo4N1g1VWNpdmQtQWJKUm1hSW5Yc2ppX09LQ0tQUFZpRjBJZlZfTHFMYzhPWE1xcWhwZ3hDSU1yRTU0NjdyeVVoMWdHbllWejlUbmJUQ1JXeERkUWtlcWIzTVJXdVhyZ2RzZ2M?oc=5",
+    "source": "Euronews.com",
+    "date": "2026-11-26T11:01:27.000Z"
+   },
+   {
+    "title": "Guerra tarifária: EUA mantêm ofensiva contra Brasil e abrem consulta pública; Planalto fala em indignação",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOR2I0T1ZjN3dYamc0Q09yZ2gtWGVPZXFwWTdYU2cxT0x3b2NVV1ZlbG9PSUZaTHpOR2l5eDJpXzhyRGZSYlBNRFAxcGV2MDNWY1pNVTJBUzRtSUYtejQ5UExYUHBla2ItZlJQRlgtSkp4bTZGN1RPT2EwYS1nOHdRd0FNR1M2WVJYdGp1RGttcWo1WEk0c1IzbTYyLXZvOVdQUXh2dzBqSWYwRVhhSTRiQmlYQUYtcE1zTlh0ZnFlUXFkYTdJOEh0LS0yd3FmU1ZZVjBpWmhSSzNLSlc0b3pwS0RzeEFsZ0ZZQ19saTUtRdIB7wFBVV95cUxOR2I0T1ZjN3dYamc0Q09yZ2gtWGVPZXFwWTdYU2cxT0x3b2NVV1ZlbG9PSUZaTHpOR2l5eDJpXzhyRGZSYlBNRFAxcGV2MDNWY1pNVTJBUzRtSUYtejQ5UExYUHBla2ItZlJQRlgtSkp4bTZGN1RPT2EwYS1nOHdRd0FNR1M2WVJYdGp1RGttcWo1WEk0c1IzbTYyLXZvOVdQUXh2dzBqSWYwRVhhSTRiQmlYQUYtcE1zTlh0ZnFlUXFkYTdJOEh0LS0yd3FmU1ZZVjBpWmhSSzNLSlc0b3pwS0RzeEFsZ0ZZQ19saTUtRQ?oc=5",
+    "source": "BOL",
+    "date": "2026-11-26T08:03:24.000Z"
+   },
+   {
+    "title": "Governo Trump recebe US$ 300 milhões sem origem revelada para obras faraônicas em Washington",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVl9hSlBPbnpxYXBaYll2WVd0M1BLZkV0b1dCcFpmOGdsUXV3QjFObGd0RTdtMmdPdXlHYkVsS0VjMlBlV2ZzQldWeVR6bjZXXzhLMngzSmpTWVF4dEt6QXNQUkpYR093V2loMFNLTF9CdU93RzA0M05QNDVBVVh2V29wczhpaDd2OE5jTEd2RFRkWGJqYzNwQWJhOWhTOFdNcjdsaEJVT1k5bWNtMV9Mc180SjNqOTFUMFB4Tnh3OE9WNjVyeVNEajBaZzVrSVV6Qm40TzZfWGQ?oc=5",
+    "source": "Folha de S.Paulo",
+    "date": "2026-11-26T07:00:00.000Z"
+   },
+   {
+    "title": "Tarifaço de Trump e dúvidas sobre retorno da inteligência artificial derrubam bolsas dos EUA",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNWhPUHpVa1Q5TVdWNUkwMXRRUXN6X3Q5WElZRDdocDBJYXBVeGtZenRETVE3Um9YR19GbkQ2SkhQMjZtQVoyRWJtRUNZQjNhTWtuamFwVlNzdVpsNDIzVk1vdE42ZE9QaGZhcjdQS2FaSGVWSHJ3Qlp2dU93VEQ0MHpYNGFkM3ZuM3liODIxTTRNd3pqZGFKSC1XdWxpblhYN3EwVnE1RXNVUHNvMUtmeXV4RjBhZm44SEcteE1rdFNRX2M?oc=5",
+    "source": "Brasil 247",
+    "date": "2026-11-26T06:59:36.000Z"
+   }
+  ],
+  "chicago": [
+   {
+    "title": "Soja sobe em Chicago com alta do farelo e demanda chinesa, enquanto saca chega a R$ 170 em Paranaguá",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOM0poWXNxeHZmZWtxQmc5ZS1aclN6bmR3RXBfejhvRHJMejBsc1BPYWdGci14RERDVldIcEk1dVpjTDZlb1l4Q2tjdUtXUTZmZ0llenVXLTRpdEw5bnNQX3Z4OXdTZWZhSHdfV1J6NTJZSkdRa3VlYUFYd0ptdURESFZCbnFCb2lkUnh5VzQwblNhNTRfS2RWd2ZVbklOOENlcXBlTjdHaDZYREVnU3ZlRUF1WllXanNvRVY3cGJtYnBBYkRxTzFDWXVlaFR0SkVTenUxMnk2R0lZbkZUVEY2M0R1RFA0NXZFRzdaNlJReVVoZDVTVUE?oc=5",
+    "source": "Portal do Agronegócio",
+    "date": "2026-11-26T14:30:00.000Z"
+   },
+   {
+    "title": "Criador de NCIS abandona franquia e vende sua parte por uma fortuna",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yUUxDdm5CZzBRLU1QcDgwVjRRdzdFUHBtaGtmSnMxVENUSEswQW4wa2JVZzdva19xNDVPYVVWdGxnNHRGNDhwbE90dGFSNTBRa1lHVzdudUJsOVJWbUFxQ0Z4Wmo5dUs2THZqcjc1eUsySmJOSGV5X2VwYl8wUUE?oc=5",
+    "source": "Mix de Séries",
+    "date": "2026-11-26T12:30:48.000Z"
+   },
+   {
+    "title": "Soja cai no mercado brasileiro com recuo do dólar, apesar de alta em Chicago",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcnVtMTJVN1ZVZkx2dUM3RTd4Ni1aaWFPb0QwSl9vOVR6VlYxdVhJbW4tNUpPbGp6UFA3ODhiUW9MOEotX3BMWWpTRFoyeGtFYkUyYnNaY3hGLVQySm9UWkVxU3Zzamlnc21TMjBxZ3ZwLXppQ01tZVliUWNZaTNYSXdJRmlFT0lIaVI5bUxCR2VJVnU2dURjS0E3TUowVDA4d0FOWDFIYWdlYVAySkROZ2pYUU93R1U5RXpOVA?oc=5",
+    "source": "Olhar Alerta",
+    "date": "2026-11-26T10:53:00.000Z"
+   },
+   {
+    "title": "Barack e Michelle Obama surpreendem organização solidária em Chicago",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQkZheEFFSWVMaU12SmpHNzVBSWJWRTdWZkhnMEdDNXh1YkpMS3cwX01wOG03aWlqQ2F0Njhxc0NOUnVqMHBtOWM0UHphOFcxU1Z2dllPWlZaTHJsMXl5M1lkdU52UlA3a1hmLWFXZ1RCUHU0VDVZYmJuZFZSWkFmYmZ3ZUV1MU5jb0N0MUFhOUdXYUwzZERiQnNlVVVKelRYUmt4azlUUnVQNTBfQWg0NjlSeURkcWRGODg4eXZOX0hCWnpNR3c?oc=5",
+    "source": "CNN Portugal",
+    "date": "2026-11-26T10:44:40.000Z"
+   },
+   {
+    "title": "Bulls 107-105 Hornets: arremessos superam rebotes em Charlotte",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX1JSQnkyS0ZsZVMxRmhWY19XSGk2STFaRGVIaDdpTl9MSG1hVGlBaW5DNDhFMURzcHpDWGdLN1poT3NUVTF3eHZWQklrVC1RaExZa3JuWlhZSkpPSURnWS1fZTJwR3JBOU43cUFyTXNSSGVkYXV4TDFwYnlHOWxyNXlBZnJEM3JrX01QVV9ROU9CQnl5TTE1LW50WQ?oc=5",
+    "source": "Sofascore",
+    "date": "2026-11-26T09:44:11.000Z"
+   },
+   {
+    "title": "Casal Obama faz visita surpresa a ONG comunitária em Chicago",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbUlyYmVPb3lyc1pYTm1DVnRRcmdIZFlrMjA3elJKUzE0aWZzOGE1eVdpemNfU2ZTS1N5VVNGR21nRWpueXFWTE9LajlKSjVsRlIwQWpRMFctSVRvUzlSalg1UW5uRFNocURxVXNFWmI2N2FrSGlaMVRxOHJ5VGtZdUQzLUpNcEJpU1BiLVROekNZZHN3cjRyRjM1TWw1bm9sQWphbmRiRQ?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-26T09:41:59.000Z"
+   }
+  ],
+  "los-angeles": [
+   {
+    "title": "Morte repentina: ator de famosa série de comédia morre aos 68 anos, vítima de doença comum em Portugal",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUHVRSTRCc00tYlMwYUM2STJoU1hTVDd4NzREa3A2bld4Q0FmZGdFcnAxaHNkRUpudVFweUJDdjlGSFZkdGZlNWdZRUpyOG9aZ0syQU5nNnF4ajF6WnNpajI2NnpqWHItMXVIRUpadGd5bEZycURybTBtMHgtVlBqZnQtWXItR2Y2TU1iTElTenNNTk1MYkhacVB3VDlaWlZFcGFkTTExWmdabXB6WE45dW05aDAzQzVDdjFjbnFwdG40SEstbm5pbnFzVTJGYjE2YzZHYXl1U19XTm55UWc?oc=5",
+    "source": "TVI",
+    "date": "2026-11-26T11:23:14.000Z"
+   },
+   {
+    "title": "Memphis 115-97 Clippers: início arrasador, números contundentes",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNS1ZJNTBWcFJmeF9YRHRNMDFicmpzVWdmTGt4SDJKQVFTTUxJX0hvQ2RqNTlRRWVYN3RpenY1SGFoUGJjVWYzWC0wSU5UU3pKbW4wTWx5UjZ6XzJWUlhlR0xkbE5OODdrRkx4SGc3a1p5M1NVRjFIb2RPdUVyWXJzMW81OHRZaEJSeDJpQUthajNTMmpOeEpPNlFUWQ?oc=5",
+    "source": "Sofascore",
+    "date": "2026-11-26T10:42:17.000Z"
+   },
+   {
+    "title": "Revelados salários milionários e déficit de mais de R$ 3,4 bilhões para a organização das Olimpíadas de 2028, nos EUA",
+    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNOEtDREZzTkttWHp2ZXJTMExLRkxxOFdLdTBoQ2txeGNNRkRZQWtqOXRILWtiZVVKWXY4NGFVbXo5N1NBZ19FdU82SDE4RG03dUh3N08wWDY2dzJHM2txa2hNVW91VnhIeGZlNmpob0lVOFE5ZjZWSUVVdktZNS1QSTVHQWo0bnZLUEIzLUdZWGtfclItamZJd0pVR21YMkltQWpCZUpkZTd5VndEZTRBWVBsS3I3bmVFZ1BhQlgwN254OG9ZV1FZSWNvajc4WEE5djdJa25NYVFVdmItQ0NValZoYTBrbDVhdFk4eWFRUEo0WmNjME9GU2xhMTFXZkVjT0NBM09ZQdIBlgJBVV95cUxNaUN6WkZHZ0ZualZveTAwY2dGbkVMcEZJVUxNb1NDVElabmtGanVqMHRBMHdiMUlNclhISThvVjRxVkRGaXB3UmNCeGh4N2kxYXA4SkQwS0lheUtNalBOcDFOMHhmQVhFLWdlY3pjTHk5MzQ4Nno3NlRaSGNSRUNMVWhKU0QwZ2VLblIyRkNHcmlGenVpOVdhdXp6UEwzRDJNSDFMZG9meGo3MWtiX1JGY3djT1ZDdl9JTUNsZTVESnY1dHdPMEZweTAtTkY1UXI4M2lwMHNISXdMZkJzYVRvTHRQNWY3ZXVMalEycXpxS2NWZFFDdU5vM2daVlRyR0JYNTdsQWU3dVcxQnhCWW5mU05WTFdnQQ?oc=5",
+    "source": "Globo",
+    "date": "2026-11-26T10:37:09.000Z"
+   },
+   {
+    "title": "COP aprova orçamento de 2027 de olhos em Los Angeles",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNX3gwOXo0YlBlVlJfSEptQjBzaVNTV01lVkxZTDlYTVpjNUsxYmtKbmhYd3JPVlhPMi14YWd0ZHlFdUJPUG41MUZnWVE3Nk1odVJZcWpldzRVc05oY3FvOUc2VmdNWTFLMFRNZWZGNDY4Vnl4VGNraFJBSTJXWk9CSGtuendCS1dMX0pyeGFwbXhHeV9FbDBrMQ?oc=5",
+    "source": "diadejogo.pt",
+    "date": "2026-11-26T08:00:12.000Z"
+   },
+   {
+    "title": "Justiça americana declara culpado homem que teria dado início a incêndio em Los Angeles em 2025",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPckQyUkJRaFVJVjVxeGxmMkc4S1FFSkpZY2VuNXZpTmZ6d2VRS0VVa0xFclo3aUd6SXduUG5CZzlTejZtMHM3aE5TMmF2ZDB0SWhQOFJzVjZBZEZoUUFiOU9rTVhkMlkxYkN1RGRGRmpIbE5VX3VZUlRETm1rTUZyQmNqbkxkUEgxb0drUDd6YmEtOXJ1YmFVa011MWNWSnZ1ZE5FbXpaZ2ZSSGg0YVFrSzdrai1CODRRNmZaM3FFdExJd2JwMDJJbzhOamxPVktPNFJVeVFhV0dhVEhBYTAtZHFCSQ?oc=5",
+    "source": "Estadão",
+    "date": "2026-11-26T05:22:54.000Z"
+   },
+   {
+    "title": "NFL: Los Angeles Rams vence os Packers em grande noite de Blake Corum",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1NaUJDR1I4ajZfSVY1OVctTFdta1ZhcEpMSFVsWmZCN2RyWEhOWi1SbmNPY1M5c0ZpQk9TeDh0dFlfWFdfZ25IR25tWUN5UHdmOU01Q2tucDZlZHJ5WU5ObFhrNHgxNm1EMlhtdWtadzBsWEIy?oc=5",
+    "source": "Playmaker Brasil",
+    "date": "2026-11-26T04:51:08.000Z"
+   }
+  ],
+  "toronto": [
+   {
+    "title": "Iluminação brasileira projeta mais de US$ 2 milhões em novos negócios no Canadá",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTzBVbTZhdmVYQ19GUnU2bGwtOHMxWnMtRmVBQmM1V04yQXo5YkFneVR6dXY0WVZrTTBXcEJTVm1oTFB1UXRDUmo1NDJZMGVLRThWYWZESzNJUmZ2YjJKOFhOVXNIQk5ybTRDM1g1c3lCTWt5Snl5YjZUZkE3aHMwZWJSUllQNWRUSUlOb2N5VEJzZnc1TkJQWjJSWmNaWGlIWlk5RGlUUUo1MElzV3RWRQ?oc=5",
+    "source": "Revista Anamaco",
+    "date": "2026-11-26T13:50:21.000Z"
+   },
+   {
+    "title": "Açores recebem Congresso da Canadian Association of Tour Operators em São Miguel",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10dVpYT3dDd1RndWVGZXFKS3dCUWM2eFZ1eTRCQ1BPUjJzWFhxVE9SeFRUSnhZQlhZdElvcXFUMURIUDZRRDJBWEFOQU5ZUzF0QzFfQ000N1llS3pqcDV2ZUxpbmlnX25QcHJwTW96b0FQSGhCTGd3?oc=5",
+    "source": "Portal do Governo dos Açores",
+    "date": "2026-11-26T13:42:10.000Z"
+   },
+   {
+    "title": "Hipoglicemia, fragilidade e quedas: os riscos do controle glicêmico excessivo em idosos",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRUVIaWtHQktpYWg5NjB6TkszSDRDYWVZYVhfQTU2VXI3S1o4NDBWQ2VxcFl2Q2s2U2ZjZHFMVHRtSGEtdTN6Z083c0xleFdfX3JDSEFrUmcycmhHeWhoR0YtbXlqSnJTN29tZTNUbmNFajhSZUxuTU9feFRiX2VQU1FlQXdaSUNjSFR2bjRad29aWklkSDVpbHJXcmdqV0Z3MHQtQWpJUjh6RHdS?oc=5",
+    "source": "Medscape",
+    "date": "2026-11-26T12:34:24.000Z"
+   },
+   {
+    "title": "Narcisa diz ter perdido prêmio milionário no Canadá após golpe de motorista",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWG5la1YzbzZha2xkekZhQ1ZVT1o1amtsRjdpS3dkN19MR2pNc2VUam5CZm5WWFJzcFpaLU1uUzY5QXlUVlhTNUd2WGhDOFBmanNHVVk0QnFCS0xEbjIybUFFMWVsSWNoQ3ZGR3RGQjZRTnhlRjh1NDExQ1Y2eFRjdVhtYWlmc2VzSnVoNmhuMFlGenFtUE9DWGhfR0tldmFrS1c3bXlfYXBueFB3UVZqYURIRk1kaVpYc1pWTENROEl0bl8ybFE?oc=5",
+    "source": "Band",
+    "date": "2026-11-26T12:19:08.000Z"
+   },
+   {
+    "title": "Narcisa Tamborindeguy ganhou na loteria? Socialite fala sobre bilhete premiado, motorista e prejuízo",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODhyYi1fSURZVV9GOXlJbnVtRVo2cWw0bU02WGt3d3hEek41TEQyR0RlLUdjWFRlNENIS3NDQjIzRUhMRG0yemlfYXR5TTRuLWY1eXlFMXFiSDFBV2J5cXBGRmwwN2h6a0IxSFRNMWRnZDlwMnk5VGtUQ1A3ZGt3YjlkaURuSUI1S2dsb0NhTGloWUU1TkUyRUFJcEdiTldLRE1BWk5Yak96dUlYOEprWnZSQzg3WDdqNFYzVlJzVmkzQ0NrQ08zNENGZWVoZlZnWUpkSHNzdkFYYXJB0gHiAUFVX3lxTE9oMGxzY2g0b3Bsa09sOG1hRllabE85aVpXWEgwSkh3Qlpra2lkMjFCMFZONWpqMUw5M241VmpJZ3NxTlVRWTJGTUd4RnRWZHhFWDY5ejRucWNGdEs2dVdLUDJrd0syQ1FITEVkYkF3cFpDWFBNdWJHYy14d2RCTENUazZQT2tiU0s0VVVhamI0VFpLVWR1eGJfR2Uwa0ZHSVk2cnZYSGtOSlhXcFJEOWxkSHQwLTVNMS1FNUFzNFIzQ28taEhpTmlXcXBjbjlZTXZhMTJCNlpUOGI5blJYYlpCZHc?oc=5",
+    "source": "Estadão",
+    "date": "2026-11-26T11:01:10.000Z"
+   },
+   {
+    "title": "Ollie Bassett: de Packington a Toronto e a vida de jogador profissional no Canadá",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOalFvUnladkFtS2FYeEl2OW9zdVIxaE8wbXE4UlplbDUwRVJaNE9ZTXNHOGVwZm1WWlFsVElUMndnT1g1UVJHNEVRR1FRb1B2Nk1WdGNRWjVtR0NHYzZwWEM1aHl1RVZuYWwzVmhSeGl0YmpOXzFHaDQtUVNrSHh3aVJKNFBuUVFPZGhoTWZUc2NTZGdSZnVpYTdpUEkyaEdjWkJ2aDdSYU5kT3hrTXBUdjRaTFhfSnZGLUQ4dVN0TGlWdUQ0VkQza0ZxZEp1UTA?oc=5",
+    "source": "Goal.com",
+    "date": "2026-11-26T07:00:00.000Z"
+   }
+  ],
+  "londres": [
+   {
+    "title": "200 estudantes de Alagoas começam retorno ao Brasil após um mês de intercâmbio na Inglaterra",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVUswTDVMMS13NFg5Zk9WNGJ4Zjh2UWtQczFSNnhPZU5ySVo5TzRNNGdEOGFpT0dJelUteEtsajJDTzFCeWdTZ0JjbHJvTlowRVo5WHk0VDl5R1FGbURpZXEzYTFNX2FUX21BY05yZ2ptdU1zREFldFBNSE9NZmIzeEJPcWlnUEJLMXF1cXdia29wU29xem9mRUxxLUFkYlZZekdzSC04dkp0M3ltaUlVYnVlbFFUSDA1cmQ4TEhqWm9aMncyRFdGZ9IBwwFBVV95cUxOaHg5ZE5NMEdTVFhhN2dfc19iem8zdXQtRzh3bklTczBOOVE4aVZNVUpNTDZlNEtwbUN3MC1BMV9vaXhDZ01wVk5ua01OS1N2YndZa1dqakRfbWk3dVMtcFhiRk1vREdJd3NsZ2tuck5ZY1phUk9mV29hS2RoVnctRExyY3UyMng2RGV5RmN3bUs1OGZIY2FWdFJtMkFoaHhIRXR6OFdiaERNRzJpY1JnNVd1WW03VXN3V0N2c0x2QmVWZUk?oc=5",
+    "source": "TNH1",
+    "date": "2026-11-26T14:41:00.000Z"
+   },
+   {
+    "title": "Açúcar sobe em Londres com expectativa de safra menor na Índia",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQajEySDlVdTZMTERHSE4yQU56WWt5ZHFyRHhhWmFySWl0LXJrUGJZR3J4bEg0VWxNbXhhYWJRdnNHSThpUTZYZWwxRHFUTDZTRG44Y05CMGhMaE5EQlV3MGxPbU5hcWwtMGZ0TjNNQ3I0U2ZFVWM5TFpPQy1nUktOYk41MTJVOERUeTk2YUgxVjB4eDR1Z25YT282Z3ZIWUdGU2g1NlRMNDVyOTdpbUJWNXp4MmRmNXl4NUN2Y2NvONIBzgFBVV95cUxPMk1KYWpTV3laUU1STUNiOTVzcjJfQVJWOFNNQWZYMXlNd0ZnYkZEWEEwaThVWnVZeEs2Q25hTTRPb2tMQUt6OHI4OUFvSU5sQlJBbGVGV2RWbC1sbVotaHBONUp6NXdmOUpTRDJtQl9OMk1ZVERobzkydEFRb092U0o3cVM5UDVhcXJlZmtuUlktaVRZYUpQTjVnenV3Vl9NelJZaXFXajM2cjNERkJrdnA2cEhMdmJ0VEM4czl3TFVaWC00b1BnMDUyQWlMZw?oc=5",
+    "source": "Globo Rural | O agro de ponta a ponta",
+    "date": "2026-11-26T13:33:58.000Z"
+   },
+   {
+    "title": "Eliza volta à Londres no novo trailer da ÚLTIMA temporada do drama criminal 'Miss Scarlet'; Confira!",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQjVrMXFWeVZpcTJHVVhyTHg5bHNaOGNqTFUtblBxOFFlWmVQazY4SmsxREtOQ1pFbkRJaGNSb0tWcnBwMGFoUVZRVXpyRUtabWp3NFVmUWlwR1Z6RlZFYlhYR2VrV2Npbkcyd2ROSkF3TVR6ZUx4Q0JxeFFvT09iRTJpZ2xRSm56TG9wd1dXWFBIMTZNVmFfdHVNTkRaNC1md3VIc25oQld1aUJhdXlhelBWdHJHWkpuMUhuc3JEeDBoYVFIbTQ5eTNDVy0?oc=5",
+    "source": "CinePOP Cinema",
+    "date": "2026-11-26T12:36:42.000Z"
+   },
+   {
+    "title": "Angola lança em Londres campanha internacional para atrair investimento no turismo",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdmxoTkI3U3hfdlA0SUlBaldnazV3d0trTFZMX0g3czlFZkhiWlg2bEl5Q1I0SHM1QVVRUS1OTEFjN1l0c0tHXzdTZXdsaTlMbElKLURzb0M2TllFcGw2WlpmeFpkd0RGTkpjQU55NTBLeXF0NEMwOXRXSHZmY2tRRnFhNEhpcURBQmVVUU9JZVdqQmkxam9DazVBdWxaU0l4LUE4XzFNYkQzbzlYWXk1cV9PelBudEdvTGdNNFR5SFBDOUUt?oc=5",
+    "source": "Plataforma Media",
+    "date": "2026-11-26T10:54:55.000Z"
+   },
+   {
+    "title": "Estes são os espetáculos de teatro mais esperados que vão chegar ao West End de Londres em 2027 — desde produções com estrelas famosas até reposições de musicais clássicos",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9pLXdKZXRGMDlfZ2NrVkVfYTlNdnZuN0dXTVJhQ0V5Yllxc3k3Nnh4dDFPbm1sYVllQ3QxU05EWWltQVQyWDBvX0Zxb0FNVy04X2diUl90OGpEM3V4SVdOUGxPZy16aF9fYzBKRHZiZS02Vnh4Z2ZMREpoazc?oc=5",
+    "source": "Secret London",
+    "date": "2026-11-26T10:02:51.000Z"
+   },
+   {
+    "title": "Coluna Magnavita | Operação Trabuco para Lula 4 nasceu em Londres há quatro semanas. Ida para ministério reedita a solução \"Meirelles\"",
+    "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOV3p3S082am85TGcxaG9qUVhWMEJIVmVJcTd3RDdEdTBoM3JpeWExUl93bzlmalluOU94dEFIWWlhQTJSV2xtcGhwTGxkTlR1S2JlcDY3R0M2UXF2VUNFMkE2aFdTY3JVcTFPa0Uzbk5MWXZtMjF1U0FyckREUGh4Zmx1aHlWT0hYWkFNQS1tdmRQMVFRTHlTUE1qMlBoZldNSThwdFB6ME5CNnNQYldqZVlJTWx0aVhYSi01Q003RllVQ3lTdEt4RG85N3J5dHF6M0FtcG03LUw1eENlUnJXSFI1Y0pDZlhFWDB6Vm4wcUpDa2JuaDdveGFhRTFSZmZlZnpwQlVPVk9sTk94ZGdaSUJXZmpTWXBPT3l3UDhUZkktX1FBWEQ3YWVnWVA?oc=5",
+    "source": "www.correiodamanha.com.br",
+    "date": "2026-11-26T09:41:00.000Z"
+   }
+  ],
+  "paris": [
+   {
+    "title": "Estudantes, docentes e policiais voltam às ruas em Paris",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZ1U4SjB0d3VheXZ1aHB0OFZZek5NUUcyenBUMDhzcnZZT2NMUlg2ejIxTXktZjNDeGFCZXNVQ3pHUThrMzJNbzBjODlNMWpDcW8wNjFhaFZEOVA5czJmNnZJVGNCOG51ellfNHdnbHRiQVBHX2hrVFM4OWR5WWFKMnpOODYtV0U?oc=5",
+    "source": "correiodobrasil.com.br",
+    "date": "2026-11-26T15:05:02.000Z"
+   },
+   {
+    "title": "Desconfiança de polícia português permite apreensão de cocaína no aeroporto de Paris",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZkRjaFdocjN0dmRNRm5MTUNZa1lDdG45SXc5Rk1XMFFwZEl0dndLQkMxMnNGcGZjdzBtMHZkNUQwa2FIYjh4UTN5aEpNbEpXWVI2alFfb1BXVHFSUVd3OGU3WVRmRkxXUFpaM3NOVzZwM3E1UGR5Q0ozZERESnp6VEFkV1hRQmNwU2NLbkw3RkhBRmh6VnZzR2RibjQ1SVkwRjRJWlR0SWV0NTl3OEtDUzZpOTNBTENhZWMxRHF6X0o3b2dq0gG2AUFVX3lxTE9SU0JoRXFNSFk1VUhpZXU1NmRscU92MDdHWDNKTEEzSmxON0RGeHRsVnVicWVYR2kzVnBaTjNNM3pJcDNmV2NjcU5tWFkycEh0WEU1OTF0Y2Z4VHgyVTQtamZTeGtXTUszbHVuRGh4LTZEcFJmQlJzTW5yc0g3Znl2Q21pVXd5TGY2aU82QXpiS1N4cTM1anUwQVlBT09ETnQzUGZHOVFKY2lWcjV6b0RUcGZmVTZ3?oc=5",
+    "source": "Jornal de Notícias",
+    "date": "2026-11-26T14:39:00.000Z"
+   },
+   {
+    "title": "Rugby: os cinco jogos da seleção francesa no Frog at Bercy Village em 2027",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQSVFnWlExdjNUTGZmSEZFSGVucEdxaWV0ZzFXTnU2cUVIbnVhVmpCaDJ5S0tfTEJVa0pkQjVrbUJfVU04Tm5qVnFicU41OUFjNVJvNk9EbVZWb0VqczhoUDhSdWpZTzc1RmxTUW02aHk2OGhCNGg1WVBxTUZGQk1GelVTNTgteE1GdElEQkUxWW9iZ1FVVG1jXzV3QUo2UUxYbTRZaUNZV3hQakRoN25ZbzdhZkY2bUp5ZEM1cEdwQmFxZWphSEtvZU02djBZOXJkZmlIbDM1X2FGUktzeUJrLW9JTjJ6cEo5NkM4RWxSSlpBTVNDR3c?oc=5",
+    "source": "Sortir à Paris",
+    "date": "2026-11-26T13:00:39.000Z"
+   },
+   {
+    "title": "França: Jordan Bardella volta a negar autoria de mensagens anti-semitas",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZVFUeTlhTHdVY3Bid1FTN21acWFOeTI3X1AzZkt3ZTJxaXQ1YkZ1WEdsU2ZKS3ZSUDRseWtzeUNZalpITGE5ZkJ1SkViT2xlcG12aHZxdktpWlVEWDVZMHVocEpHS2d1MzdZTERESmpBSlh6WUZhNzlZQ1Vub3lvZDVzR09PY285dTJ5MG12dUJkV2JxYU1McHlJNWJKeDFUX0w2RmViUXpmSXVManFoZ2U3TWV2b05MRHc?oc=5",
+    "source": "RFI",
+    "date": "2026-11-26T12:30:54.000Z"
+   },
+   {
+    "title": "Orelsan: em que canal e a que horas assistir ao vivo ao seu show no Bercy?",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOLUczRDRMdU93ZWFNZFFoZ3pRN2pEOG9MVW9qZUxxUjRadkgwZ3NkZjJUN0h1NWVXV2o5Y3NhNnFVRjlCSWZFQmtWdGlfejA2U3Y2dUtlX0gwR3FMNGVfVlhiR1U3ZzhSbHVfdWVyYm94V2VmYV9YalppT2t3QkFxd294VEtRMHpuRVFUdzZKckExNFBoamU5ZklaNE9QbW1hTGE1Y0tlZEFwTXBoTjl4LWJGMEE3WklYa1dyd3V0ZEp6MmRKSTRsLXN2SnlNcEE3TUVTcjIxaHVaNFRKMUswM2FfbHhjUEZ4U3JoMjJB?oc=5",
+    "source": "Sortir à Paris",
+    "date": "2026-11-26T10:20:56.000Z"
+   },
+   {
+    "title": "Vida em França - Casa dos Estudantes do Império é lembrada e homenageada em Paris",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaVdpQVdGSXc0Ul9iNkIyZlZYbkItQ2VHVlFrMWlYUnc2aXhxSEY1N3pmTjNvdnY4c2JqbFRrb3VRcmt3VkpPQlREZXlianY3clBKUVVjcFlGc0JCeHQ2N21jcC0xSWtnaVpzWDBFRWxSWDFyQjhvaEtHZG0tVGRkaUdJV2tqbEZTVFBoQmRLV2VfOEpTUnNHdDRCck8xUW1fZDJiUEtBMmF4RDhlYVlHYWpBWXItTmNHSTNKNEY2LUliYy1LYmd3Y0VFZmUtRC1E?oc=5",
+    "source": "RFI",
+    "date": "2026-11-26T08:22:12.000Z"
+   }
+  ],
+  "madri": [
+   {
+    "title": "Jogadores do Real Madrid ganham novos carros de luxo; veja",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY3Z6RDQ2SVhaS0YyZFc3Z3hyOEg4U2V1U3VVQnBhVk5ycnktc0l1SzZ6TjEwR3lSN2JJOFBLR0lhVmZnQmpkQnAteGZIa1ZzN3dzZEpVMDVvMjRHLUlFR2dVa1BaaC10b0VPeDA4bnNDVlBFWGFlcFpvWUtOQzdpSFpKSG05RDdlOVJJcXVmX3pXYXNJVFJCenlIN01SWEJQOGZlT3pVNm0yS0NHTDFYd3NWY29vUFFIanRfZ3ItdHFzZFRMc1pVTzRBLVYyZ9IB3AFBVV95cUxQM0pXcGdUZjdLbG40ZEJQQ0tUR3M0czNTdzZROEx0VDZnQjE1R216RmMtbXdrMU42cjN3WW5SRTZEbUhEZjRjOVJhTzBNZWlVNVRjWWRaekR1XzduX2xhcW5IVm1OelowRk1URnVHNWloU3RKdzUycTFpSU9hVGFxbXh0VEVqMVd0dXE5emZlRWtfZW5ZTlRIWDN5ajVrM2Vnbk56SmVRVmN3aDUwTWZuRGdZbGE5MmluZGoxbGpBaE9CSDhJdF9MUEhRMzBlZjJielJYVk9xazBRVF9f?oc=5",
+    "source": "ge",
+    "date": "2026-11-26T10:02:38.000Z"
+   },
+   {
+    "title": "México reclama à Espanha a entrega de Inés Gómez Mont após sua deportação dos Estados Unidos para Madri",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWHBPbS1ua1Y1cHJjZVdXZW9NZmZsY3ZKTFd3cjJ2Si1tV0tQeWpQeUEyMTNNRHBHZUtUNkxKRFhhVm1RSF9BV2JjYXNGT0c2bTA2VWVfZndJU1R3X1NSazNBblJTRjlHd1FlMi01MktGY2tiV3ZrNTdMRV9EUjloZHBrNl9GMEwyLUxHQW9fMUdzUGpZWFBKSDFfZXRfQ1NQdUs1Zi1sdDc0OFVORXM4M1l0LXZCNGJGNkpWUWp1NGhUQnF0TVpaWmEyOVBRRmxUU0dVcDJFWTRha2lubVZz0gHkAUFVX3lxTE5vc3JsaEw5NVRIN0hoWWx6M1F6SHZoN0xHdkF3SHdXb2VTU1lqZVZod3ZlSnl2Wl9WMk5EeGxreHBDZGQ0VGxBckdWenNVaTNmMzBXMl9SSmFYUzhlQzV0YU1jN18yemdZM3dnRUpJWWwzbWFISDFrbFljWkpSemg5S1F1SlhjaUtOY1lZdGV3V25pU0w0c2N4dXY5aFFHaklrZlo4dHBPQU9tNW1fazhuSFhhTUpraVBEWm1vZEdkZzR6UjlwYVE1M0pXZUM1RkQ1dmo5aDh5aGlVZVRmOGZhcnNvdw?oc=5",
+    "source": "Demócrata",
+    "date": "2026-11-26T06:16:29.000Z"
+   },
+   {
+    "title": "Não renunciamos à nossa identidade ao fazer acordo com ultradireita, diz favorito a novo premiê da Espanha",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONl9XZ3ZrVTFmZFRmUkVRNnN6MG5zSDc0SkRUQjBweHM0Z0owRW56WjBkMUhoWEROOVF3WTVGQVY0ZUI3UjdjTGswSVlicVNJOFUzR2lMOE9oRWRrbDk4NFNQajI0UHotWldkOEFBRUsxU3ZoalpuZE1pUkp4M1h0RkdYWFBqcXdZcmNQaU5oaVJsRW9FOEtOck9HU0ZSM1BXWVRaYjh2LXJaQ0tPZ2FrWGEtOU9BUEYtWmt4blFuTHd1RGRFOXNaUWFnTmJrTUJKWkVpZWJJQlNqMzIwLWFSY08xUHhIaGJr?oc=5",
+    "source": "Jornal de Brasília",
+    "date": "2026-11-26T03:00:21.000Z"
+   },
+   {
+    "title": "Atlético de Madrid vence Viking e se recupera na Champions",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUDNpbzJoWGJ5V3ljMUlEZnNQdjhPZjVsQ014Q2VpM2dLWGNsbTA0SmRudWQ1QzJYS2UxVTFsSy13aW5uQ3owV29LRlF2WXdtWWJyUVpCc242TWF2Nkw4RFp5SHc4eEVYc3hBd2xiYU43Z3g1c2hPaHM0cEZrQjVxUmdNNlA0aGMwQ0FtYXRka2VoOV9uazJrWUNwUVk3dGtucGlUU0hjZWJDR3VWOFJxSHY2QW13RzVpOE9ra0JlWlBFYV9VOTJOdEtiVlZ5Nm9jd2IzVTc5d1hiMkE?oc=5",
+    "source": "Rádio Itatiaia",
+    "date": "2026-11-25T21:56:23.000Z"
+   },
+   {
+    "title": "Vinhos das Ilhas Canárias: os sabores vulcânicos da Espanha surpreendem em Madri",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNN2ZnTUFpVVRuSF9CUUlNVXJSa2JqeW84R3diaUhFZkdSaGdjdWl1enMwcHB5YjBxdjlubjNDV3pnejA4MHUxMUprRjBRQkNtWml5TXFPazZQRjNodkVmUmJZd3QtWktraWlLMEE0UzhSTHVmWTllUXVScklBVFB5ZkttVXcwckhyZHdkdy1fRkF0UFFiQ0VjQ1NEZG5WRWtnQ0lLU1o0eWhiSFBOblEtY0xWcE14cDRUa24xSGlHN3VEdnNIelg1SXJXTTFKV3k0Ni1ZWmtoRWNXNW_SAdsBQVVfeXFMTTdmZ01BaVVUbkhfQlFJTVVyUmtianlvOEd3YmlIRWZHUmhnY3VpdXpzMHBweWIwcXY5bm4zQ1d6Z3owODB1MTFKa0YwUUJDbVppeU1xT2s2UEYzaHZFZlJiWXd0LVpLa2lpSzBBNFM4Ukx1Zlk5ZVF1UnJJQVRQeWZLbVV3MHJIcmR3ZHctX0ZBdFBRYkNFY0NTRGRuVkVrZ0NJS1NaNHloYkhQTm5RLWNMVnBNeHA0VGtuMUhpRzd1RHZzSHpYNUlyV00xSld5NDYtWVpraEVjVzVv?oc=5",
+    "source": "Meio News",
+    "date": "2026-11-25T21:55:00.000Z"
+   },
+   {
+    "title": "Erika Januza mostra fotos de passeios em Madri: 'Só tô sabendo que quero voltar'",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV1RiNDZ1SDBEd2hsVDNoT0EtTzNhQjl0b3dUZnhEZ0QwNG4wOC1Ld05DMDNab19iUTN0RXJWS2puakJ3NzRRa3VmTWpuT1FCYmsyTTZweGg4WG9BaFZrT1ItZ0VfbWkzdWJnU2pYYmVLUzFEY0pqcmQ4VTh6SFhmR0ZaRkc2WWlSU0tJMEE2Q01MVXlxc3FUODRoLTRadTRINzJua1JlRlA4UXZlXzUyUEwtUnlqVXpCRHZ2NHJ2TWZuT0ZuUUZOOE4tVGh3OGN00gHfAUFVX3lxTE5vUGtJMUl4RU1IZEFNV2hZbEt1UTk0VlpVdU9ha1d0Qk83MDZhSWtCTzgwOUdUY1Zqa3hSb0xIcDhPamdEVWFxTUtMR1J0TTJjMmV5dFREV1VfaVlaNGh2bFVXS1l1RnVXSVpCMDBUeHo4c3FieXdKeEZqZEhmSmI0NFUwVTZsdWxZV0stSG1kaXlxcTl2R1J0VzZycGFuOWpMeWk2TEM1YnE1eHBya0RHSlBMSzZjR19sdDhocHdhV24ydWduUXp5Ql9mRjVKb09Hbm1wYlRsMDdIZ3ZqdUk?oc=5",
+    "source": "Globo",
+    "date": "2026-11-25T21:30:22.000Z"
+   }
+  ],
+  "lisboa": [
+   {
+    "title": "Crime organizado: PJ desvenda caso de rapto filmado e morte de designer russo no centro de Lisboa",
+    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOV3k2Vi1jNTZveVFIc0p6NXhOVDVSb0IzS1FaTkVEZ1FOQzg5UjdwenBJc0tlc0xiZVJZR005U2ZHV2tRWHY2TE56YllhNjFEZkU2SVEzTGRqNFZ2OTk0bl83VXpteVBsWWhUeDBaLWFjSXZ2V2hwMU5CSzN0YzJ0WFYyaG1Pd3RBWVVlZ3JVX0wwZnBjLVpQS3VFeWNnQUZBSXk2dHBFN08zYU5mbkwza0FrYlVOdVBwcXp5XzZMSFhtcG0xcXM2Wi1pbXlnRkh5OGlWbW1nbDZNbUhFQ1RfdVcwRUlyMThIcEp5cnBHanEtSGl4NjJ1cTEycnpZRlBXbnAwQU5pcFB2TUxpQ3pN?oc=5",
+    "source": "CNN Portugal",
+    "date": "2026-11-26T15:06:11.000Z"
+   },
+   {
+    "title": "Inimigo Público. Moedas muda as regras: acampamentos em Lisboa só com cartão de campista",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdGZjNzNqU0dXZGVCYXZTOGh2WGVKdWJxVEFmY2I4aHU5QjQybjFMZlFPcXo4YnkxbGJlU1JnLUhIelJzS1dLWXRyY3laakVWaVNQdmE3VExzaEcxbzhiMDR2VG1tb1NXZUQyVVVWSUFqYlFSaGZLanI0dlk4N3F5YmxwaEN5M3dCcWsyVHB3MWR4RTg2Z1AteDJPRm15TGR3Nkc2QzNCY3ZhMGdreVVvdnNyUk52WkdlU0JTWkNtbzA0TXlBVXlBX19oQjlCNGQyNXBfanYtSFJiR3M?oc=5",
+    "source": "Expresso",
+    "date": "2026-11-26T14:30:04.000Z"
+   },
+   {
+    "title": "Combate ao tráfico de droga em Lisboa",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbjVDVnhNZHNrX2lKWXkyd0QtR1NmMVowNzN1eFZCWVRXSVF3bGp1cHMyQkJjdnRKUGMzc0VoQVJDMFM2Ym55WW5ubFpGWjFzSFdJaWJON1dvUnVJbzI4YnRFcURhN29kNENiQ3pWaHhpbzkxd3lDMVdLVklzOXZFYjA5VTBjMTY1azhEem9yNmkwNVc5ZzJEOHpUWVBidw?oc=5",
+    "source": "R7",
+    "date": "2026-11-26T14:11:28.000Z"
+   },
+   {
+    "title": "A FlixBus expande as suas operações no terminal de Sete Rios, em Lisboa",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPYWJZLW12WmgxaUQ0Z0poV2dfMTRsM24xaE5NUHRfbmZZN09vamZPcGZvWXpiTEhrWGQ4TGVTdFV3bFJZR3hHRmRxYnRaYVhFVU05RGtWYmlkVXJQTVVwejFocjlVMkxxRGxSdU9TbFA4R1Q5eER5VHp4OElnMll0VXRPcmNVS0dzS1JIRGJFUXJJR0QwYmc3UDZjSFc2Y25ISVdkTVAyQ3VBNUsyMmgwRnpRNFM0NnhJM0FRdWZSRzM5aExaZFdSRGh2dlR5UQ?oc=5",
+    "source": "The Portugal News",
+    "date": "2026-11-26T14:00:22.000Z"
+   },
+   {
+    "title": "Centros logísticos dentro das cidades para resolver o problema da última milha",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb09jLW9xU2dFaGZNRmp2djhqN3RYYlY1dUh3Z3pnNDZCR1RNYV9hU2lCWjZPV2NNZ2trcEpES3hGNDBZYUdiN3ZjMGVDeFRaU0hBSnRKRDI1Z1ZtRkpZNTE0djF3dWJCbl9ZOEtzZlFXZjZzVzA5UHVGanRFM0h6VlhUc3Fmd2dMQ1U1V3g2WXNWT3BUejVrUFU0YUoxaXloTDh5MmJrVWdKZGJrQXVKQXpILUVqZw?oc=5",
+    "source": "Diário de Notícias",
+    "date": "2026-11-26T13:49:10.000Z"
+   },
+   {
+    "title": "Acampada de Lisboa",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5YZjE4cXlPczV3RVU5ZEt0ZlAwR1ZpLVNXMlkwYmV4djVTaUFHR0E3WlVhZG1HX0dvenlKcFd6aFkwM19zX2J1Nmw5VWJqWGVhQmVjb0ZqV3pKZ1hiSHlHQkJMdWszYjBwcVVKWlFzSzU?oc=5",
+    "source": "CNN Portugal",
+    "date": "2026-11-26T13:43:50.000Z"
+   }
+  ],
+  "berlim": [
+   {
+    "title": "Zakharova: Sustento do regime de Zelensky depende de ajuda militar e financeira do Ocidente",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMS0tYXpvNHF5YTZDSUtaWWJIcnFFbUZ0MlZUajNXQ3d4cm5FcWxWR2s0OUdzd0tJWTdvc0RfN0lJSDJKX0s4Znp4SDJNckxaOU9UR2d6N2o0VDBCMVVFTEwwa2p6amdHY25KdHFKc2N1QlJRejJwcDNBc21GVzhubWlQNnp4eVpCUU9raWxIVDJHQ1hPVC1LWTJMTHFBNXhrV0lXSHJkN2hnOXFSY3lSS0djRmdEaDhvYUlxSDF1NGZ3cFYwYWJIQk5SUkk0d3NFWTRyc2JDbkFaaGIzcDcwbHJibFBodw?oc=5",
+    "source": "Tribuna do Agreste",
+    "date": "2026-11-26T14:41:00.000Z"
+   },
+   {
+    "title": "Gerard Depardieu será julgado por estupro, diz advogado",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY1ZYRzlFSUVaZDNpOHlkalkzVXBzU2FoTG1nRkY4SjJHUHJoV21lZEhTcGQ0NnJ0dm5pU3ZnVUtOVUFydWFkWUYxZGtOMWVHUzNPY0tnM29HU0ZHVC1wOHc3eWdBeWEtRTZHdmxGZGttR2JMMS1lTVFDR3JhLXNwRmNqQzJXdGJrVkhXMFNrSGNTQWRCRGdSWUdIUnVUcEk?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-26T13:27:16.000Z"
+   },
+   {
+    "title": "Morre Veruschka, supermodelo e atriz de 007, aos 87 anos",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVByMWNZdDhmUk1HcmVaSy1jbnR5b3UwNFo4UVc2MWUtTUV1UlhIWTR3SUhIZVVaQWJoTVBkcER4YjJUZnRqLUtCQV9FbThnLTdORHF5bi1SV09sSUF4cXpHaUYtUHVFVDM2M1NyQjQyeHR1akd1eGR1WjVGMXdZeVRaOFh6cDhZSEdCbEE0YWN1OTE1STJTN0daZlF1RVhLWGFjWXlRTjMzS1AteHNYNDc2cF84Z9IBuwFBVV95cUxPdm95TTRCMGtzUjVsekN5TDM0ckZiaGVmR0ZWdFA4M3BjSUR5YlZiWk45cWtGdHpNM2k0ZnJyczFWemlsU1ZqNUxPZkhmS0kwQnk1OXo2RjF1R01zS1hmM1dKYURtZm44c1Y3bVNfSnNQRm9ZSjZaMjd6UEpxSnVNWTNGdlpHY2Fsb0VXRnVKTkJyaDFIRmQ1bjh0SlZNcEZYbFlBSWRMN1h4eTVEOXpYLUM2R1lmTURpbXM4?oc=5",
+    "source": "BNews Alagoas",
+    "date": "2026-11-26T12:36:00.000Z"
+   },
+   {
+    "title": "Alemanha julga suposta espiã a serviço da Rússia",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeUpoSFM1YlpVZlJRdW4xdTFtMmVRdGxzMnNfUEh6dGZKOU1PSkUwdUxzMnlVbndvQy1sdUtGQnR5UzhKRDJGX0ZiOTAzUHZPNFJtSHBWcXh1ZTRTQjVXT3Y4WkxkY2hyajJHREs1LWszVnFfNzcxN211Ym0wQ1RLWDhfZThXN05sRmRkbVNHWTJLU1JlWDBhdTEzNNIBmwFBVV95cUxOeUpoSFM1YlpVZlJRdW4xdTFtMmVRdGxzMnNfUEh6dGZKOU1PSkUwdUxzMnlVbndvQy1sdUtGQnR5UzhKRDJGX0ZiOTAzUHZPNFJtSHBWcXh1ZTRTQjVXT3Y4WkxkY2hyajJHREs1LWszVnFfNzcxN211Ym0wQ1RLWDhfZThXN05sRmRkbVNHWTJLU1JlWDBhdTEzNA?oc=5",
+    "source": "Folha PE",
+    "date": "2026-11-26T12:34:17.000Z"
+   },
+   {
+    "title": "Funcionários da Airbus querem caça de sexta geração próprio e rejeitam entrar no GCAP",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaUZKR1RVUTZjWGI2cWJMSWgxczRuY1lwdjhWZHNJWGVBNERScmdLWWd3NzZmMkR3aW1VV1lWYWpLSTczN21TQ3Y4YkNESGtEQnF4dUZrbWpFUldpV1J6dDI0UjJCM2E3NF9NanBtWjJpbGRSemZkWE5fODhjUmFvSktLamItalRrUDg1NFVKMG9BZWhDRW4yazRjUnJ4eFVHTWxJaTdHZEFUS0ItNllJ?oc=5",
+    "source": "Cavok Brasil",
+    "date": "2026-11-26T12:32:20.000Z"
+   },
+   {
+    "title": "Alemanha estuda incentivos até oito mil euros para encorajar sírios a regressarem ao país",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObE1OOWVpS3BIeWt3a1RyRFdzcDdZNDgtM2FCb0xPdkdqR3VoYWtaQi1uTlRVN3MzSmtLTF9zQ0dsNUVLUXU4WV9HS3U2NzB6QnVHZ3RzYzBBV1FFbnJwU3gxMk03aVdQVE5pb3d3ajdOTVpNT0xYZk5jNTBFTW9URVBWbFFQVGE5aEs4R0p1RnNtNnR4UndXYzVkeU05by1RSFBnRFBERFg4QlhNSEhOUjFUQ2k5bWV3cFdHZXY1N3NLUQ?oc=5",
+    "source": "Euronews.com",
+    "date": "2026-11-26T11:11:36.000Z"
+   }
+  ],
+  "roma": [
+   {
+    "title": "Tajani admite ajustes na lei da cidadania italiana e diz que governo monitora aplicação da reforma",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1LX1ljVkFZbjF4dm0xWkZyZ2Y0WEhNalNMcllnZnEyWVg2ZmFQM1lGQnVwVWJPTWFDRjNfR0wwNFZRaVJRZ3RKcGVTWmppei1jeXMzV09wYTUwUUVTSDQ3MUJZdGgxRk16bC0xRjVqZ3B6cmc0Z2ZFQg?oc=5",
+    "source": "Italianismo",
+    "date": "2026-11-26T13:15:17.000Z"
+   },
+   {
+    "title": "Quais aeroportos da Itália já eliminaram a regra dos 100 ml para líquidos na bagagem de mão?",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Bb3RWT3J5bWladGt0VUVlaTMtSmNhR0VaeDNmNnBSTGktcVBucnd4YTVfNEo2QzUzdGx4TnJ5VnA1UEFBcmZOdmpPSm9VMy16MGUyNUlCR3BGdC1VUXd4RkJrTGE4b05hcnlOd3ZfQi1YN19BT1laU3ZSUQ?oc=5",
+    "source": "Italianismo",
+    "date": "2026-11-26T12:20:58.000Z"
+   },
+   {
+    "title": "Wesley diz que chamou Endrick para jogar na Roma: \"Venha, venha\"",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNSXlqTjRzVmdaeENjUE5ZWTlvaGtMQVJIXy1PSHpGay15dEdURlgzcF9hZzN4UXBXMENIUkdhdTdhbU1LNEVBOHY0UGpCd0RCeXlJNGVoQS05blllT1lFS2JIOHZLMmpDOExJczA5Y0dYYURobnJ0VUdOZzFZMVM3MmxzaUx6R294ajNreWxfMlQ5YzRfZHY1SUx2WGRxUEpDblBKR0FiMWx6Qml3YzQ1VnlVaTEzZEk0RU10aDhtOGZwejd4SlNGdy1QM05VSmNybmV4d2ZPSlpMLVR6V0ZaNV95NjM2RDFv0gH3AUFVX3lxTE1hbnozWEpnS1JOckVlcS1aM1pIYkNDbWNsM3F0cEE0SmktN3k5NEhBNGRXQlZkSF9LbWd6RmVwSnJZTzl1R2lyWkNQalNrejVOaFg2bFEzZUVubW55R29uWFNRbTV4bWcyTnA1RlZXY19Qam1KaXg2Q3RTdTMtQndEdVNWVGtoeTJtY0YzUWVWcXlSWi1URzhoLXA5eGVHdERZd183OFA2a0U3cVdSYy1YaEM0N1JBbS0ydEw2dG1RRGJveDdaRnZwZHBUaU1oa0tyX3lqNFRfaE80Q2pmY0RaQlBwc3QwOTFQU3dCMnYwalhCM1dPSzQ?oc=5",
+    "source": "ge",
+    "date": "2026-11-26T09:24:26.000Z"
+   },
+   {
+    "title": "Em Roma, antiga sede do Partido Comunista Italiano reabre as portas como hotel de luxo",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQnptb3U0WXpaY2FRRmYxUUd5amRnY3pqMElaN3Ztek1nVmZJbExjWmVDWFZUc0d1ZVNQbDdpY25uX204ZVpsYVhPOHRiX0tjX0hjbURRYkNMLUpScGVlWFV5b095aDJnbU5TTnhnQUxZR1lkOURUdDZKdjJuUlJDRWVDOHBSU1BiOW5QUjBEdXhCaXNGTURPX0lnLURkQTd2dFNLT2VMdHBoc2p6X1ZSMVNBRWxPN21pVTBoZVp0MVZxb1pRTUd2Z3NsVU1hZkp3OGhWNk5hNmRfeHZWUExJ0gHuAUFVX3lxTFBVaXI1bDlrOURDbmlqMEt4VVZJVkdfU2VQTVNJMmpFakp6NHlRUGlqLWVLVi0tcHZPYm8tdWNfSlJyQlo4TVFaMWd1N3lMVHRoMUY5OXItanA4elIteVdZT1hJX2stZThxVVdDRnpPQ2xGdkNEQk5kNGt6X2tGcjJtcVhIVEpwWWRRZTU4Vk9WX3ctN1FWSkVfenMwckhoWURqcGpRT3A3ZWNnVVp1TjJLS01ZOVJRTURUSm85U1R0UGd4emRXWmVzWWV1b1Z1X19aT0lTWXVxVHd6dDduVDVURkdfeXJFSGRtZkZXTVE?oc=5",
+    "source": "O GLOBO",
+    "date": "2026-11-26T05:59:00.000Z"
+   },
+   {
+    "title": "Podcast da Calciopédia #97 – A dupla de Roma no topo da Serie A",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVjRMQXh1eEVINVlwN0VwY0o0cTJDUzhrZ0pwWmFaVzNRZ2lBU2Z1ZFloVzhfNHJGVXFkVUcza0hvZjBhajVMcGlxcVJKY2liRzVmQ2E4WUxybWJma2hjc2ROTkZIT01BX3J3NFZDamFWUkRUWXVJd3BKaTdfMU1sdlY3Zkh1cXB0MFhpX3FkM3Z3MHgyQnpKNU5GWmZ3QQ?oc=5",
+    "source": "Calciopédia",
+    "date": "2026-11-26T00:36:27.000Z"
+   },
+   {
+    "title": "Wesley revela sofrimento e dá relato cômico sobre como comemorou título do Flamengo na Itália",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObFJfTERqM0RUb3B4V2Q2ejVfOGxQSUtVWm94MFkzbTRweFdtaEFiYXpueGhKcm9VY1NOb3F0QUtEeDhQUEpkcmtLOEw1Y0tMMHJZMGFwM1ZMOW9LQWVVZG5vQWpNaEF5NUNLcWZwa1JzU1h2NTRJWGlWRzhkbGpuUFQ3YWtSbzhPYWVITklReVZJcGpDWEVyVXFYaGhJWDFSNGxjMVhDM010OHIxS2M4OFNTSHd0VWlWUndnaWJKdDBkemFU?oc=5",
+    "source": "Coluna do Fla",
+    "date": "2026-11-25T23:15:36.000Z"
+   }
+  ],
+  "moscou": [
+   {
+    "title": "Rússia realiza ataque em larga escala contra instalações da indústria bélica em Kiev",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOEFBUzkzOXFYNER4Z0JGSGtnV08tS1VvdlRtWW5waGt3aFJDM2doYjc1a0hxdV9jRTJXRUJKWENGc1NydXlBMnNFOHJ4MFZNUXpWM21Ra2pLM0V5NXBNLXVxREFjOFlJNGNMZXFsdGpKcS1GS1pQam9WZFExUXhXQ0JqdEJ3UzBYaFhjT2NfMHFUU1V3UWhUakpuSkcyZERCOEo4eHdJak10NE9iR1ZBVHNLV3IwRF96?oc=5",
+    "source": "Brasil 247",
+    "date": "2026-11-26T08:42:30.000Z"
+   },
+   {
+    "title": "Moscou aponta dedo para Tallinn: futuro do Mar Báltico pende por um fio",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE56Y0VibXg4X0w3cXFBakhhY2VnemtucUZ6R1ROM1cxTFlwYUtoVXViOEpXSlh6Wl9iU005NEp2Wm1ZMVhCb3piZFgyT1dGWnQtRW9LaVNfX0lkSFN6SDduZHVDME9zeWlZbEYxRmNzTUFhUUZwYjV5cVpsUQ?oc=5",
+    "source": "Правда.Ру",
+    "date": "2026-11-26T04:36:00.000Z"
+   },
+   {
+    "title": "Rússia: Se a E3 virá ou não para Moscou, depende deles.",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xS2IwMlhuSVZJSkVocnZuejh4LWtrYWtoZVhOT21fZHJRVGxZUnFEZzZ5T0tncW5mR1AzTUVldk5nX09FMW0xTFplVXR4Yms2Q1NibkJPLTNsLU5RT1htS1hxWjJuNEdmdk1yakJ3WFY?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T02:12:26.000Z"
+   },
+   {
+    "title": "A nova rota da China para a Europa passa por países que Moscou já não controla",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcDJqdmdCd3A2SWNIV1I0QUFYQjBaRzh0cVVlUERnT0RTT01GU3FWX3hHSVhKUE53RmFIeVpRVFBFY2NScmF3REFmMkpJVWxfaEo5ZGJyd3JYVW1YSXZqazcxV05KTkNPLUwyQ0h6OFVHeDdDZmtBNFZQM1B1Ylh3MXpEVW9PdldKYTJ6WjR1RmRYZVBsaFExbzVoejJFTXVYZGsySWlzRm9KT3ZSVDRHRnZCVWstblF6aHByWGEtZDFlczNlbnJV?oc=5",
+    "source": "A Referência",
+    "date": "2026-11-25T21:33:56.000Z"
+   },
+   {
+    "title": "Nga nêu lý do mời đại diện châu Âu tới Moscow đàm phán",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQalZfa0Z6dk00Mkw3NzdMakVmdXI1YVA2U3VuYXRiUk1jS2dDZC1yR0RMaHFTUDNFTXVfRUpseGJDVGNvMzFzcVZudkNrTDVhN0p5cDUwMFNaUDVtRkszcFFnV3pTcXQ1eXZ0YVZyV0FWX2JNVFh2V0NncThUVnJMNVVUQTdLczg?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-25T18:12:41.000Z"
+   },
+   {
+    "title": "Ucrânia diz ter atingido base aérea russa a leste de Moscou",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMG52blFiVFo0VXpxeE93TVE4Z3ZlMzB6TzFaMTA3WEluSG9VZ19GQXpfaDdodG5xa3hQVzFuME92dU5fV3cyZmpZVjlPWGxBVUtIRktvUTlnQTZCOGd0TmFTWjYxQjlXYUl5ZTVjM2dhQ0tNdUd0LU9kd1hlVzVpbVVfUUF0LXVENVFDMGJ2dklJQmRjX1M2YW80R0kxOFN1ckE?oc=5",
+    "source": "SBT News",
+    "date": "2026-11-25T17:58:31.000Z"
+   }
+  ],
+  "kiev": [
+   {
+    "title": "Turquia acusa Ucrânia de violar Direito Internacional",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNW1XNlctazJQYUFybWEtcW1LVDkwZDdvdTRVVjJjSVAtek5DUXZiQlZuRUxkenM0bHRhdnBTYThpREZpdFVFQ3dvam83TnFLWExWclZGTlpWdEtjS0NrQlJQSE5GUmtFd2pHbkxNb2dPd1hDamc5Qm9OTzFzYTc0LWh3V2tsTUU3X1pGWlZ5RnFEdnA4RjNoOTVzeVU?oc=5",
+    "source": "RTP",
+    "date": "2026-11-26T13:14:59.000Z"
+   },
+   {
+    "title": "Kiev é atacada com mísseis balísticos russos",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWnNGRnlkTW40OEpES3FiQWxIUF83OFNoM3NBN09vNUtCdUhOUUV6azYwQVdMMzBWVHlJX1oya0dVenVOQUE1NS0zZEE0amdBVHlBM0R2NHc5ZTE3TWdvbFBUNDdjN3I4V1R3aFVnVWlPTTZBQnVSWGdMTkd0X0ZkaE54ZzY?oc=5",
+    "source": "www.n3news.com.br",
+    "date": "2026-11-26T13:11:00.000Z"
+   },
+   {
+    "title": "Forças russas atacam Kiev com mísseis balísticos e 7 ficam feridos",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUVFWa2VWYk1xUk1DalJLeE85MnQ1M1Z6MC1rUHdUWU9JVGV3N0hwUlNuTnRGNUhoVjMwMG1meUdUMGVtWmg5bzJXR3h5ODZtbG1WVk96c3RhYXZSTVhJZ3czNTZJdm84cTM3UkZ4YU1fRnhmVWo2X1dZN25CT19GRUdkbndJZUdvM2pOSnEzczV2WG9PZy1FWkpab181R3U5TXdDeGxkX3JnLS0ybTF3?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-26T13:05:50.000Z"
+   },
+   {
+    "title": "Moscovo e Kiev trocam corpos de soldados mortos na guerra",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaDhWT0lmdU9OdktEWHJ3cWVfdTZhemtMQlh2ZmdCaENQN2lrOVRYS09qR1h1VE9DLXVnMGZxYWpjY3g4V0U1X0U4YVVGTnJRN1hPREhIeHpDbUUxc0l3UHJQSXN0b0s4b2ZzRFY0N1prZTNtMWM2Ull6X3lmZS1jTDRQYmltT0pESkNhMHVXXzdTbXJrdGU4M1FtRW9HUdIBkgFBVV95cUxNZ0VJX3dCTGJsdWtXZUFsQWlZRlFNbm5ZamFvTDEzYk91aHMzR0xuTWhJTFZ2TmNlZFZVVzVxTHdwUWFManAzWXc4MnZwcnRWX1ZDZlRzOWtkMXFRc3Q2LUZJX2JpMVk4Y0lFUjdDNVJxNXQ0ZW8wOUxyNTE4RmxJNkhGSlNmODdVQWVkdGxlaUdIUQ?oc=5",
+    "source": "Jornal de Notícias",
+    "date": "2026-11-26T12:40:00.000Z"
+   },
+   {
+    "title": "Coreia do Norte terá cortado apoio militar à Rússia: em causa está uma tensão diplomática entre os dois países",
+    "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPNkR2TV9KY1RjM2w4a2NLeUJlbklidTFVN0lLTjVUVWVSaVBJeldEaV94RDcxbFNsQk1Zc0gzdkMwNHdJbEJLZXJGMVIxNGFzOEhfMHVadWxFOXN1QjdNVWRLMU1oY0VQdENLTjVwa1ZSTDhXT3RVcko4WG1MbWpOMWRfdzZCcEZaa2lURE82M2RWU1o2ZTVuWHcxVVhoY21LVVR6NWFacWM0T3RZV1JfMVJxOTR3QnRnTUxvQ09CbGZhMnpQb1hjSW9CR1RPU0RqZzJ5Nnlpc3ZhS0hZdHBpZGxFQXFoakxuLU1LTExEQkl5MDI0aVpleWpNeHhCXzFtaGY1cEt4bXBDTGxCaWFqZk4zSEJEUEs5M1lWZy1QLUk?oc=5",
+    "source": "CNN Portugal",
+    "date": "2026-11-26T12:22:17.000Z"
+   },
+   {
+    "title": "Países europeus financiam compra de peças para F-16 da Ucrânia",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOEpmbWc5OVBwVXFEalJZZl8td19BSWwtN1FlZHdKeVB0MEpjWDd6UHBPRzVwcjhFbW1PekxWV1ZlMmttU3Q1REdYa2hlRkNiNUp3Q1VRcjAxSTY3RDhfZ1ZKSHFZaFFXeEhGMFRoeFFBalVncmhqSURkRFJ6d2RodGRfWEpBOTBHMHdjN2o3NTBfRWRXWFFtWEVB?oc=5",
+    "source": "ECO",
+    "date": "2026-11-26T10:53:07.000Z"
+   }
+  ],
+  "istambul": [
+   {
+    "title": "Seleção Brasileira encerra participação no Mundial Juvenil de Istambul",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeldJWU55YzZEODlyaWFHUGRFSnhIcXNGaGpmSUxZQ0puYW5DZmlwVUZCRXd6UGxUbDZqQXRKV1Q0MDM3WXZxWi1UXzI1ak1qM19iVG9oMFpKN2owU2VXb2d6a212R3FKRzhQcmtnLTJUajg5a2c5b3dzTkh3ODJYc1hVWUJCamhYa2NzN2gyMTU?oc=5",
+    "source": "Confederação Brasileira de Tênis de Mesa",
+    "date": "2026-11-26T12:45:00.000Z"
+   },
+   {
+    "title": "Quem é o homem idolatrado e visto em todos os lugares da Turquia?",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ1d2RV9mVjI2ME9SU2pNRzQzRlg1STB0YURCd1RlYTZQMHBRTHBaQjU2X0tjMWY3MVMxODQwWWRHeFBtYlB3T3hEdHh0aDFsQ0V3cXlncHdwdzB3UXROV1pfbW5LRFpHMlhUTlJSN0pVLTVZVzgtSmtmVFFxN1hpcGJhcHBXaTVXMFF1YWR6YndubkF2dDg3d0Vxay1pT1JLYTAwekNDTC1xWnZSOTRBWUhrVTkzQUozcm1GblQ5MExwSURISlFj0gHMAUFVX3lxTE5SaVlFZU56bjVwdkZISGNhNUdZS0lyUGpvelpXOTNnOVc3UENHQzhTT3ExRTFMNnFEWFQ2c2owaG14NU9xWGU0NzVyZnljNDhZcS1hY0gzNERQaTlzZm1UWnlySDlrZEFPRzJySzdPeVV0UC1ENGhsZXkxbGNmaFFqUHdoa2EzU3Jpa1ViRmpESGxoOXd4U3UxVzZfcEM1V3BMWmg5aWZocS1hUW42TGJMNnlSd3BHN0dtQnNTT3RsSjJzN2EwdC1WRHpicQ?oc=5",
+    "source": "iG Turismo",
+    "date": "2026-11-26T11:16:00.000Z"
+   },
+   {
+    "title": "Empresas de Da Nang promovem negócios na exposição Halal OIC Istambul 2026.",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQkI5MEhMTWlCd3VSMjdxbkNjbWxLQkowVXhmcm9hSk5idTFDVFFpTC1mVlRDcFJQZDdLenJHbzdtSWIzNnloYnJpUkdTdVA3dFlZcURtTzRwa0JScW9oZXA0QlZWRklRZ2t2QmN3aFJCOEZGazN6SmprTXQ0T29fWmZuUjA2N2Y4dmFsWnNQTVZGVjR6VW53TVNDMGQwX2hZT1U2QV9Yaw?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T10:48:10.000Z"
+   },
+   {
+    "title": "Ekrem Imamoglu tem recurso rejeitado e fica fora da eleição na Turquia",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRGt2cS1Cam5SdzBuY3ItTHpUQkU4Y1c3MFdsTGRZOE5QTE1aZTlKRVRHck03ZnFCMUpPMXA1NlhiSFdnYy14OUV5SjFxV09kZjBZcWFSRllSTl9GLXFDd2xkLXlqOHVhUE9SNlJ6d1pfYVl6Z21STzl3SExoeEVNWm95dVRUb3pNUlRybUVuS0tMdGFxWDM4c00tb3dlU3k1MzdBRjJVZDhWRW9ULUlwNg?oc=5",
+    "source": "Paraná Urgente",
+    "date": "2026-11-26T03:36:00.000Z"
+   },
+   {
+    "title": "Principal rival de Erdogan é impedido de disputar a Presidência na Turquia",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZmNVZ2k0LXd5MS1ZTnQ1aE81V01sSE8taWVuaHFVSFowY09OeFU2SEhaY05sRkNrMlZ4S2ZYMHBsWXFGbThwUnYwZjZaZU9QM2k3OEJNcnVvTnRKeEktV29Ja2JuV0FFcGZCZjdzNWx5YzdkZTFENEcwd3JnVDZMOVp3eHdSVUp6bVpUZ0pER2lpakF3VUR1S3FjRGVPNGJPQmJRdVZ0c3U4NEFmYUJRQWc0SUlSWDJKVnc?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-26T02:34:09.000Z"
+   },
+   {
+    "title": "Sismo fraco de magnitude 2.4 - 41 km a leste de Agri, Ağrı, Turquia em 25 nov 2026 às 23:15 (Hora de Istanbul)",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTmdHWkZKWEw3WGdPUG8xMnN2TDlRZGd2Z2pGZ0Znbm9TcW9nTWhpVTFRTkNIQWFFVHU5S0owbXA0c1hXSllsNm05SVVBSFNmVk1PdHBVdWswdG16RmNjcUZkNGdzc2N2YlR6QkJ6bnFMaENOS19sUjBEcnRGb0V3SGFFemp1VXFtbGdEa2ZpcGJXQWJ6MlRTZlQ1a0I5WHEtaWhPYjVKMnBVOVlqUy1n?oc=5",
+    "source": "Volcano Discovery",
+    "date": "2026-11-25T21:28:51.000Z"
+   }
+  ],
+  "cairo": [
+   {
+    "title": "Horror no Egito: explosão de caminhão-tanque deixa 31 mortos e destrói 27 veículos no Cairo; veja vídeo",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcHRuMmFfLXdXLW55UzQ5YjhyMlNvR204cUIwOURZNXpRT0xtSjl4UnM2ZWRLMmd3VHduNVEwTXlGMzdOUjZfejZycmc2VFFKNjZORWdnMUN6RlFSMUdhS0FhcXZfZTVWYmRWOU9BM0hyQ3dZM1FUWGM2TFo1Z2I3UlE4YTVKM3BiMUtvcmVLd2x4dGk1anBPUEU0VnMwNFpUbGdhX1lmczhrSlpyZ3dCd1VmMWVTREJhZlpfeHRiamtPQ1FFWWZ4ZGZ0Q3hZOUw3Sjd6cFRwUUcxaEE?oc=5",
+    "source": "Portal CM7",
+    "date": "2026-11-26T13:37:12.000Z"
+   },
+   {
+    "title": "Caminhão-tanque pega fogo e deixa ao menos 30 mortos no Egito",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcDZicGppWTIxY3dWczRFRFdRWjhFeEpYd1lOdlM1bzdjcEEyMTJGUzJodWM3U25MYmlfbkp5X1lEU2liUnR4RUd1Yl80SjZDSkdWVTBMN3dyVkx1ZFhIakk3eWpIRF9YbTNxTVFzUHNjNTJORDhURFhveTdlQjRPdTNuWkNzdlBqbnpRUHEwM1k3ejdVaXN3RC0tWllESFk4a2xLcGhCbnRIalBNUkxOT0d3UDdNU3A2?oc=5",
+    "source": "Gazeta Digital",
+    "date": "2026-11-26T12:34:00.000Z"
+   },
+   {
+    "title": "Homem é preso após incêndio de caminhão-tanque matar 31 no Egito",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVUhaSjBzUWFCTWNvdjVjaEM3YWdDTm9WSXZIeC1RZWs2TDVXakg2aFRLQ1FEaS1HdFRoU1llME52d3EzWkxsdjJhMFdYTGVicnBXQ1RnYl9nLXlxNkZLNDdXMnFJQmhtUmY4Q0QzUGJKVFhEZHBrS29TbG5uUlRjNlBlLUNGazZSbTBkWE9tNXhlWkVteldTTmc3M0o1aVNDdkFEcWJrTlhPcUdE?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-26T10:51:07.000Z"
+   },
+   {
+    "title": "Acidente com caminhão-tanque deixa 30 mortos no Egito",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnTUMxSm44RjB6bUdObjhyZklLOHp1d2lfTlYzUDBxT0F5TnBTaUFWT0d5YWRMOTR2TVVGUTlhSm9WUUdfVktQWlZFM1daU1docWRORGNnY3lTMHIxMHkyS2JmM1ExY3I0RFNsQjdGclE0S0x2TFNv?oc=5",
+    "source": "comunhao.com.br",
+    "date": "2026-11-26T09:59:12.000Z"
+   },
+   {
+    "title": "Vídeo. Egito: incêndio em camião-cisterna na autoestrada do Cairo mata 31 pessoas",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUko2ekFBOHFXZksxMjdxTi1uaE1OUUtENFU4R2ZOdDgyTndXenEtTC15ODhIRzgtUWtITWxfOGZlNVZYVWJYaGdWWEFLTWpPSll6TEFQZkltUDZJQ1h2QTdrNWs1QmZkLW8wYjNVM1lUelNEWlFEbGFMZXN4LW9PcXR6Mi1HOW1IRlhxUnZuNkluQUpSTlNBdmdfTzVtNzBVRUc0QUJZM0xETW5Jckw2WTRzajg?oc=5",
+    "source": "Euronews.com",
+    "date": "2026-11-26T09:30:05.000Z"
+   },
+   {
+    "title": "Trinta e um mortos e 21 feridos após explosão de camião-cisterna de gás na circular do Cairo",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTXdZWlFfazE3aElZMWMzaksxOFBrWmwxdmY1aGVxSTJQTlYzSUdnYVdnQmN5WEp3NklaQkJGMldMdy1yUUJYZE9xT2lXUmxSdWplVUxaX2ZWajRoMkhzWVpTQ0FEamJ5cnMtUGtJZXJQb0VzQ3p1NWZBTEpsT1AwTEJYaURxTlo5UVB6Ul9lWlN0STV2UW5rLXo4LWg3V0VpbmMyelN2V1VjZExua1NtQ3lEMEpuQUFnSjFLazR4dzZ1RjRudkhR?oc=5",
+    "source": "Observador",
+    "date": "2026-11-26T09:17:29.000Z"
+   }
+  ],
+  "lagos": [
+   {
+    "title": "Guaxinim viaja 6.000 milhas de navio da Nigéria para o Canadá e é encontrado gordo e saudável",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNYllNNnhidVdsU211Nkpla1FoSG9KekhlU0RDaF9CWmxFdHJSbFFEQWtWRjhrYW56M19VaEdwRTdROGNaZllaYkNrRVdGTEJLUTF5dlR3ajhOSEUzMzl1RWJJdFZaX0llLVh5eVdQNEQ3T1R0VXFOWUs3UzVwV2ZSTmxlNUlMdHdyZnNxYkxhZGNLdVJOenh4TlpSX2NUZVpvWnJ6VkZnYVFTS2ZNZDYxRERIYnJ3WU5UdFRqa2h5UUE3X0xIa3lfVjNKZFNaNjFTeVZRNQ?oc=5",
+    "source": "bra1.com.br",
+    "date": "2026-11-25T23:13:00.000Z"
+   },
+   {
+    "title": "A reconstrução de Paul McCartney após o colapso dos Beatles",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYUtSZTAwRVZsRjVqdGJsaklfRTJhN2RpY2dGdGRRSVFEcHU3NDZKSU5ObWY2bnBlNG1YRUltaVIyeWpSZmJkN0JzM3VZWlRiR0FrU0FaTldpbUpkeHRZUHpKR0x1TmM1VG54NDJzYk5Mek00akRPTFRUcEJEbnJfcGtNM0NfVkNpeHhTaWJOOVRuRzVCN0tvWjJYaF9udjlZMDdHREZSU2VzMzByMlAyYVoyQnlCTDhNUHc?oc=5",
+    "source": "The Music Journal Brazil",
+    "date": "2026-11-25T11:50:00.000Z"
+   },
+   {
+    "title": "Duelo entre Marrocos e Senegal: anunciada a lista final da Bola de Ouro africana",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTHB5TXh0T1Y4cDhwVTdfUl8yaWtUbmc0NUwxb2hkT3lDVE5yUXJTZE1uOTBUd2Utck5iMFNqNUY1WmxvazZMcUhTQmtyVUlsbWRVYmhWdjFfZkV3VF9oM1k3NU5Jdm1DMWwza0Z3WnF3WWY5MUFxOEtUWmZHLTV6ZG9USkRSWjhzcG9wWmZiazl1MVkzN0kyUlh3X3A1bVVSQ0pucXVyRjhXakxVd0tnamFIZnVWdDJ0emZ1YXlSTEx2OFhLUUIwbjVBSVZzVnZXRHNB?oc=5",
+    "source": "Goal.com",
+    "date": "2026-11-25T09:39:16.000Z"
+   },
+   {
+    "title": "Como Paul McCartney atravessou a dor e reinventou sua trajetória",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQdVhjOWhqUVRDN05ycDhlSVRvVGFYdVVYNEVENE9rVEEyS0d4VkRHNVAxSjN1RFVOaGt0WDFhSFdoUTRXdC1YMXg2cjVuaE5ka1hMaDFVdWNJN00wb2hoUU1rOG94cUJRRENYR1JzN2ZFRHFBTWVBSkdDY3VzWTlUNmx6NXFTUURmbUlEWGhBcVFBcTNJdEtXcTFFM2FOWW02TGI1ZWVzdXN4V2tNd1lXb00xalpRTHowcjJCYkdUQWhPa05mSjQtM0pyRElOLWxfZEVEVlk2bzJBeld5ZDA3NktOTDF0SVJybk5OQWNJUHJJTUJKTmJCVjlqbw?oc=5",
+    "source": "Terra",
+    "date": "2026-11-24T17:01:00.000Z"
+   }
+  ],
+  "nairobi": [
+   {
+    "title": "Católicos na África superam Europa e chegam a 288 milhões de fiéis",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU1VybkdhdnE1U2ZJanNDeUVYQWZZTUJxU2dJYTFoNjBlT2t3WEhmZXYxU3hvdVZKWkpXZlA0cjlzaG5LQTVNaHBVQUVGajF6VWtrUHpaM0ZKUHJFMHFJZ3JkN2VRQjdzU1ZVUWE3cFlOMFE1UHhacmhhcG9GVGM4NFIwcUt0d050TjYwNVhSYXJjNm1PRHA1d0ZDWEZqSWxwalRMVFJpRzk?oc=5",
+    "source": "Gazeta do Povo",
+    "date": "2026-11-26T14:07:00.000Z"
+   },
+   {
+    "title": "África é vital para renovação da Igreja, diz presidente da fundação Ratzinger",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNVcxd1ZRUUxsTk9VckxYWmZONWtfN0JpT2xDX2Uzc3VtYjVqZW5pSlU3a1lmVEdkVlZTNWdHTlQtaTg5a0RlRGVhTG81VS0zOFpMUFAxNFRabzdyYUowSXJBWjRnRlQ0VlRHbWk2SmNGYWJLLXhHdDNEYmk4YzM3TTR2NXdua1QzcFZOQ2Z6MWM1M0F2Z2VZaVAzWjE5VVQ5M2thMWdWRnJqUHJTaUpoT3d3SUNEWERi?oc=5",
+    "source": "ACI Digital",
+    "date": "2026-11-26T10:21:00.000Z"
+   },
+   {
+    "title": "A Major Step Towards Safer Roads in Kenya",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAwX0NjZTFQYzFkTjFpOGN4M3BYNzFRZ0h0alJid3lRYkRQelpQVFZiRHRkaWJCMWFXRlpCbXlJbWlHYmdDLWJUSXFkcUVaM2FuTkZYeFVmamR0bW5xQXVVY3dJUU8yb19pT24ySUxjSQ?oc=5",
+    "source": "irap.org",
+    "date": "2026-11-25T21:53:24.000Z"
+   },
+   {
+    "title": "\"Pensar antes de dar um clique\": seminaristas refletem sobre o uso das tecnologias digitais",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObzlYSUlyTlUwamZzUlNuaWdxSkltcnZISEladFJSb0I1ZnQzWnRUZk9qYjlJVTAyZk5qbGlpRUF0LVhfUjRacDlKWVFHRFVNUUNMUUxkaUUzQzM2YzhpRVdnU2o2eGVRcHktNV9JNEdGLThCaHV4dTdsc0prQW1nTjc1bGpvTWRud2pTYVBURk1XdEFJcEdEZVVpdWxMYWc0aUNaZDZYdmhTN2t0VWsyY1RHa18?oc=5",
+    "source": "Vatican News",
+    "date": "2026-11-25T16:13:23.000Z"
+   },
+   {
+    "title": "Africa’s Road Maintenance Funds Hold Key to Scaling Up Safer Roads",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbWRLQkZaaGxsMzc5dG9xVl8tb0x3OEh0N2ZzUU5rYkFyTEk1QXQxempSMEVQeTBYSlBJQTFLR3BlM0JUOGp0V3h4TEM2UlZ2bEhJVVdVS2NXSW1kZ3hTRTlUdzAzOFBGUVpwYzZRek9BSjlwZWdlRTJxTmI2RGU2OGtld09WRmExS1dqNDA5RQ?oc=5",
+    "source": "irap.org",
+    "date": "2026-11-25T03:55:34.000Z"
+   }
+  ],
+  "joanesburgo": [
+   {
+    "title": "Sneijder vende camisa de Sergio Ramos usada na final da Copa de 2010",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTGNZSW1kRTlnWTJRT1g5OGdXTGtEXzhTanJOckFEZ2VPMFRXWjc2UDNrYmtFUWJydW5WZW5YZW83cmNTTlliZGY5YXgtTnhaeVpTNmtrWmNOU2NIbXBMbWFjbGcxWklJc2dXSC1WWUVDb0hnUXFmZmhZdEI5SmdSV1V5Mlh3YlVGVlp6Vzc0b3R3ODUtR0dOMGwwMHF2YmFQQzJqNUQ2aw?oc=5",
+    "source": "Metrópoles",
+    "date": "2026-11-26T13:12:00.000Z"
+   },
+   {
+    "title": "Brasileiro arremata 'relíquia' de campeão da Copa do Mundo que estava em posse de ex-jogador",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOXdpZEVmQW8tQklmcEVScHZXMkFZZFZFQzA3LThoazNIenhDR05PNkxNNUZpWl9pWE10b2JHNFVGMHgzMFpLekh1V2cyZjUyX3Jmckx0NG5GSzduX0hlMGZlY0dCZ3NvWXdxeThPSkdScTIwd0dRWTItQ29wMFY1ejlNVUpwaEdUbVRCbFZTbEVIZGNsUGYyU3JFVzFpUHp0cVRLUXJQbllWMGdJN0JBNjluTzdIV1ItZGFRXzZ1bmRCX2l4aDdnOW5hZnEwdmlGUVdxRTR5cklWbmw1NUxjcw?oc=5",
+    "source": "Rádio Itatiaia",
+    "date": "2026-11-26T12:59:55.000Z"
+   },
+   {
+    "title": "Tratorista do Aeroporto de Guarulhos é preso por tráfico",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZlZqaHV0X25WNURVaGtUUWdQdzBkSzE4WXRnVkdRcDVIdGliVlpGVG1sREQ0Umgxbml4RktoSmpIUE1IeEdWQ2tPR1ExV0dmV1BCUUhUR3dIYlpYcmxfUFQtdGNHMlNnM0RURWVEQ0VsWG50eE5VMTNXbUVOQlh0TzdWTWUyQnBrMEwzQzNxSndfNy1SNWE2TXpDNldJM21p?oc=5",
+    "source": "SBT News",
+    "date": "2026-11-25T23:04:55.000Z"
+   },
+   {
+    "title": "Morre a artista e curadora sul-africana Tamlin Blake",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZTFteEFYVGljeVBzSDhRQUQ3ZmJuZHkyRFk4ZzJSaTZZUjZreFNXaDB5ck5ORnlXWkpTMDlkd3lhbko4SDg3THc0dHFISzBWQ1J6d1RVbHZ2SFpQekNQV3BBWWR3V1JVMHVUSkxsaUhfYUZ6Zm5mS3hxTmNVTzZSVW5jTE9tV1c0QVR0aUx2bm5mZkE?oc=5",
+    "source": "Dasartes",
+    "date": "2026-11-25T16:35:20.000Z"
+   },
+   {
+    "title": "South African Airways conquista 7ª posição em ranking mundial da TIME",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbG82Y3RVMnZ0VzAtTmJmNnltYU13UC1xUEV5SmVQLXJINlVYbEs3cHpWS1IwVjEya2F5bm9BRURWNlBNWmYxRmpSYU5FX0NNRE1DbURNRjZXODZvQXhwWmY1dlowUUVvOUJVazBoVWM3aXVBZ0xaNUprckJMckNtSEpPR3U?oc=5",
+    "source": "Brasilturis",
+    "date": "2026-11-25T14:57:23.000Z"
+   },
+   {
+    "title": "África do Sul reforça restrições ao uso de água devido ao El Niño",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX05EcktEMm1saVZZZi1PcnNYVFBtTjRyLXZkd0ltX2pvWjZtb05wZkl0VTRKQk9HYU5VZThIVFhaNFY2enFvZ1QxbHdaQTRSSUxMQ2VkWGxhazh5aFYtTlkzSW1VVDNBX2NsY1BaSkNzQ1lrMzFfNk11QVVYY3owOVczYS04QldvcHlMdGNpcw?oc=5",
+    "source": "O País - A verdade como notícia",
+    "date": "2026-11-25T04:01:25.000Z"
+   }
+  ],
+  "luanda": [
+   {
+    "title": "Autoridades apelam o cumprimento obrigatório das regras de segurança nas praias de Luanda",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yZkFRTV9XVVh3QTZrdV9LLVdOdVpaV3FadE5VY29fYXVvdEE4ejhrRzZ5bUREUm9XQ091dVdSTmJYTzIteEZnVENWMEc3M0FV?oc=5",
+    "source": "RNA - Unimos o País",
+    "date": "2026-11-26T10:35:56.000Z"
+   },
+   {
+    "title": "Angola defende reforço da parceria com Andorra",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVXhUOFYyRm1hVEl0czdZTFlvQUY5VldJcnZWVHptZkFLNS1uZnZ5YWt4cVlsbnRiLUExMUR0YXFOdjAxV2tnOFUxczRSMzZuYkVmb2Vzc3k0QWdMQU9GMURwaXZiTzBUc3ZpOGV1WnJwbVVkbkxhRk1qR21BREVwRVNIcFFXaVV4Y0tyN25VTG5pRDRwcnZaclRxVnVKUmRhUzZvcG5sUV8zd0drTU5hTnNNTQ?oc=5",
+    "source": "Jornal de Angola",
+    "date": "2026-11-26T09:29:36.000Z"
+   },
+   {
+    "title": "Assistência do INEMA a eventos privados passa agora a ser paga",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOblVKZUpPaFJJaFRzUDZZVFFtRWZNZnZFMktlbnFQbzl2TnZFOEVRLW9zM1ZOaDZpQXdfbVM5NDdUOTZOTExvVm1wTXU0VHNXTElyZEJDM0RfTUVaSXlCM0drS096YTBLOXZKWkxzS3R5ZG9nU0MwQldONFdsQmhSUWM1WjBzc2RGNGtYOVdoY0MtQVRTMXZjLWw4NjlJcHNPQ2ZLNUhwNFV3SlpBc1lDLW51eEw1TF9MT0dXWHhKdkVHZzlqV1RrWmJR?oc=5",
+    "source": "Jornal de Angola",
+    "date": "2026-11-26T09:29:35.000Z"
+   },
+   {
+    "title": "Primeira Reserva da Biosfera de Angola será apresentada hoje em Luanda",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZnYtbWJ1SXpHdWlIWkEtQnZvYzUzcU93SkVJMjVMcXhvTTVGdFlabTdLQjBrSmo1bFgwdERZLUo3R1JSYXNRNlJEYTNDUV8yb29BTEJTWjVoMHR1dzE1dVllcXVNQWtxTkFQLXB0dlZ6RHJpRkg5ZkxXMnNxd0JOMGVnQzdDaGxxUTZYbzZjZTJibVdDakxUQXVFRUNsLVpXbWoyN1lCbw?oc=5",
+    "source": "RNA - Unimos o País",
+    "date": "2026-11-26T08:45:05.000Z"
+   },
+   {
+    "title": "Angola lança em Londres, campanha internacional para atracão de investimento no sector do turismo",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTjd0bUpUa1RQWFNxTlk5NzFFdWlVSWR0Skl0Tlo5WmRtdTVCNFYtTTRQYVJ5d0VSTGZfbXlGTFFzX3VMTndoV0lVUk1jX3NJSVo1TEdiRXE0bWVmZnBOd2Z1dUpfRzdSR0tLelMzelpJRXprNVM4VkJNRG1HdV8wMTRXZnNyY0Z6OFlseHNTT19KNHZPWWlsZzhPdV8yVDB6QWs0dnpHXzVZU1hKVkY0ZElEREw0SjVXNjJLdmY4TGx4dDF2UUh6MUx3?oc=5",
+    "source": "RNA - Unimos o País",
+    "date": "2026-11-26T08:45:04.000Z"
+   },
+   {
+    "title": "Assembleia Nacional inaugura monumento “26 de Novembro”",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOLS02Rko3REc4MnNJVHVaVTBPZ3M1b21lcTRZa1JEaGNzZDUxNl81bDR4YlNEZHVBR3UzQzhOUVhDSGF3bzNSeUhERGozck9sSXpCODFwOXJwUExrSWFBSnhpWjFIbWVtNnBMNGN1R1ZLX2RZVjRPTVA3THJfOUlvbkk4R3dNZzdKZ1o2Z2pSU2hGNkpBbVJkdHFIV0ZYT1diUEQyb3ZZS1pMaF9LU1FDcTl1VkczOE10YkUzSWdBc21nVFd5MUtlcHFnRnNZQQ?oc=5",
+    "source": "Jornal de Angola",
+    "date": "2026-11-26T02:13:19.000Z"
+   }
+  ],
+  "jerusalem": [
+   {
+    "title": "Ricky Tavares visita Jerusalém e encanta seguidores nas redes sociais",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZHRSMEhNV0FHQkFNOVdieExYMUZ1dS1KSUpiTTRlVm9BVU83V2gyV21TRm90S0tlaGRpa2RCbXlIUXpsVlZhd3hDdW1vM2J4Xy14S1BJbDNTXzY4Z0NSYUFiWlFERktsT3BfTEZwOHMwMXA4dk91aTBIc1dhMHkxWnlCUFNzWUFaMjJFb0ZvTzg0RUhnMUNjQURiUmw2ZlZKRVpjak82SlpCRVlhOThyZE9ZLWxTNVprQW56MWJmQjVvZVJLYUE3eFR1WkE3M0k?oc=5",
+    "source": "TV RECORD Europa",
+    "date": "2026-11-26T09:23:48.000Z"
+   },
+   {
+    "title": "Juízes lançam dúvidas sobre as acusações de corrupção de Benjamin Netanyahu no julgamento de Israel",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWDlmQlhjcFJGRUNQbHVFMjNiWTNfeGhuT3dqcTE4eS1LVzJxR2tYMGQ2akstX0V2VDF3YkgwSm81SUJEVVNiWFpBUmVsYzRRcHR2TGJ0RGpoU2YxZkNNeGlYbmUxdFZJVFdWLUhLVGxydExoOWtLbEQ3Z1pldzAzRGgxUnJrNVNRNGNubElLNDJiTEJKbTNGN2l5UUtLS0tGZzEtcG42ZWI1WTVidzVNZnRnb1B5YUdjRlZ1aGMyenU4S0ZJOENoUzFzSXFST29PV1l5UTF5bU0zS2dY?oc=5",
+    "source": "Segunda Base",
+    "date": "2026-11-26T03:18:29.000Z"
+   },
+   {
+    "title": "Protagonista de Reis, Ricky Tavares viaja por Jerusalém e encanta seguidores",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUGxjUmRTQzJ3Vm9qcERadFM0eVlJbHRDbE5sZmFjZUMtSmN5enNEU0JnVEc3a3ZxYnJfMy1NMGJKc01Nd0x3ejAwZGlnYVVra0EyRHo3ZnpEYkEwbDQzM3hXeFBUcy1DSGloNkhEdUJkWDlraTAyTW9Jd3RBUWtIZm54Ml80Um1xb1FlcTFMeTdhT19jcUl3aDg0OTJGNWpPaG16OXJGM0s?oc=5",
+    "source": "RECORD MINAS",
+    "date": "2026-11-26T01:00:41.000Z"
+   },
+   {
+    "title": "Israel elimina segundo chefe da segurança interna do Hamas em menos de 24 horas",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYTRYZG1Ib3AyWHNaZV90LXc3UFNlcFRCc1pwbGdldmg2LU03Ylh4c0xCVGdmUkdCSnBXNGdIRVdCQ0c3MS1IZHZQMUVQeUVvY1hiRVlmV2dzdHE2czRpYlVJeG45V1Q4M0tlMHg5VGQ4N0NidGxaNkJFZHp1bjFaZGhUUTczMzVaWGYyZ2RnVVhPemZvRFJCQ2NEemlJTllKY2Y1aDl3MnNjY1FXSVZxOS03bnA4SEdLbVE?oc=5",
+    "source": "Gazeta do Povo",
+    "date": "2026-11-25T21:09:00.000Z"
+   },
+   {
+    "title": "Israel: Juízes recomendam arquivamento de um dos processos contra Netanyahu",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMVdqbDRCVzRkQU1jYzVXWC16SkFCcW50bmJYem9qY0lsWnZ5aGRZazdqTDFONG83RENER2NPRjRhcUI5RGZhR3JXalllQzNtWDh0LVlzX2tzQ2VCbnVqQU4tVXFXbmt4cWVtUGR5U1I5aGJYMmVLT3BDUkYwNnRmVGJUWQ?oc=5",
+    "source": "CNN Brasil",
+    "date": "2026-11-25T20:24:26.000Z"
+   },
+   {
+    "title": "Netanyahu pede fim imediato do seu julgamento por corrupção",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUXc2UElFOUEtWTBiY1RFV0FSaVV1OFhJZXotM01WenpzaTRjLVAtdkhEZmxQRUdTRDFiN2RRT1dlQmxsazVkbHlPNE1TX2hlQi1JYWNRaDhkZTJobXJISFRGUmlaR3JSa01vRXJ1R0plRUpfYTJXWGc0Slp4Yk0wZFZPSkZhczJTY2dkRW5KT0RIckhQVUxxMHJRaXFQUQ?oc=5",
+    "source": "Correio da Manhã Canadá",
+    "date": "2026-11-25T19:01:04.000Z"
+   }
+  ],
+  "dubai": [
+   {
+    "title": "Mercado imobiliário de Dubai movimenta bilhões e registra mais de 181 mil negócios em 2026",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUVRMN1hzbTdqcVNDNGlZWGFScEQxTm5SdmI2dEsxT3h5WktLbXAwMGlLS2MxWUV0WEVycU1vUFhfM3VzZEg2cnZRaFh4Nlp1WjZISl9xU21iZ1p0TWI1MTM0c2tKRVE0aWxldFFsNW85R0ZQc1pERkRGZjd6OVRZTkJhYVM2Y0ExWFI2bzFOSnBTN3FnMl90dkRsaGxsVlNYTWFSNVd6OHcxeGN5ZWhMdE1BU1F0OVdoZFNURWxXOW93Y2c?oc=5",
+    "source": "Agência GBC",
+    "date": "2026-11-26T14:57:25.000Z"
+   },
+   {
+    "title": "Dubai acabou? Mercado imobiliário do emirado movimenta R$ 17 bilhões em uma semana",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVjZaSGc1VVF6WURnbTVYUDZFVnc3YzJBbDJKdk5kTWdZRElZWmszQWZuSjZ2MEZ1aWN2eWRWZHFZamJTcU04elZJRXlDR3NQQ01HVWtyWkFYNWlkQ2s0cDhaRUg5ZFN0di1fZ00yOFVORVhyaE05d09RaDd5NEpocmY5OU9KdWxFUDgtaUtnSQ?oc=5",
+    "source": "ND Mais",
+    "date": "2026-11-26T14:38:56.000Z"
+   },
+   {
+    "title": "Jabeur treina com Badosa de olho no retorno em 2027",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZGpYdDg0YkhSVXdDSHJLR2hoOXprbkppYWRiNmJEV1I4RkktTVczMDBxcmNpQ0N0ajFLVzhndEtxVWdQQ3lPdHA5eDBKb1V4REM0a20wSzV3eGVWQnVFR21YSFFkd0RadW82ajJ4SDBSVVd1ZVZXZVVhUnlxVTZxZ1dsSWc0NDc5VWtjUUFWVmU?oc=5",
+    "source": "TenisBrasil",
+    "date": "2026-11-26T14:19:00.000Z"
+   },
+   {
+    "title": "Como comprar ingressos para Al Ahli x Shabab Al-Ahli Dubai FC: preços, informações do jogo, vendas de última hora e mais sobre a Liga dos Campeões da AFC Elite",
+    "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNc21ILUE3MEZtaVN2d0JucWpVeG1GT3BwTXIyNE9UdXUwTUdZWXdVVzZUakFPMVI2NzJ1MUtXNkd6MWMtVmkxUnVoT3VyMFEzclpLZS1OM21rTi1abHJEelZFeUFpeGloY1dmdlAzaGxFUmV6STB1VGl2V010QmpoZ2FYbkhmLXQ1RWR4M0dBejN4a1RFOS1jeDFMZzhUQWdKcF9YSEgxa0RMVGRKUnFVLWlna0dpTVBWbTJxMFMzSy1jaDk3QzJOSkF0TnVwS2dsN201MkdMTWZ1WmV0OGpqNGppSkJfMzlxUFNFZHFnOEh1dnloa3hyR1VVcDJhMk1Qcm1veEoyamFndklyYWJveC1nODhGZ3Y4YW52SUJWLS15czFzN05hekdZMFF3VFZnaS1kaDNGdEVERUZIWkhEWWVIUkhEVkFtNy1yWg?oc=5",
+    "source": "Goal.com",
+    "date": "2026-11-26T09:20:28.000Z"
+   },
+   {
+    "title": "Neymar vira rosto de marca árabe de perfumes e ganha parceria global",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZm1HX1FqU3FIc0NHRWkybVotRUs2eTFnSlB0cG1xYkktVklFR3dubWJCQThaV3hVMXpwV05ybWQ5T2lsNHpqbk1BWXRfODBGMTZXaXlRbktBXzB5YlNZNXZrRV9jenEwTjRBLVZzdW9WUzl6UzZTMmh6QWIta0NqZExYQlJhT1U5VU5Ia0R2bWFMbk04aGpFekxtdVcwSGRwQVdMRVRZVG1EQnVBZG13?oc=5",
+    "source": "MT HOJE",
+    "date": "2026-11-26T08:16:00.000Z"
+   },
+   {
+    "title": "Países do Golfo vivem ‘novo normal’ sob as marcas da guerra entre EUA e Irã",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOblVhSVl6SWN3MElQZ2haMGdqYnJOMnc2ek1rZ2VMeFpQMXVEZHBJWVQ0TVhhSWtGSDBBc284cEdmNmxmWWphaUZDaDRaMlBMcjJwZ0ZVWDVOYTZHNFNqR2RibjN6ZWFDUGJRWW1CeXVLQ3JCWXJwUmdadi1XYUFwMGFFUzJGMzFLd3VFSEQ2Sk1OMlZLRXFLVWlxRkQ5aWxGX3ZaMkNFZGtRV3FSRDJUcHJUT2ZjVll3YVh3Z0podm9YNUlzbzR3OGlPSHZDMHdQSU5aQlhn?oc=5",
+    "source": "Valor Econômico",
+    "date": "2026-11-26T08:02:51.000Z"
+   }
+  ],
+  "teera": [
+   {
+    "title": "Quantos mísseis ainda restam ao Irã após os ataques aéreos dos EUA e de Israel?",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTm95V3RNNkFFUFAtR2N5cW5KbzlZekFCQUZmRXhoT2p1VS12V3RTSTZTeHZjdjBLRGp3X1Frc2dSRnlrbW9FYmNORzdIeUJ0S0JrbUtFc2dLbkw0R0hWLUdUTUFkdk9Pd2tYbkNhU3FwSWVxcEdNM3VZX3lNR3hBVGdzVVVjMDkyVGZxMDE5OWNOTC03?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T12:28:31.000Z"
+   },
+   {
+    "title": "Os Estados Unidos estão instando seus cidadãos a deixarem o Irã \"imediatamente\".",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5YTWhITW1neTAwaEw0bWtCdkQxbzJGMXNhbUoxLU82cm44MjJJWk93YWdvS1c2cFc1NmNLRkhScGsxaHlHUU95a1l0MjQ4SW1Va2lhVnpRWXlTOENORWVOa0RpZHRVUnV5SkNHVDFEYjk2ckNXTjZ5UWZIaHg?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T11:02:10.000Z"
+   },
+   {
+    "title": "Conflito no Oriente Médio: EUA intensificam sanções, Irã alerta para retaliação.",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYXJMOEJ5UzVuOHFwZzlvTVdGZU0tbjJqQzZnbmpLRWFzVU5HY1ViNEhkSWZweG9tMnpxbllXYlRBVW5yMHBGWWVwckV0TV9STm5oVGxiSnU4ZjNvdjNURFhacUdPNlFwc3FDOS1YVE9xSlVEYl82MzhmalhiTXF6S2h3cEJ1Ykg1N3dKcTBvTXRSM2s?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T06:47:26.000Z"
+   },
+   {
+    "title": "Irã acusa Israel de mentir sobre armas químicas para arrastar EUA a nova guerra",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHBRYTRKSDdxZ2NkOVFzU204WnVlRThqZEtFZncxeXJOUWRmT00zUXpFX0diSDh3RUo1S2lZUGNlc015RXdRb3k2NDJBcGJNNHN3SERDNXJTeGxfeFlwZE9QZWZCaU5zX1dCSGlLRzhtM01nUmRVc3VidWRGZjItS3lDdF85bTNnV3ptdUlPeGc3cElwUGtjQWVpNzEwQjhLT2wtQ043ZHlIUHg3YTBGcmt0REMxczExZ29iRUVmQUtHQm1Kei1NWnZIbHIzSDhR?oc=5",
+    "source": "Opera Mundi",
+    "date": "2026-11-26T03:50:26.000Z"
+   },
+   {
+    "title": "O Irã adverte que usará novas armas se os EUA e Israel continuarem seus ataques.",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaDl1SjZhWTZKT20xT1N2cXo4dWlGMmRTVVpFT3V6ekhrV1ZvV1hpTlJXMTctUkhreVZub3QyWi1IMmE3SnRiSWxjbFo4WF84Zjc2NmMxbkkwVTM1cHhnM1NoNTZQSmJIOW95SHlRRXlzc0RuX09HdElRUnJDdUlibENZRHVKWDZlYkVlRkZOcEZfQ0dvamNlNQ?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T03:06:54.000Z"
+   },
+   {
+    "title": "Irã nega desenvolver armas químicas e acusa Israel de buscar pretexto para guerra",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNEt5QThfNzVFdVVnWV9TT0VCbmdFTFU1bFFjUnV6dVJhd3o4XzBwYWtwemNCU01PTHVwaEQ1TVJ2VkJGMlNBQm16Ukl1cEQxYVBEUE5lV2RRdWg3WWZRbGxHck9sbFc0RHhIeGhXdjJ6UVQtVUJ6N1g2NXZHU2N5YldFVy1UbjRxNnZhbzNfT0FvWXRFbU52OVFmSFp3ZWRkcm1mbHN5T2FzTHN6OEFJN1FjN3pWbi1EX1VDLV9vMVBnZ3lLLVVzTjg4QmtiUXFyelY2XzJ2cGw?oc=5",
+    "source": "Itamaraju Notícias",
+    "date": "2026-11-26T02:43:21.000Z"
+   }
+  ],
+  "mumbai": [
+   {
+    "title": "Família Real entra em 'alerta vermelho' após invasão da casa de William e Kate Middleton",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOV1c5Q1h1VW1DZ3RWMWx2RENFd3lEalFvWS1MMUNlUF9FNGNzd1BKVGx5Z2ZPX2NkalZHbmFtZlk3RmpfMDFCRkFUSHpWUkFVWFNJVDdLT3dGbHRkazNSTGVlcTNTQXh5UHVWODlmbklKbzNXMjVCaWxFNHpYM193aGFtVHpGUVU0MWdIWVpVbjFZaXlHdXRIS2t6YVpZNzNQSXNPQ2VwdWpyM0NCM09MSGdHS0YzUFpfU241b0U3YVk5SmpjVHRJdV9na2drRmJlVC1wUkRrTWY2MnhuVHpydUxHTHRvaVHSAfYBQVVfeXFMT3RuTkZ4WU15MDkwazM5Q2lhT0xicEVQbVg5VTlzWC1HMmZxN0pIa3BMaThzSWUybnR3TllqUHM5UGREX0lVNENlU1NGUDgyRjhBSlZSdnBTTEtSQXIzdTdkdzNMODZucXZMMEE4SVpBREphVFpJQWZNeHEyRVFzS09saXBKcnNQaGRHZVNWeTNZbTZZLVZudEk4b2hFZmN4N1FmMDhXbi04QldGSjluOFRvcHRHU3cxWnoxanhHYnJ1aHZvQ1BSMmgzRFF3YnRIM1p4X1ZQTVFiNlhUVURQUjlGQmpTQ0pLUHVEV1lzWUxQQndMZzJR?oc=5",
+    "source": "Globo",
+    "date": "2026-11-26T12:18:59.000Z"
+   },
+   {
+    "title": "Certificação do jato Lineage 1000 na Índia amplia alcance comercial da Embraer no mercado executivo asiático",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNam5KLWVhMkp1YTktR1NoU3BCUEZnNmpKc0JTT0JCTlp3dWxoNWRJQ3V5U2xFY2lUQ0lVZE1maTZ0TXhhZk1ONzktQ0tCUG9FNVVhQzAwbDFoTjExQUkyeElSd0RSTFdyd0RvMDRJTlBDTHJiZDVxcUQ2amJnb1BYb3lZWWNzVkItS0NiNnhCUl9McmhGd21zbGlRT1Vpay1KcnNCM2FETEtkZ2JXTy13V005VGp0RWFlVVU0b0NWQnRwNVFBRVpnTnM1LUdXUXB3bi1IRjZ3?oc=5",
+    "source": "Brasil Inovador",
+    "date": "2026-11-25T20:30:07.000Z"
+   },
+   {
+    "title": "Acordo comercial da UE poderá reduzir de 150% para 20% as tarifas sobre vinhos premium importados pela Índia",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORU1fSlFiOEFkVmRySWNZWWxxaWE4MG9ocDV0MWx6S2J5WFJEMzU5NDJxWW1rajdsRUpDNjh3ZFhucEpVVXBFd0JKSFEwYWV5c1IweW5tZDRFZWszWkppV2c2LUd1a0R4Zm1CeGRDNzI4dzVLNXg1OEdQWllYV0kzVDQ1X3p4enpMdUhEX2NLY0NuV1ZLN1NtalgyM0xSUGtERzd6eExteVBnNF9JUlFkZXNQQnFCcUtFb0FYOUdUNXAxd9IBxwFBVV95cUxQU0pobGVINDZXMXFra0YtTFRTclJsOFEwbGtIdnh2M2hIcFNMQ2FlSEt5blVVYUJZdHdVMGp6OU1hdjMwQzg1dDEwRUFRX1JnOTBRQjR0N3VrV09GRTcxaVJNMGFLejhrbmFjV0xNdjRpSTZvd3JYYlI1R09lZ2xnZG9oWEs4MlRubEdPMVBSWEE4WDdvSlJZVnR5TzlxWVJSaXFhR3FhZUdJNC1mOWM4eUlRQ080aUFtYUJ0ODNBMW43N1ptRGFj?oc=5",
+    "source": "Vinetur",
+    "date": "2026-11-25T19:33:43.000Z"
+   },
+   {
+    "title": "Devcon 8 em Mumbai: A Comunidade Global do Ethereum se Reúne",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40ZTlnTGwzWWhadk1ZM3l4VHVkQUlnWjlMZGFtcTY0M19WOUlaRTdJOW9aeWxaYlRyQkppV29TZUh3T2xMVFBQTVd6azBFYnl2MTlrallOUHNwNGxvT2NJVWQxLWlfYlU?oc=5",
+    "source": "blockchain.news",
+    "date": "2026-11-25T19:31:27.000Z"
+   },
+   {
+    "title": "Produção de açúcar da Índia deve cair ao nível mais baixo da década, diz entidade do setor",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZ0c4OWo0eEJ1OGVOT0tsZ1RvMGNZYkZMTWhlZWh2QS1yY0o2eG9WN1pSdEVfLXhQTWc0UEd2ZUlGdU9MbnpudUFXLXBZRHJ0bHVPankydU4waHhxcjZyYl9uT0s0WG1mLWdqSjY2S3J6N040bXNrMG5WY041NnRkQnFNd1FhVlNWdUZwU0xTbm5FRC1saVA1QVQwdkFVQWVyWFpsdkx5akRMV01tUzdEcHdMSENwR2RnSHpYN0VpMC1Tam4wWW1oRTF3?oc=5",
+    "source": "Portal do Holanda",
+    "date": "2026-11-25T07:52:00.000Z"
+   },
+   {
+    "title": "Invasão na casa de William e Kate em Sandringham expõe falha grave na segurança real",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNX0pTV2I0eUJSalV3REtPZ3c4VmZBWmhIZnlBS19xdGViandaM0d6MWFUVGt0M21XVVh1S2dZRDVCTVdWbWdOUzJTSEQyRU1mQ19JOGtxTFJKeFBUY3ZrcGVKT2pIZU1OWTZsdW9BRC1mN3VFVVhob2ZKOFgydG5fMHJPQ1l6SmFIU2lwc3dESElwXzBLc0lBc3A0a3R2b3hPa3NMTU9mVW9tSXFUVGNqZ2VpMTZjcG1zUWc1eXFlYTJQZw?oc=5",
+    "source": "bra1.com.br",
+    "date": "2026-11-24T20:47:00.000Z"
+   }
+  ],
+  "nova-deli": [
+   {
+    "title": "Preço do Amendoim na Índia, 26 Nov 2026: EUR 1.13/kg FOB — CMB News",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYjhieW5DMmpyaW5jNjhxTU84Wl9EU2FKZG15a2Exa1pfMnZlQ2dhdGFFU0RFazE1T2dZWDZHNkh2d0VWWEhVOHh5X2kwOHlBRGJ1NEM4bFBkNUJrdVk1QUxWSWNiandUQzRTZ3VKX3RXMUluSEwxNXBGeEwydk5xRDMwdlM2ejFjeWltR1UzWFlRaWUzMEpVa2NrZlZ1dWNKWGU2THZZYXdoRHI4QkxxV09jM28yQnBB?oc=5",
+    "source": "CMB News",
+    "date": "2026-11-26T05:37:24.000Z"
+   },
+   {
+    "title": "Preço das passas na Índia, 26 Nov 2026: EUR 2.75/kg FOB — CMB News",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUnhCLTNNSFF4b0tteU9OekxkN2lhRElZZVRxZlhpc1M2UXZwUl9tNVJEVzVWT0QtWTBBb2lKQWdlaGlub1d5X3FZR0FuZVlYVlh6bW83NDA0ZWdqbGo3UVZ4RUF3TG1PUzVLQUFjZ2tMX2dvV3pQdVVpUTJHdFlsem1CV1BDWUJic0VLYk5POEM5eUJoclRKSnNjc2laeHk3eVhKV19vcmJlZw?oc=5",
+    "source": "CMB News",
+    "date": "2026-11-26T05:31:16.000Z"
+   },
+   {
+    "title": "Preço do arroz na Índia, 26 Nov 2026: EUR 0.77/kg FOB — CMB News",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWEJzWWtZVkV6NGprQXQ4S3F5YlBvdEVZOFZ2bmVGd3M1RzlUY3E0aWF5ZGIwUExQT2FSU3VTWHJhNkE2MWxiSFBLdlZnWXA3UWYtVTc4bHFmLWMxY2VqZzBmSFI3UGpQQzNWM2lXcVotRmVVMFVVWUhOWHN4eFZwOEV2bS1sajU2eU1wWjNBSTJwMHkxMmFuSmxNOVhUaXNGMDlDQ1JoV1BXeV9BdGZWejZsTV9VdVJv?oc=5",
+    "source": "CMB News",
+    "date": "2026-11-26T05:28:18.000Z"
+   },
+   {
+    "title": "Preço do arroz Índia FOB, 26 Nov 2026: EUR 0.77/kg — CMB News",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONTQ1YVdaZ2RoSXZNXzdndXROdDA5MVBZbUFIWThvLWFuRXFBMU1LWmtJZGxKeUItS0dZN0gwTUF0aFZucFpnYWZ6OEtYZC1TUHlUODhEcFJQakhpbXEyNXF2MXVzUjVGMXlLRTh1UnZfOEw2OVQtZlZfMlZhQkRFazRGX3NDYXdWQi1jNlFrY3FMWXNXbXFBSV9EYWVLMGxoVHc4aWtTamNLZ0Y4TFhaaVl0ZHExR0lBX0Z4WGRBWHQ5TVJwekhFYmtuMy1sMjRubEVZaA?oc=5",
+    "source": "CMB News",
+    "date": "2026-11-26T05:26:43.000Z"
+   },
+   {
+    "title": "Preço do grão-de-bico na Índia, 26 Nov 2026: EUR 1.20/kg FOB — CMB News",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNb2VKT3NWSTlrRzBIMTdsMWYwYXhQeGllQXJzejk4eEJ6ZU5lQWR2ZmR4VzF5eU9FNVNBM01idUlXMXJuNmZRbmxVRk9TaTZLdkh3N1c5dnFOTHlGMzVJaEx4Zl9NeWFzU2ZFTFQ4cXl5SVNVT2lGQVM4ZzRpOTlJcDZFaWtyQlA2VDFPeWxYQzJzLVNCZ3NUQjctWjBlWS0wZFFPSmtFQ0xvM1d4MG0zMWd4VEJES0dNeEZZR0JBM00wYjRV?oc=5",
+    "source": "CMB News",
+    "date": "2026-11-26T05:11:40.000Z"
+   },
+   {
+    "title": "Fieg participa de jantar de negócios com CCIB e Chadha & Co. em Nova Delhi",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMHdsV29USzdGN1owaUw5a0xWY1NlZFVFalZxRlNsaEZCVjQ5LVRtZHAxbUFJdC1tOTBQaDctY3Z1ZGlyRUtHUzV1bkhocEFEWTNjMWF2RnAxMERLUGpsRzdXWTJsUm5xeGdWbC10Qlo4ZGRDLWQza19xempWdTEyTUJFQ0lva1ky?oc=5",
+    "source": "Foco Nacional",
+    "date": "2026-11-26T04:27:00.000Z"
+   }
+  ],
+  "singapura": [
+   {
+    "title": "Singapura testa bairro do futuro com robôs e inteligência artificial integrada ao cotidiano",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNTdWdFBkNUQwX1A1b3VFbFFKRnhOT0NBQWNBM1ZrQ3Z2VlRTeC1wY2tHS0tjdFVVRXJpR3E3RTBHYS0teEVkdnp2MkU1c2dqODlMRklybnRZRkREN01NbmhJRUZOLUVyNXg5TGd2OUh5cFVnVTViZ0hrQXc2MFZQOUJ2b0dSeE9VOU8xYVdPT1A5WTZXTmZrTUFLSzVDUld6T1JGQTZibWVwOWdxQ1F6V3AtMDVfeXZmMVNxc0JGcUY3R0tObnpJZHYzWVZrVEgzZ1NCelNB?oc=5",
+    "source": "SWI swissinfo.ch",
+    "date": "2026-11-26T14:21:34.000Z"
+   },
+   {
+    "title": "Kimi Antonelli perguntou se podia saltar na cama",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90M1hvMl9MWkh3VC0tRjRIZnl5QnJ1YXIxaVNCZDR3X2s3Qlh0UTY2bmExaTJjSHNhcDNIbExvSW4xU1VzeVBoaWs4WnItZlNMd1hXWGZPRTVCbzB4ZjBVbUVCOUVwcWhK?oc=5",
+    "source": "autogear.pt",
+    "date": "2026-11-26T14:07:00.000Z"
+   },
+   {
+    "title": "EUA apertam o cerco à IA chinesa, e Nvidia suspende envios a 4 países da Ásia",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTExqNmdCUDdLQnV3Z0hsMzB3NDJaeGpZYjVPdmFSc0R2ZDdRY3dITVNUWkowYnpWTzFZMGtFbXp6Si1KaEZzYjJjMm5wTlYzT0ZITEU2N0RDWWJHa2VhMHVHSUFDNlhZN1JjZEhZYldnR2VjSko1eExJM05fRE5yNi1mUTFlQUpBTGNfVktWazJkQnpmWjFiV21SeERJRk1RSmdMTzgwNFgtQQ?oc=5",
+    "source": "Exame",
+    "date": "2026-11-26T14:01:48.000Z"
+   },
+   {
+    "title": "China, Japão e Singapura criticam proposta dos EUA de novas tarifas comerciais de até 20%",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZlJkUHdJMDRFQnlpbzBTSUJTOW4yOUY5TFpUbnlfdHcwdzg5UlhIQ2czNkNiT0pzY0NyN1VBM0JYNS0zM0VWMnJpRWJXU3BzcGdVTE1GYmstY2lRME9oS0RRS0M3Rks0ZXhya0VGamxWMUdEYXFLT0lELVFXanJSSGNGMVdQTHFFa2dIbG05SWNLVnlMS3NBd0NuM21uUjc3c0JZcF91em5Rd2VlX1loUEQtSE56Q000a1YyNmk2UQ?oc=5",
+    "source": "Vero Notícias",
+    "date": "2026-11-26T14:00:00.000Z"
+   },
+   {
+    "title": "Nvidia suspende remessas de servidores de inteligência artificial para países asiáticos",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOODlYV2JYbWJlU0MyTHhkbHdHOHR4ZHc1WGNxVmVFcUd0ZHZwSkdBWW40VExRQUpFRUJyOGhRbVdGaUFseThnZHdPQVpDU29NcThCWGt3NGNjNXRualZ4TXl5alVDM3dKTkpiS1JBNWc2UlVSYU96RHdEMWx6blU3WVc1X2h1NU5KYlotWDV3Rkw4TEJnQWhTLXFMWWtCSUFzQjF0Y2E4U3U3aGI3bENHdVNNa2h6VlNCcW56cDVOQmZ4SmlPR0hQSUpYU3UwaTY5VGpENm1JdGZtbTA?oc=5",
+    "source": "Rádio Metrópole",
+    "date": "2026-11-26T12:30:00.000Z"
+   },
+   {
+    "title": "Twistzz fala sobre futuro da FaZe após eliminação em Singapura: \"Está nas mãos do clube\"",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOGRuYzNPLUllNjloMVk2VmZQeXNCUDBRQVpuWXBQOGtBN1J5aVBxb0xKZUZyUTlyTWUtR0xGd2JwZzFNMXQ1NUsxVGJGQmJRN3p1eDA4S2wxN2d2azhWWDdBT3hwY180OTg5b2pTaUNMSk0wcVpDSHprTllfMnVrbzM2dUgwS3k3Z1VrS3JaTjZuaXhBcW91QmZFenJPakdTdjRCem83TVFQaXVQUWUyVA?oc=5",
+    "source": "DRAFT5",
+    "date": "2026-11-26T12:28:42.000Z"
+   }
+  ],
+  "jacarta": [
+   {
+    "title": "Pelo menos oito pessoas morreram e 18 continuam presas numa mina ilegal na Indonésia",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeFA5RktodVJVS0l6cEN0NTdUblRjQm42VWNHSU5UOEJWMG5pMFJHSXdXeXgteXlrWVJ3Q1NDTmN6YUg5NmhleTFfNjZ5eVFCWi1FTjFhWng5VWhlSUx3ODJldXVMS3JKUHBGTU5oWmdmLWhLVGpaWjR5QWFiWm5MTHBHcEN5ejU5Q21rcVhqZ3ZTQ292OTc3bnk3eVZtVnh0WmczQzRhTF9lcFlsdG53TEdCTk5qZ3FuZHJzMFpJb0xNbEZyZTMtQjlzRm9SbjAyWi1fdjJhWGIzV3M?oc=5",
+    "source": "SIC Notícias",
+    "date": "2026-11-26T13:06:27.000Z"
+   },
+   {
+    "title": "Conectando as culturas vietnamita e indonésia através da arte do batik e do Ao Dai (traje tradicional vietnamita).",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMjh4WjVVU3VKYmVFX2dOYWx6UHFEb2NvZHVzRWFhS2tTSkJ6RVA1Rko1UTVTUUtUMEEtNFFadWxIcEktMldQQTJKVEFmbGFEZmF6V3RSekhETmFvTXM2V2U0cTdZSjB0VDdEbmc0R1VpV291TW9GcGE4enFqLWpnN05PdkFXd0dDT3dJaGhnS1Rwc1dodWc?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T12:16:19.000Z"
+   },
+   {
+    "title": "Enchente mata 13 em mina na Indonésia, e buscas por sobreviventes seguem",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOREFNY2Vobk40ZFhuSUJoMFp5UmU0NHl3anV2blhiZDFLM3V6X21YVWlBY1J1czNiTTZNajhkeVB0bVh4dnZVaUgzSXNlT1ZBbDBHaG5CYmg5MnVucFUzRHlCT1hKbWVTSzVBRHRKaDBpQzRURUdEazZLVnFXUzRxRzFjSzZwUVZ3SFltOUI3YW4xcEV6ZmRhZ0lzVlVzWkhTRERqWWFYcWFQZ2d5bVVqWXZrVFUyZVXSAbsBQVVfeXFMUG5HaXZUbzBZdER5OXNyZFppRFozaEk5eU5mYTZFYm1Vai1qQzljQzRuX1FZWWlvVF9xSHY1ME9CeHQwZU9pempWLXgyYmZaSG54UUI3dFNyMzRENDJkOS1IdUVjRXRHNWRSV2pnbFdhYkVPT2E1ckZva3NKR3RLVzBkdWhCU2QyZ3lhNnFfdlZCQ0F4eExxY0dfMXZkRG10MDhzeWNCblc3RHQxOHRWdWFwVXlHUWpIOTk0TQ?oc=5",
+    "source": "BOL",
+    "date": "2026-11-26T04:40:21.000Z"
+   },
+   {
+    "title": "Mercado financeiro reage a sinalizações fiscais e indefinição na Fazenda",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTGU5NzRmVVBtVWtwSGI0U2RqcXBnREtkUklMbXNhOHhUVi1LYWpjTjYzV2pTd2p4Smg3aUtkUnBqd3lxdnZBS0VJVHBfUnpfVXdIazhFaGlxdFRmVElac09QM3dfRFVNNzJmM3BFTkRqNEN4LTFCdEN4aU8zRGZSaEFYTWZ6cUlpbFh5bmZ3ZkJvUHZuVEVtdXhwVnBiRDVKOVRnX05mYkZzZXM4S0JSWXRBNlktQVFMSEE?oc=5",
+    "source": "Plantão Brasil",
+    "date": "2026-11-25T20:04:53.000Z"
+   },
+   {
+    "title": "Ibovespa sobe 1,2% e dólar cai a R$ 5,82 com sucessão na Fazenda em foco",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZzM0bThNWVdSR24zWlNFRXAzTk5CLUo0QTNMejVYTEx2dDNWWG4zUDNTbk9QNE1QdmZNMm5kR1NaaWtxNkRQRVNLVVBNWHdTeFF1YTZRYWZwR1FZcWZzc3EtTjhneVVZQWNJMlJvcno5NDNOVkdrNnhjMEl5cnJvR0R1MU9NZDRvWk5rZFhKUk15T08taUFPM2JwZkdzdWdLTDM3SGZ3MA?oc=5",
+    "source": "Brasil 247",
+    "date": "2026-11-25T19:59:02.000Z"
+   },
+   {
+    "title": "Một trung tâm khảo thí ủy quyền Cambridge English nhận giải tăng trưởng",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdElITGxPX2NHeHRSZ3AzTEdQaS1PMmIyZ28xSUtLSlZPb0V5YklxZ2tIbHF2UFhHbFVHYnBGeFAzSHlOREhmZGxfSWZVeXNUWG1sNnpFQmVmYUdZV0twRERpR3FEaWV2c0lvQzRRaURVZ0FEZWR6S1VKdXQyb183WGNpRGRQMHhXMk81NDJYaWJoMkNyXzFJMkR2RUlhdw?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-25T13:25:33.000Z"
+   }
+  ],
+  "pequim": [
+   {
+    "title": "China fecha campos de golfe como parte da campanha anticorrupção",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaDhISDZ3aXVXMVFuVHBqNGZtNGJLYUJWV0dFakpXRHlqOWd3bVc2VThRS3A1c3Z0VkZwQnhab0Q5SGVYX1puODBBdGU0Mk1DbE9udHZDbHlVNVctc1B3VmNzdC1qb1RoSmEyZXZxLUFEWGlYYmhCNHY3amVIZXUxVG9lN2F4R2J5WFp5X1d6R1U5MVZFTVc5YXZVYVhmOGlSYXFiZ251cGRQajVBNWpzMtIBsAFBVV95cUxPaDhISDZ3aXVXMVFuVHBqNGZtNGJLYUJWV0dFakpXRHlqOWd3bVc2VThRS3A1c3Z0VkZwQnhab0Q5SGVYX1puODBBdGU0Mk1DbE9udHZDbHlVNVctc1B3VmNzdC1qb1RoSmEyZXZxLUFEWGlYYmhCNHY3amVIZXUxVG9lN2F4R2J5WFp5X1d6R1U5MVZFTVc5YXZVYVhmOGlSYXFiZ251cGRQajVBNWpzMg?oc=5",
+    "source": "Folha PE",
+    "date": "2026-11-26T14:00:40.000Z"
+   },
+   {
+    "title": "Ministério da Defesa da China pede ao Japão que pare de \"instigar\" disputas no Mar do Sul da China",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOR0ZwQndXYmNhaHJpZlVwc1hfZHNvcGZScDVDZlpsMXVsRDNXZS1QUDNRQ0JjYlZPeFEtTWduaFdtOGhIT19NbnhCbFJFMDdwR3pFeUFUQWxuaF9aenQ5RS1aRjNzb1NHNEhraXBka3lJakhOWU1BcFlGenhad1JNYVpJVmpETV9EbEd1Y2tIRmpUdGxvNHhGUUlqZ08tSE45Q1JneXdtTm5sYUd6d1U1WXZqajBxVlpydVYzQmdaVkFMdU43cnlqUGhKVG03SHpvel9qRnlkTnlvMlI2d3JPVG9BbkpCU1hOZXpmTWpmZ1c1b01ETGVv?oc=5",
+    "source": "UOL Notícias",
+    "date": "2026-11-26T13:27:21.000Z"
+   },
+   {
+    "title": "TARIFAS: CHINA AMEAÇA RETALIAR CONTRA TRUMP, MAS EVITA ENFRENTAR CRÍTICAS SOBRE SUAS PRÓPRIAS PRÁTICAS COMERCIAIS",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZDdlREItR3hDdkRzNmJ4Qi1vVnd5UkxzVWtqNjJYMVNkZWxuSWdOem9QS0tVbDdMaWlPX2pXX3lDNWFCSzlyai1iaDNZSW5pR2RzZUcwenhWRXNxMjdJVzlyM1ljTzBKVkVqT1d3NVp6Tnp5UlRWVE9uQW1vS2NoaDRHU2hxQTVYM0pEaGpfU1dHV0ZZSnRZeGdpcTFNZUhDNlh0X3Y0cnFIZk12c2tYaTh2dDFvbDBYYy1SenlTVjdrQTJxZmxLTnRqRGNkRXgtTUs2VV9RVm9CR2JmX0hvNW9R?oc=5",
+    "source": "Diário 360",
+    "date": "2026-11-26T13:23:00.000Z"
+   },
+   {
+    "title": "(Multimídia) Fórum sobre cooperação China-Brasil e formação de talentos realizado em Beijing",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdFQzRzNFdmxRNmwxek1aSC1meVp5VGdkdWU0Ml9ka3R4UFR1aUFROHdYUllqNzdiWjBZM1hJakhCejlEajJtdjQ2QW5TSm4wel9fUmhkZ1hHSS1oZ0Fyek9Jdl9UeHNVVlRmajJ6bHlTSTRLSUZxM1JhcUNvNHhFdm9zQWZEejlLcjVxYmVsQzB3V3J4MjFJbk4wX0pmNmcwYzhBRkZndmh4T2h2VklhMDFqNHJqMmhVakNMQ2Q3VzFUZw?oc=5",
+    "source": "Brasil 247",
+    "date": "2026-11-26T13:15:44.000Z"
+   },
+   {
+    "title": "55 horas de viagem: China e Rússia retomam ligação ferroviária de passageiros através da Mongólia",
+    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNM3VpQVVtS3lmX0t5M1VSSHFjNGdqVF8tRXlxaFZaN0E3LXlzdzRaZnJLQnNkWGF0bkhCaHJkVllzdkRfZG1BQXc0a3pya0E2NUNBaUk1MU12ZDFXWmlVSUczUDNNc042TTVsaUl6cmNnaG5Mdm5VTTJsSnpYeF9CdXdQUVpEQnIwbkE3QXFjZDJwV29HTDJQZnJDSmx5c0EwaEhpT0ZfVHBfaV95M0Z0Zll3bDZuc25EWko5QmZxVUVGa3l1ak1iRGttUVFpNkd3SnFwcTY2ZDl6Sms2V2ZwNHl0WEYxVWs4X2N0QVVJX1prQm9ONFA0QndiRElnVDA?oc=5",
+    "source": "CNN Portugal",
+    "date": "2026-11-26T12:50:07.000Z"
+   },
+   {
+    "title": "Trump aumenta tarifas para tentar tirar comércio mundial das mãos da China",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRnZySEpFaXhWUjg4eGJVNGk1dS0wbHFwRzljc1RKdUZacmhzaG1vU2F3eGFyNm5YeWQtMVNIRjFIalFTcDdDM1NRZWphcG9oRFNyMTRzQmU5dUpBb2ZDVElJTHZScGMza3NCU3NVRmNZRnVUZEZzZXJmWGxDNlF0ZU01RmxCMHppWnFHM1RoZHNiOC1PcGstVkE5OEZnYTdfZWlNYlpJVjMwdnpEbVF2QW82Yng?oc=5",
+    "source": "www.bra1.com.br",
+    "date": "2026-11-26T12:42:00.000Z"
+   }
+  ],
+  "xangai": [
+   {
+    "title": "Por que a China está investigando o secretário do Partido Comunista de Xangai?",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5JbURud3RMWi1IN0k2bUUyTS1GekNLdzQxVVkwel9fVk5icTBEWF9QMzZvamQ1U1dnZHZMc0hVMmp6LURsUW1vTGl5WVQyQlRKc1MzT3RYV1l3VjE2bGUyN1g4TTBVNG1RZHBlR1Jnbzl4Nm5NdlVQOHJR?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T15:04:49.000Z"
+   },
+   {
+    "title": "Ações da China ficam estáveis enquanto mercados buscam superar pessimismo com tarifas",
+    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTXVYT1FPNk1pU2NQUEQyd3VQSWliSU5zRmNfYmJqdHJQMENFZGdjU194THNrZFN3cUkydGlGZ3RiakQ5U1A1VFlUUGpnNmlKYUR4ZTBLV3VKMk1hZXUxT3U3QjFGZzkzZXhsb1hwUy0tS1hDTV9uVXUxLUl0bWhvbFlZbjhVRE9SVHRuYnFaTm5ZZ2NZVzZkU0ZaSUExaEw2VHJvMEpqdlRaUFRyVU1lTDk1UGVhTXhvVGtsam1jSkhBYjFGblNScDJ3YVIxaDRWV2dCSnZmZ0JNdENGLV9Bd0JFbzlRMGZpWXgyZmlvcnNmQ3FzMGJyYQ?oc=5",
+    "source": "Terra",
+    "date": "2026-11-26T10:08:00.000Z"
+   },
+   {
+    "title": "Bolsas da Ásia fecham majoritariamente em alta apesar de novas propostas tarifárias dos EUA",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOa1cxTDdvT3lMM2luSXlOOFZtWjIzbHRZZ0FJbUs3RC1hVi1UOExOQmxUbHNaU0NKdnNsTWZDV1V5SDR0VjBCeEdkamQ2MHowN0tzMm5PdGxFbE9QNVRoSHRvNTRnS1MyTDNpRVFpSmNMQUtZMlJtWWswOF81WUYxbjIzb3doNlNiaTR1WVgzTjVOOUtvZWpKOWZUMXcyS3VxS0N2amYxeldhY200cHN3VFV4RUJpZUY5b2l0WmJPYnNkbmhGUlE?oc=5",
+    "source": "Money Times",
+    "date": "2026-11-26T09:08:00.000Z"
+   },
+   {
+    "title": "Jovem baiano conquista medalha de excelência na WorldSkills 2026",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObnRfUFIzMUlYdmFDUG5wSWVTR1psVGp6SFhpWDZTaW9scEptS0hBWHpOMDd1QkExeDJjN0FSazZMNjBPX01RTkc2UUxYNHA0Nm80TG5lU2pnY2lyQWFGajBoOE5JLTF2S1pTRmsxZjA4T1JKeUdHNkdmMGdjN1RndW40RmJoVDRQSHJqNlB1Wk1WakYzS0Z2ejh3NUtzT3RTZ05XSnc2U1VqZEVSMWw4QUJJWjdQQk9nTGJN?oc=5",
+    "source": "Jornal Correio",
+    "date": "2026-11-26T08:00:00.000Z"
+   },
+   {
+    "title": "China investiga líder de Xangai antes de congresso do partido",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORlhiVHlmeW10ZDl0cFYtYWxUZUx1Vy0xRHdWTWN6blBXXzVNeVdCRkhUVjZfeUxwblI5OWxxRlotbVMtbElCRWhvVUpxSGIzZldYVWRZTVozb19YMDkxXzRFaFk1TzJ0LTBGYmM4OEsxMTVlNmp1S1lESXdsWjZnZlQ3cDhjd0tNb2UwYXc0NUNrVzdQblpMZw?oc=5",
+    "source": "Vero Notícias",
+    "date": "2026-11-26T03:00:00.000Z"
+   },
+   {
+    "title": "Secretário do Partido em Xangai investigado",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ZLVU3T3liS0lFQTBUOWVKa0tQSUFIRHRJb2NfZnpMNjRYYWl6dVl0aTd4c0Y2eGJhT2lwZnhyZEE1b3d0RktBcnRVTUFoZWZRUmpHNDQ4ZWtFZ1k0UExWdjRsS3ZMYWxrWTVJR1ByZjRsX0lpczRkTUl5QUY?oc=5",
+    "source": "TDM",
+    "date": "2026-11-26T01:31:05.000Z"
+   }
+  ],
+  "hong-kong": [
+   {
+    "title": "Incêndio em complexo residencial em Hong Kong que deixou 168 mortos completa um ano",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40ZHRicTd1RjZTT194bUs5NWVIWmlOUjZ2bGE1Mk1adUNXMXZrY2JLS1FhWldKM2otSTBuVzlrbUFFeVhDN1R3UVVDTHRXaUVlX3A2ZVlNakZHaldleTQxRTR6SjlnVFk?oc=5",
+    "source": "NHKニュース",
+    "date": "2026-11-26T14:56:24.000Z"
+   },
+   {
+    "title": "Homenagens marcam um ano do grande incêndio que matou 168 pessoas em condomínio em Hong Kong",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORUlnNEpKbjY2ZTBSeXE3LW1jX0hvcEs1Z21xa3ZlU2ZnTU5xRW96UXJ1NXl6dzBDMjV6M2RvNHM2YVRpbnVPSHhuS3UtYzdwOWp2cHJOdEZnV1dlb0V6UUplanFPd3VHZnp4cmZ6U3dob3ZQMzkwMjFnby15M1lJRHkzQXBUeG1oSzMxUEtkWUx6MEx0cElpbi1XMXkyVHFNbmppNWtUejhzd1FtbWVhOUZCMUZWVENfUEJIVEh5RjgxaFFzSzVyazBSeW10LVpf?oc=5",
+    "source": "O Tempo",
+    "date": "2026-11-26T14:03:24.000Z"
+   },
+   {
+    "title": "Os ETFs de bitcoin à vista estão a caminho do seu maior fluxo líquido de saída mensal já registrado",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOXFZb0dSY3ZmTEdoMkFJSWVLcFpIdGQ1YzRBdmhBbk12ZjAxZmFYLW5LdzZQMUFVeUVLRkRhUVZFQWR1VVI5Vl9BZ1hMWFFhemh6aTF3N1ROTTRlUXE4dEEzaU1RYnAzSjAyemR3cGFnSTRTclhPTTJwcjMwcVBDdnZnWDhoNDZ4MHROQ2VqUlZLTEk3cXVfeWRraTNneFppSDQ3dXhLemtzTmRvVkNQdm1wYTM0Zw?oc=5",
+    "source": "CoinDesk",
+    "date": "2026-11-26T12:32:30.000Z"
+   },
+   {
+    "title": "A empresa de negociação de criptomoedas com sede em Hong Kong, Auros, está encerrando suas operações",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObVZUeENSN2hvZ3FpT1JLQXhRa05mSUdMb3B4UVFDWS05RTRxckt6clZxSHlGUFVyZ2w5X0t2a2l1NzcxaDUzLUFMSVZYeTZDWFNfeUJtQ3dnWjljbnVSb2JuTVF3RTM2M1ZKNmtfZ2Z6czg2WDVfMmhmTTB0dFRURzU2dWxmcmdPWXVXNUlwd1JiZDdkQkU1R2cyOEE2SGZQZXdQek5LYjVmM1lmSVpaNHpPWGs4OEk?oc=5",
+    "source": "CoinDesk",
+    "date": "2026-11-26T12:07:54.000Z"
+   },
+   {
+    "title": "Suspensão na remessa da Nvidia ameaça paralisar a alta da IA",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMmUweF9qQll5NGFxU01FYWY4dTlDN0N1VFlDams4aVA2UXJMOENFeXpDcXZnZkxSbVVkckhHZTRjNEZnTm4wRjB0WVYyZGZGZzdfdnpfWDliS0JqZGxNNWE0UFdXRTRXd3kxdjVqWnR5RzhLM2Zubjd0M09mRUFzQTdzTG5uZTlhRDlFRjFRN0J0RnBreVZka0lBZWpHYnhGOV9CbEViWmRxZGR3bkhFQVAzUjVueGIzVXhRaA?oc=5",
+    "source": "CoinDesk",
+    "date": "2026-11-26T10:56:08.000Z"
+   },
+   {
+    "title": "Fundadores da NovaTech condenados a pagar US$ 1,37 bilhão por esquema de fraude em cripto de US$ 650 milhões",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZ3VUckpmbWprU0stZFVIaFVTakZmNDBMQzI3WDV0SndIVUlzeWJGTUxMdjl6TjhMTE9hVkoyR2JpcHg4MGN0ellRTGNqdGZRZk1rOWJFOUlIVTJSeGZhMUFTcHdCWnFZeXdoRGVWVGdISDFVN0tyMFQ0eV9XWHV6SlMyXzBNSFprRjNsUWRYUXMwaE80WnFadThGVkpyRzNtWE1yd0pYTVp1ekZCckhxRjl5c3JMeEVKcFVqQlViSTZDcVQwekYxeDYwakd1Q29wd1N2QXd6cFQ3VlNUUS1CdzBzRHE?oc=5",
+    "source": "CoinDesk",
+    "date": "2026-11-26T10:40:33.000Z"
+   }
+  ],
+  "seul": [
+   {
+    "title": "Ampliação | A Inteligência sul-coreana nega que a China tenha proposto a Seul cooperar em operações contra os Estados Unidos",
+    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNZ2ltZEoxVGIwVkF4ZDh1MjV5OFoxc2RkRlB5bmxQQ3FsYlZWemJjbzBkNUFsOV9QUTRub19aVDk3OXJrd0xSUndjTTdNUy13UnlnOTdzLWVOQWd3MU8yQmpOMUduamJWaW9TZ09SM3dRbms2OC1VX1ZKU1pvMnRSVm45c1BXRWotTVVIbzg4bHdwYlZ1bGZ3eHo0d0JLcElKZEtZakpTM1BTU3NNRnZfSl9Ta1VUdkVYa2FaMjlzRUVxbUpvX19fT0ZaV2Y3VW9JU19Ja1ExVl9yekRZTDY5WEc4dUhPSFdoc05rWlRNTkZBaHFmVFhQadIB_gFBVV95cUxNSW9IM25aM2N6bFJZWG1UckpQQkpzSlM1QUYzQjFsN3NFc1BPcnhpSXIwa3BoN3hSUUx5NnFsajhCZHR0dUk5dV80RHpzdFFQNmxKN1lYbGVYTXVlWFpPSFk2MXhIZUdtWmxxX1FmdGg4N0thRVhCNmU4WkU1NVdKZVpaaE5YM0RhdUxWSDA1ZklVVW9yaG05YnlKQ1FwcEp5eTJnTTJMLThYaEtnUVRieDd6eTRDUDhtaTdaR0haZVZNNHFyaFhwbVNZM182c0VWamhYSi1OQlU1dFI4ZVp3M0VCbzdZQkhpZ2ZyX0NhQlFUdmpvdWlrNmtzRl9PUQ?oc=5",
+    "source": "Demócrata",
+    "date": "2026-11-26T12:27:08.000Z"
+   },
+   {
+    "title": "Os turistas que visitam a Coreia do Sul gastam a maior parte do seu dinheiro em compras e tratamento médico.",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTWhJTzlBa1gyc01vd3MzU0VDbEFfRVJOSmJpaVBKNk9NalNMS0I5RVVUQ1FQSTFXTktCamV5WUdobU1JMER0TGpPQXN2Yi1EWm1sNFJZM0RFZDZVTVBzekxfR1B5cWFLVWE1U3hzYVdxYnFucGQwVFZxT1oyMF9SUVdFWTFMd09tNmc?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T12:10:21.000Z"
+   },
+   {
+    "title": "Yim Si Wan, Dara, Hwasa e uma série de estrelas internacionais se unem inesperadamente em um sucesso de bilheteria do K-pop.",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZGdKejdDUUxHampQMFNJRXpLeER2T1lfSHRxSGJRa25oYjdQcnpWam1WSmZ6U21vRy1lYko5MmFGNlRxVzJZR3Z3UVAzV2JrSGktNVhYX2lBTUltdUJRRVRSaDM2ckhOc2lPU1h1MkRjdG5RMG1zakNnSGo4Z0VFMDQxWVQzb3lDX21zVGc2aG43VUNBQXdRR0JtQk5pdm8yeFVsOGtiTldxbTE3WHpkSjVZajhjaExlcWc?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T12:08:19.000Z"
+   },
+   {
+    "title": "Pavilhão da UE na SEMICON Korea 2027 abre candidaturas",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcTNxMlpqMFlHT1hRTG9vZ2JiSDVRS0tuRFRiM0x2eEZXX1dHU180ampWRm9faXUtamlyNHl4REVKU2lDQ05xRkRjNy1fTzJhMmdFcFlIU1h0eVdQVXhhaHdsaDdVRnpoMkdXdF9pRE1kTkg3RUtYM0thY2hlblVnTXBoM25kSzFTalA3QVdWWEZvTVhNSVlmZTl5WjZCWUJNeHlYaEJfRQ?oc=5",
+    "source": "AICEP",
+    "date": "2026-11-26T11:22:52.000Z"
+   },
+   {
+    "title": "Bi Rain e Kim Tae Hee enriqueceram com investimentos imobiliários.",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1NUWdrLXVUUl9WTW5yQmlqRE1PRTR3aXUyM2JKRkxaS0h5S05QQ1Q4QUxRaU5UcGVTRzNOekNvYzFqOVZpWUZQOUI4QkN3VWhsZWpvLWRXaDVpRVJ5T2ZWMXI4OVBMRllhZjk4dHZMV3Q3YUJKYy14UTJQUQ?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T08:50:06.000Z"
+   },
+   {
+    "title": "A Inteligência sul-coreana nega que a China tenha proposto a Seul cooperar em operações contra os EUA",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMENoMVZLcXB6V0wxZVU5X3FlbHJLUVM3RDU4QXJvZG1najBlcWs1VW5Oa1lON0poRGZfdDRHdzdrdzhTM3Vmd3lRUEdudjBEV0JHZS12dG5zS0tFcWlmc1ZTellScko4NzdmZFQzLTN3Y2Eydlk0QVNPSW9UWXlHdGVpZ1VWQkQ5RFpDbkhWdlBEQ1hIUVgtQlJnQlN1c29DejRuSnhNc0JXQkY2RjZNZk9ScXR2UDZ6R0hWLWtjWXlWQUlNWGYwV3p0Qkx5UU00YmctempkTFMyQTk10gHiAUFVX3lxTE1hYTlRWGF3UEdCOEdoYVE1TjQwc3lTRXBkaXlFV1NVQVV2alZqaUZHNV9DSFJWRFA2ZGFkSWMxajltaEhzVnFvZjQwMlA3UkY2WlFudUU5aHpnSmdkWGJFVXhiX0NMN09OM05xdmZFU3NlRjlONXBDbmNUUW1xZndqaU1adE45T2UwbjNqSkg4UWJRdFk3cFhsem1LQWp6WDlyM0pfOHhucDhYb3p2bHliV2tQRHNpa0JFdWtVN01WMzRMNGdCUDNUYktJd0MwaGhmOXdEbTkxY3VvaTdBcHV1VXc?oc=5",
+    "source": "Demócrata",
+    "date": "2026-11-26T08:40:42.000Z"
+   }
+  ],
+  "toquio": [
+   {
+    "title": "Hasuike Kaoru fala sobre como resolver a questão dos sequestros cometidos pela Coreia do Norte",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wcHVJMjFrOEdXaVNJS1VNQUh2SDAxbEhGd0t6d2VVZHFqcFY4S1RMcXhGb1QtSnViQXNvRHhMLURaX0o2NUJWM0VWQldHeU9OM2xIRkY5SjNESGlZY0dTNHd6MFhUdXc?oc=5",
+    "source": "NHKニュース",
+    "date": "2026-11-26T13:37:32.000Z"
+   },
+   {
+    "title": "Ministério da Defesa da China pede ao Japão que pare de \"instigar\" disputas no Mar do Sul da China",
+    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPTUt0ektrTGREN1lhMUwteVFHYzdOZGdjVkIyRVgwOHI5c0dZVFgwNlNDeG5LaVY4TXU2dWo5NVIzNWszbzNkVms4TUdGU1NXd0laRzllZlBHNHhTSFRnRHpTOUhZMmI4Q2M3YmU1ckpvYjZoWk4waVhFUFpnV2g3alhxMUJHNU9EZVRxNFJtS1RNbTVhVFFvbWNpcmw3ODhzTVI2S2R4ZkNFdVZsbzllZTM1MXl5VVYzaTBqd2NnM1hqekdaQldxZWI4THRldTB5MEtJTWtlVmd2SGxuQVJTVHlIcElPYjBkVlpxSjZfOUt3ejk5MWNGTmN3ME5KaUlDMy1GRUZId1NKamxER0M4?oc=5",
+    "source": "Terra",
+    "date": "2026-11-26T13:33:00.000Z"
+   },
+   {
+    "title": "A nova Miss Internacional 2026 é linda como um anjo e fala quatro idiomas.",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT0hHbnU1ZmZSeEpkYmd0eTE3aVRTR2tvc2xuZFlzRW5RS3NFQWtodW9iaTBwaU9SdUZKYmJWMndvTE9UUXBJc2Itc1BDNld6NTdNTWszbXp1Nm5STGJoWkFEdmVYb1Y5MzFWSGFRMGg5blFNcVdLM0VhbmQydlhjMHdZSUVMdFh4aUZVdjM1Qm5xbzQwemhoaw?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T11:38:17.000Z"
+   },
+   {
+    "title": "26 de Novembro no Futebol",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QcjBXN01WZWxodkF5RG9yX1NpbG1wV3ZkVHZhdzN5V2xrU1F3cTMxT2FwM2tBM3loeGN0eFRCRzVlQmFsZWhkbU5Pb1UybmdGRV96QlNvVVd6MXdWc0dZaQ?oc=5",
+    "source": "agência ch",
+    "date": "2026-11-26T10:44:35.000Z"
+   },
+   {
+    "title": "Avanço de data centers no Japão enfrenta revolta cada vez maior de moradores",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVU1GU2kyVldic0hTVTlDNTNoenhFTXR2bmFaYVQ5d3VadDlxaTRTLThObEhxOU9VT2RjUlY3NTNYZFpPcEw1TmUzNXh0b1E2RS1Kd01mOVRFakU2eEZVaEo3XzZWWkVyR2dZcFNLSmE0X1lyRmhjemtKcVBFMjNCalRXU0lYSWhEYnczclA5c3ZvNUtkdmVrM3BzU2ZLaGU2dXhJRGY3TGI2TnpVZkdSU0lmZENRMlZjdFY5RzBTSQ?oc=5",
+    "source": "Portal do Holanda",
+    "date": "2026-11-26T10:24:00.000Z"
+   },
+   {
+    "title": "Casos de influenza aumentam pela terceira semana e Fukui emite alerta nesta quinta-feira",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11c3VtWmppUTJoQWlmVExqbjhFbW0zY1c4OC1yVDRwc2E4cjhLMklsZUpvczMxYUtRNTNNV1A3MUpGVHNKZXRJSmZrSVM2QU9OV2NxQjRHbjR6R3pCWnBEaXpqYmFFeXFjM2l2S1JNZVpmTE1maVoyTmRjTUt3S1E?oc=5",
+    "source": "Alternativa Online",
+    "date": "2026-11-26T09:20:39.000Z"
+   }
+  ],
+  "sydney": [
+   {
+    "title": "Estudo liga maconha a surto de psicose 6,3 anos mais cedo após os 30",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbTNWdzBXdHFmMzlZb0RteDliTzJCZ1lTbjRlY2RmMDJUM2FEU25TVkYwUlViMkRoQ19VckV3d2I3ZTJaSl9COU4wN1RFa2FULTgtX2Q1cjFSNDk4R05IdjJtWXlBdGducHpXTXNTbHA2NDR0Rk9DSWlrSUV0TGxjVU9YdVNfSTItYUxmUmR4U2x2UE1IbDF4SVVVYmNjOE01bWFSWnRRcWhNd9IBrwFBVV95cUxQbm0zVHkyZUxsUEpoMno0RFkyZU9PN2hOQlhiRTg3eXFfalE4VjRPSG9oakhrUFlvREZTVUJiWTBjV0tZaVloU3BsLV9RV0RFZFFSa1dYOVhsbkRCZjBwcEpwWVRZT1ZDeVlqZnNoc1cyQWhIMlF4MlUxUXJZWU5jSUo5SkFJMUNIaGZVdzEtMmNvUHBSTTIteVRyOWF6aW1LTVhIRUNlTzZNaVM1QzZn?oc=5",
+    "source": "O Cafezinho",
+    "date": "2026-11-26T12:41:16.000Z"
+   },
+   {
+    "title": "KuCoin lança seu programa na Austrália com Adam Scott, destacando infraestrutura global e responsabilidade local",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQT2hub0lkWDJUSkZUaG9yeWo0anNFQlljVDFUUmhYZ01uVmtZNmFKdkZBNEpIV2Q1dTBYOXM4bXdpUXlISTAwbmZpWHRfUFlsbS1YbS1qWXBQeVQyOXpZT0RJVTVCc29MRV9pUEpoWTJxNThjc3hkUmt1S2llTFlSSTEzYUp4Zy14MWljYkUtVTB2RFRVUlkwRWhGckVNRFNxTkxqUnMwWFJnbTYyZVlYOXlpREFpeEQzQ0lYWWZ3ZThRTmtmbG94MmlFemNJT2Rhdk96R1ZvZGI4cFJsaWxKOQ?oc=5",
+    "source": "KuCoin",
+    "date": "2026-11-26T10:44:00.000Z"
+   },
+   {
+    "title": "Meta, Google e TikTok terão novos motivos para se preocupar com seus algoritmos na Austrália",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcjlzZDk5QXMwbGVUZHFnc0ZMeTNFNG56cjRDSHZUamgyU0paX2FyVXRwaVd4aTJaSVlsSU1KSW9OdWNXUVlpTEU5UmhjcHBqQlhreFA4bno1NWp6d21TUTc3MHNlWGprRDhfY2ZxZGs4SUdHQ09veG1pTWpKOXM3M1VmZExTSF90OXJhT25mS252SjhzNUxyak0tcTMzX0JXZWlQd1MzNDlxcGFhSWgyUTdsSk1CdVk1Rjh5ODRuSEctZw?oc=5",
+    "source": "Gizmodo Brasil",
+    "date": "2026-11-26T10:04:23.000Z"
+   },
+   {
+    "title": "Os fluxos de capital para ações de tecnologia ajudaram as ações asiáticas a se recuperarem.",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYjI2TTZVUUE3UGt5YktLcDh5SGFQa2VwM2YyTmY4bnhpV2daZnR4OXNpRHJuR09xeTV4XzlBcktPSmtjSGdwWVRiZlVITGs1REcySVoxd3JUdW9YVkVxREhFOHNNWXZxaXAxXzU0YWd1OVVFZTNYNlpwaXhhcUhhOXQ4M0JLbUJ1NHh0NWdOVUU?oc=5",
+    "source": "Vietnam.vn",
+    "date": "2026-11-26T09:44:00.000Z"
+   },
+   {
+    "title": "Rochas naturais vendem US$ 2,6 mi em missão à Austrália",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5POXVXeERNRmk1ajQtLVF4S3BRYzZvVWw3SE0xa0twTzItVzVEb3ptdDRPLVltSUoyR0NJNEdJazRscnlOVmZfeEx0QTRRd1ZVb3pxcEFvNmg2RzhSSUdwMWhTOUtScDl3c3NGUF9BYml6NVltQ1RtZGtB?oc=5",
+    "source": "ES Brasil",
+    "date": "2026-11-26T09:22:00.000Z"
+   },
+   {
+    "title": "www.lusa.pt",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GR0NfY3pNbXFwMjNzWV9PN3ZCZXpiOEo5T2F6T0xDd1U3emdVV0FjWGh2SU9pUE5zOVZILUhMNE9IRkdPdDMtSl8tUmhiQ0ZRbmJvRw?oc=5",
+    "source": "Lusa",
+    "date": "2026-11-26T02:04:19.000Z"
+   }
+  ]
+ }
+}
