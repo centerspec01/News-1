@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Oráculo de Ações</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Previsões de curto, médio e longo prazo para ações, baseadas nos padrões dos últimos 5 anos de cotações.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,8 @@
   --neutral-bg: #fbf0d9;
   --band: rgba(31, 94, 255, 0.14);
   --band-2: rgba(31, 94, 255, 0.07);
+  --ma50: #d27a0f;
+  --ma200: #8a4cc4;
   --shadow: 0 1px 2px rgba(20, 20, 30, .05), 0 4px 16px rgba(20, 20, 30, .04);
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -37,7 +40,8 @@
     --ink-3: #7e8592; --line: #2a2f39; --accent: #6b93ff; --up: #3ccf8e; --up-bg: #12291f;
     --down: #ff6b5e; --down-bg: #2e1715; --neutral: #f0b84a; --neutral-bg: #2b2414;
     --band: rgba(107, 147, 255, 0.20); --band-2: rgba(107, 147, 255, 0.09);
-    --shadow: 0 1px 2px rgba(0,0,0,.3);
+    --ma50: #f0a64a; --ma200: #b88af0;
+    --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
@@ -45,12 +49,13 @@
   --ink-3: #7e8592; --line: #2a2f39; --accent: #6b93ff; --up: #3ccf8e; --up-bg: #12291f;
   --down: #ff6b5e; --down-bg: #2e1715; --neutral: #f0b84a; --neutral-bg: #2b2414;
   --band: rgba(107, 147, 255, 0.20); --band-2: rgba(107, 147, 255, 0.09);
-  --shadow: 0 1px 2px rgba(0,0,0,.3);
+  --ma50: #f0a64a; --ma200: #b88af0;
+  --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 header.top { border-bottom: 1px solid var(--line); background: var(--panel); }
 header.top .wrap { display: flex; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
@@ -187,7 +192,7 @@ footer { border-top: 1px solid var(--line); padding: 18px 0 30px; color: var(--i
       <input type="file" id="csvFile" accept=".csv,text/csv" hidden>
     </form>
     <div class="chips" id="chips"></div>
-    <div class="hint">Ações da B3 recebem “.SA” automaticamente. Use <b>^BVSP</b> para o Ibovespa. Sem internet ou API bloqueada? <a id="demoLink">Ver com dados de demonstração</a>.</div>
+    <div class="hint">Ações da B3 recebem “.SA” automaticamente. Use <b>^BVSP</b> para o Ibovespa. Sem acesso às cotações? Envie um CSV ou <a id="demoLink">veja os dados de demonstração</a>.</div>
     <div class="status" id="status" role="status"></div>
   </section>
 
@@ -267,7 +272,7 @@ footer { border-top: 1px solid var(--line); padding: 18px 0 30px; color: var(--i
 </main>
 
 <footer>
-  <div class="wrap">Cotações diárias ajustadas (dividendos e desdobramentos) do Yahoo Finance, buscadas no seu navegador. Os cálculos rodam localmente; nada é enviado a servidores.</div>
+  <div class="wrap">Cotações diárias ajustadas por dividendos e desdobramentos, do conector Financial Modeling Prep (no Claude) ou do Yahoo Finance (fora dele). Os cálculos rodam no seu navegador.</div>
 </footer>
 
 <script>
@@ -283,13 +288,14 @@ const HORIZONS = [
   { key: "long", label: "Longo prazo", span: "1 ano", days: 252, win: 120, k: 8,
     w: { ana: .3, mc: .35, trend: .35, season: 0 } },
 ];
-const QUICK = ["PETR4", "VALE3", "ITUB4", "BBAS3", "WEGE3", "MGLU3", "^BVSP", "AAPL", "MSFT", "NVDA", "TSLA", "AMZN"];
+const QUICK = ["AAPL", "MSFT", "NVDA", "TSLA", "AMZN", "GOOGL", "PETR4", "VALE3", "ITUB4", "WEGE3", "^BVSP"];
 const MONTHS = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
 /* ============================================================
    Utilidades
    ============================================================ */
 const $ = (id) => document.getElementById(id);
+const esc = (x) => String(x).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 const mean = (a) => a.reduce((s, x) => s + x, 0) / (a.length || 1);
 const std = (a) => { const m = mean(a); return Math.sqrt(a.reduce((s, x) => s + (x - m) ** 2, 0) / Math.max(1, a.length - 1)); };
@@ -368,7 +374,48 @@ function parseYahoo(json) {
   const m = r.meta || {};
   return { dates, prices, rawLast: close?.[close.length - 1] ?? null, symbol: m.symbol, name: m.longName || m.shortName || m.symbol, currency: m.currency || "USD" };
 }
+/* Conector FMP (quando a página roda dentro do Claude) */
+let mcpPromise = null;
+function getMcp() {
+  if (!window.claude || typeof window.claude.use !== "function") return Promise.resolve(null);
+  return (mcpPromise ||= window.claude.use("mcp").catch(() => null));
+}
+const isoDay = (d) => d.toISOString().slice(0, 10);
+async function fetchFMP(mcp, symbol) {
+  const to = new Date(), from = new Date(); from.setFullYear(from.getFullYear() - 5); from.setDate(from.getDate() - 7);
+  setStatus("info", `<span class="spinner"></span>Buscando 5 anos de cotações de <b>${esc(symbol)}</b> no Financial Modeling Prep…`);
+  let res;
+  try {
+    res = await mcp.callTool("FMP", "chart", { endpoint: "historical-price-eod-dividend-adjusted", symbol, from_date: isoDay(from), to_date: isoDay(to) },
+      { cache: { staleTime: 6 * 3600e3, gcTime: 24 * 3600e3 } });
+  } catch (e) {
+    const code = e && e.code;
+    const msg = String(e?.message || "");
+    if (code === "tool_error") {
+      if (/higher plan|upgrade|subscription/i.test(msg)) throw Object.assign(new Error(`O seu plano do Financial Modeling Prep não inclui “${symbol}”. O plano gratuito cobre ações dos EUA (AAPL, MSFT, NVDA…). Para ações da B3, exporte as cotações em CSV (Yahoo Finance ou Investing) e use “Enviar CSV”.`), { final: true });
+      throw Object.assign(new Error(`O Financial Modeling Prep não retornou dados para “${symbol}”. Confira o código.`), { final: true });
+    }
+    if (code === "needs_reauth") throw Object.assign(new Error("A conexão com o Financial Modeling Prep expirou. Reconecte em claude.ai → Configurações → Conectores e tente de novo."), { final: true });
+    if (code === "server_not_connected" || code === "selection_required") return null; // sem conector: tenta Yahoo
+    if (code === "not_in_manifest" || code === "approval_required" || code === "consent_required") throw Object.assign(new Error("Para buscar cotações, permita o acesso ao conector Financial Modeling Prep quando o Claude pedir. Você também pode enviar um CSV."), { final: true });
+    if (e?.retryable) throw Object.assign(new Error("O Financial Modeling Prep não respondeu agora. Tente de novo em alguns segundos."), { final: true });
+    return null;
+  }
+  let rows = res.payload;
+  if (rows && !Array.isArray(rows)) rows = rows.historical || rows.data || rows.results || null;
+  if (!Array.isArray(rows) || !rows.length) throw Object.assign(new Error(`Nenhuma cotação encontrada para “${symbol}”. Confira o código (ex.: AAPL, MSFT, NVDA).`), { final: true });
+  const pts = rows.map((r) => [Date.parse(r.date + "T12:00:00Z"), Number(r.adjClose ?? r.close ?? r.price)])
+    .filter(([t, p]) => isFinite(t) && isFinite(p) && p > 0).sort((a, b) => a[0] - b[0]);
+  if (pts.length < 200) throw Object.assign(new Error(`Histórico curto demais para “${symbol}” (${pts.length} pregões).`), { final: true });
+  return { dates: pts.map((x) => x[0]), prices: pts.map((x) => x[1]), symbol, name: symbol, currency: /\.SA$|\^BVSP/.test(symbol) ? "BRL" : "USD", source: "Financial Modeling Prep" };
+}
+
 async function fetchHistory(symbol) {
+  const mcp = await getMcp();
+  if (mcp) { const d = await fetchFMP(mcp, symbol); if (d) return d; }
+  const noData = mcp
+    ? "Não foi possível buscar as cotações. Conecte o Financial Modeling Prep em claude.ai → Configurações → Conectores, ou envie um CSV com as cotações."
+    : "Não foi possível baixar as cotações (todas as fontes falharam). Tente de novo em instantes ou envie um CSV com as cotações.";
   const cacheKey = "oraculo:" + symbol + ":" + new Date().toISOString().slice(0, 10);
   try { const c = localStorage.getItem(cacheKey); if (c) return { ...JSON.parse(c), source: "Yahoo Finance (cache de hoje)" }; } catch {}
   const errors = [];
@@ -376,7 +423,7 @@ async function fetchHistory(symbol) {
     const url = `https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=5y&interval=1d&events=div%2Csplits&includeAdjustedClose=true`;
     for (const p of proxied(url)) {
       try {
-        setStatus("info", `<span class="spinner"></span>Buscando 5 anos de cotações de <b>${symbol}</b>… (${p.name})`);
+        setStatus("info", `<span class="spinner"></span>Buscando 5 anos de cotações de <b>${esc(symbol)}</b>… (${p.name})`);
         const res = await fetchWithTimeout(p.url);
         const text = await res.text();
         let json; try { json = JSON.parse(text); } catch { throw new Error("HTTP " + res.status); }
@@ -391,7 +438,7 @@ async function fetchHistory(symbol) {
     }
   }
   console.warn(errors);
-  throw new Error("Não foi possível baixar as cotações (todas as fontes falharam). Tente de novo em instantes, envie um CSV ou use os dados de demonstração.");
+  throw new Error(noData);
 }
 
 function parseCSV(text, filename) {
@@ -742,8 +789,8 @@ function renderMainChart() {
   const accent = css("--accent");
   const ds = [
     { label: "Preço", data: xy(data.prices), borderColor: css("--ink"), borderWidth: 1.6, pointRadius: 0, tension: 0 },
-    { label: "Média 50", data: xy(stats.ma50).filter((p) => p.y != null), borderColor: "#e08a1e", borderWidth: 1.2, pointRadius: 0, borderDash: [] },
-    { label: "Média 200", data: xy(stats.ma200).filter((p) => p.y != null), borderColor: "#9b59d0", borderWidth: 1.2, pointRadius: 0 },
+    { label: "Média 50", data: xy(stats.ma50).filter((p) => p.y != null), borderColor: css("--ma50"), borderWidth: 1.2, pointRadius: 0, borderDash: [] },
+    { label: "Média 200", data: xy(stats.ma200).filter((p) => p.y != null), borderColor: css("--ma200"), borderWidth: 1.2, pointRadius: 0 },
     { label: "Cenário otimista (P90)", data: fut(f.path90), borderColor: "transparent", pointRadius: 0, fill: "+1", backgroundColor: css("--band") },
     { label: "Cenário pessimista (P10)", data: fut(f.path10), borderColor: "transparent", pointRadius: 0, fill: false },
     { label: "Projeção (mediana)", data: fut(f.path50), borderColor: accent, borderWidth: 2.4, pointRadius: 0, borderDash: [6, 4] },
@@ -763,8 +810,8 @@ function renderMainChart() {
   mainChart = new Chart($("mainChart"), { type: "line", data: { datasets: ds }, options: opts });
   $("mainLegend").innerHTML = `
     <span style="--c:${css("--ink")}">Preço ajustado</span>
-    <span style="--c:#e08a1e">Média 50 dias</span>
-    <span style="--c:#9b59d0">Média 200 dias</span>
+    <span style="--c:${css("--ma50")}">Média 50 dias</span>
+    <span style="--c:${css("--ma200")}">Média 200 dias</span>
     <span style="--c:${accent}">Projeção ${f.hz.label.toLowerCase()} (mediana)</span>
     <span class="box" style="--c:${css("--band")}">Faixa P10–P90</span>`;
 }
@@ -794,7 +841,7 @@ function renderAnalogs() {
   }
   const W = f.hz.win, H = f.hz.days;
   $("anaSub").textContent = `Os ${ana.analogs.length} trechos mais parecidos com os últimos ${W} pregões e os ${H} pregões seguintes a cada um.`;
-  const pal = ["#e08a1e", "#9b59d0", "#2aa198", "#d33682", "#6c9a1f", "#cb4b16", "#268bd2", "#b58900", "#859900", "#6c71c4", "#dc322f", "#2f9e9e", "#a0522d", "#708090", "#c71585"];
+  const pal = [css("--ma50"), css("--ma200"), "#2aa198", "#d33682", "#6c9a1f", "#cb4b16", "#268bd2", "#b58900", "#859900", "#6c71c4", "#dc322f", "#2f9e9e", "#a0522d", "#708090", "#c71585"];
   const ds = [];
   ana.analogs.forEach((a, i) => {
     const pts = [...a.past.map((y, j) => ({ x: j - W + 1, y: (Math.exp(y - a.past[W - 1]) - 1) * 100 })),
@@ -811,7 +858,7 @@ function renderAnalogs() {
   opts.plugins.tooltip.callbacks = { title: (it) => (it[0].parsed.x === 0 ? "Hoje" : (it[0].parsed.x > 0 ? "+" : "") + it[0].parsed.x + " pregões"), label: (c) => ` ${c.dataset.label}: ${pct(c.parsed.y / 100)}` };
   anaChart = new Chart($("anaChart"), { type: "line", data: { datasets: ds }, options: opts,
     plugins: [{ id: "zero", beforeDatasetsDraw(ch) { const { ctx, chartArea: a, scales } = ch; const x = scales.x.getPixelForValue(0); ctx.save(); ctx.strokeStyle = css("--ink-3"); ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.moveTo(x, a.top); ctx.lineTo(x, a.bottom); ctx.stroke(); ctx.restore(); } }] });
-  $("anaLegend").innerHTML = `<span style="--c:${css("--ink")}">Padrão atual (últimos ${W} pregões)</span><span style="--c:#e08a1e">Análogos do passado</span><span style="--c:${css("--accent")}">Mediana do que veio depois</span>`;
+  $("anaLegend").innerHTML = `<span style="--c:${css("--ink")}">Padrão atual (últimos ${W} pregões)</span><span style="--c:${css("--ma50")}">Análogos do passado</span><span style="--c:${css("--accent")}">Mediana do que veio depois</span>`;
   const rows = ana.analogs.map((a) => {
     const end = Math.exp(a.fut[H - 1] / a.scale) - 1;
     return `<tr><td>${fmtDate(data.dates[a.e])}</td><td>${(a.corr * 100).toFixed(0)}%</td><td class="${cls(end)}">${pct(end)}</td><td>${money(data.prices[a.e])}</td></tr>`;
@@ -864,18 +911,18 @@ function renderAll() {
   $("result").classList.add("show");
 }
 
-async function run(loader) {
+async function run(loader, scroll = true) {
   try {
     const data = await loader();
     setStatus("info", `<span class="spinner"></span>Procurando padrões em ${data.prices.length.toLocaleString("pt-BR")} pregões…`);
     await new Promise((r) => setTimeout(r, 30));
     STATE = { ...analyze(data) };
-    setStatus(data.source.includes("sintéticos") ? "warn" : null, "Você está vendo <b>dados sintéticos de demonstração</b>, não uma ação real.");
+    setStatus(data.source.includes("sintéticos") ? "warn" : null, "Você está vendo <b>dados sintéticos de demonstração</b>, não uma ação real. Digite um código acima para analisar uma ação de verdade.");
     renderAll();
-    $("result").scrollIntoView({ behavior: "smooth", block: "start" });
+    if (scroll) $("result").scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (e) {
     console.error(e);
-    setStatus("err", e.message || String(e));
+    setStatus("err", esc(e.message || String(e)));
   }
 }
 
@@ -908,6 +955,7 @@ $("themeBtn").onclick = () => {
 };
 try { const t = localStorage.getItem("oraculo:theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
 if (location.hash.length > 1) { $("ticker").value = decodeURIComponent(location.hash.slice(1)); $("searchForm").requestSubmit(); }
+else run(async () => demoData(), false);
 </script>
 </body>
 </html>
