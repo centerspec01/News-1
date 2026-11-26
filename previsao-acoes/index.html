@@ -446,9 +446,12 @@ function parseCSV(text, filename) {
   if (lines.length < 2) throw new Error("CSV vazio");
   const delim = (lines[0].match(/;/g) || []).length > (lines[0].match(/,/g) || []).length ? ";" : ",";
   const head = lines[0].split(delim).map((h) => h.replace(/"/g, "").trim().toLowerCase());
-  const di = head.findIndex((h) => /^(date|data|datetime|time)$/.test(h));
-  let ci = head.findIndex((h) => /adj\.?\s*close|ajust/.test(h));
-  if (ci < 0) ci = head.findIndex((h) => /^(close|fechamento|último|ultimo|price|preço|preco)$/.test(h));
+  // Formato novo do yfinance: cabeçalho em 3 linhas (Price / Ticker / Date), datas na 1ª coluna.
+  const yfMulti = head[0] === "price" || head[0] === "";
+  const di = yfMulti ? 0 : head.findIndex((h) => /^(date|data|datetime|time)$/.test(h));
+  const cols = head.map((h, i) => (yfMulti && i === 0 ? "" : h));
+  let ci = cols.findIndex((h) => /adj\.?\s*close|ajust/.test(h));
+  if (ci < 0) ci = cols.findIndex((h) => /^(close|fechamento|último|ultimo|price|preço|preco)$/.test(h));
   if (di < 0 || ci < 0) throw new Error("O CSV precisa ter colunas de data (Date/Data) e fechamento (Close/Adj Close/Fechamento).");
   const rows = [];
   for (const line of lines.slice(1)) {
@@ -466,8 +469,11 @@ function parseCSV(text, filename) {
   const cut = rows.length ? rows[rows.length - 1][0] - 5 * 365.25 * 864e5 : 0;
   const r = rows.filter((x) => x[0] >= cut);
   if (r.length < 200) throw new Error("O CSV tem poucos pregões (" + r.length + "). São necessários pelo menos 200, idealmente 5 anos.");
-  const name = filename.replace(/\.csv$/i, "");
-  return { dates: r.map((x) => x[0]), prices: r.map((x) => x[1]), symbol: name.toUpperCase(), name, currency: "BRL", source: "Arquivo CSV enviado" };
+  const tickerRow = yfMulti ? lines.find((l) => /^"?ticker"?[,;]/i.test(l)) : null;
+  const tk = tickerRow ? tickerRow.split(delim)[ci]?.replace(/"/g, "").trim() : "";
+  const name = tk || filename.replace(/\.csv$/i, "");
+  const usd = tk && !/\.SA$/i.test(tk) && !/^\^BVSP$/i.test(tk);
+  return { dates: r.map((x) => x[0]), prices: r.map((x) => x[1]), symbol: name.toUpperCase(), name, currency: usd ? "USD" : "BRL", source: "Arquivo CSV enviado (" + filename + ")" };
 }
 
 function demoData() {
