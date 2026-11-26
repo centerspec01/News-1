@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oráculo de Ações</title>
+<meta name="description" content="Previsões de curto, médio e longo prazo para ações, baseadas nos padrões dos últimos 5 anos de cotações.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #f4f2ed;
+  --panel: #ffffff;
+  --panel-2: #faf9f6;
+  --ink: #16181d;
+  --ink-2: #4a4f59;
+  --ink-3: #7b808a;
+  --line: #e2dfd7;
+  --accent: #1f5eff;
+  --up: #0a8a5a;
+  --up-bg: #e3f4ec;
+  --down: #c8372d;
+  --down-bg: #fbe6e3;
+  --neutral: #a26b00;
+  --neutral-bg: #fbf0d9;
+  --band: rgba(31, 94, 255, 0.14);
+  --band-2: rgba(31, 94, 255, 0.07);
+  --shadow: 0 1px 2px rgba(20, 20, 30, .05), 0 4px 16px rgba(20, 20, 30, .04);
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1014; --panel: #161920; --panel-2: #1b1f27; --ink: #eceef2; --ink-2: #b4b9c3;
+    --ink-3: #7e8592; --line: #2a2f39; --accent: #6b93ff; --up: #3ccf8e; --up-bg: #12291f;
+    --down: #ff6b5e; --down-bg: #2e1715; --neutral: #f0b84a; --neutral-bg: #2b2414;
+    --band: rgba(107, 147, 255, 0.20); --band-2: rgba(107, 147, 255, 0.09);
+    --shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1014; --panel: #161920; --panel-2: #1b1f27; --ink: #eceef2; --ink-2: #b4b9c3;
+  --ink-3: #7e8592; --line: #2a2f39; --accent: #6b93ff; --up: #3ccf8e; --up-bg: #12291f;
+  --down: #ff6b5e; --down-bg: #2e1715; --neutral: #f0b84a; --neutral-bg: #2b2414;
+  --band: rgba(107, 147, 255, 0.20); --band-2: rgba(107, 147, 255, 0.09);
+  --shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+header.top { border-bottom: 1px solid var(--line); background: var(--panel); }
+header.top .wrap { display: flex; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
+.brand svg { color: var(--accent); }
+.brand small { font-weight: 400; color: var(--ink-3); font-size: 13px; }
+.spacer { flex: 1; }
+button { font: inherit; cursor: pointer; }
+.icon-btn { background: transparent; border: 1px solid var(--line); color: var(--ink-2); border-radius: 8px; padding: 6px 10px; font-size: 13px; }
+.icon-btn:hover { color: var(--ink); border-color: var(--ink-3); }
+
+.hero { padding: 28px 0 8px; }
+.hero h1 { margin: 0 0 6px; font-size: clamp(24px, 3.4vw, 34px); letter-spacing: -.02em; line-height: 1.15; }
+.hero p { margin: 0; color: var(--ink-2); max-width: 720px; }
+
+.search { margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+.search input { flex: 1 1 260px; min-width: 0; padding: 12px 14px; font: 500 16px var(--mono); text-transform: uppercase; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; outline: none; }
+.search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--band); }
+.btn { padding: 12px 18px; border-radius: 10px; border: 1px solid var(--accent); background: var(--accent); color: #fff; font-weight: 600; }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: var(--panel); color: var(--ink); border-color: var(--line); font-weight: 500; }
+.btn.ghost:hover { border-color: var(--ink-3); filter: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chip { font: 500 12.5px var(--mono); padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--ink-2); }
+.chip:hover { color: var(--ink); border-color: var(--accent); }
+.hint { color: var(--ink-3); font-size: 13px; margin-top: 10px; }
+.hint a { color: var(--accent); cursor: pointer; text-decoration: underline; }
+
+.status { margin: 18px 0 0; padding: 12px 14px; border-radius: 10px; font-size: 14px; display: none; }
+.status.show { display: block; }
+.status.info { background: var(--panel); border: 1px solid var(--line); color: var(--ink-2); }
+.status.err { background: var(--down-bg); color: var(--down); border: 1px solid transparent; }
+.status.warn { background: var(--neutral-bg); color: var(--neutral); }
+.spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; vertical-align: -2px; margin-right: 8px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#result { display: none; padding-bottom: 48px; }
+#result.show { display: block; }
+.quote-head { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px 22px; margin: 26px 0 16px; }
+.quote-head .sym { font: 600 13px var(--mono); color: var(--ink-3); letter-spacing: .04em; }
+.quote-head .name { font-size: 22px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; }
+.quote-head .price { font: 600 30px var(--mono); letter-spacing: -.02em; }
+.quote-head .chg { font: 500 14px var(--mono); }
+.up { color: var(--up); } .down { color: var(--down); } .neu { color: var(--neutral); }
+.src-tag { font-size: 12px; color: var(--ink-3); }
+
+.grid { display: grid; gap: 14px; }
+.cards-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) { .cards-3 { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); min-width: 0; }
+.card h3 { margin: 0 0 2px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
+.card h2 { margin: 0 0 4px; font-size: 18px; letter-spacing: -.01em; }
+.card .sub { color: var(--ink-3); font-size: 13px; }
+
+.fc .verdict { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 999px; margin: 10px 0 12px; }
+.verdict.up { background: var(--up-bg); } .verdict.down { background: var(--down-bg); } .verdict.neu { background: var(--neutral-bg); }
+.fc .target { font: 600 28px var(--mono); letter-spacing: -.02em; }
+.fc .ret { font: 600 15px var(--mono); margin-left: 6px; }
+.fc .range { font: 13px var(--mono); color: var(--ink-2); margin-top: 4px; }
+.meter { height: 8px; background: var(--down-bg); border-radius: 999px; overflow: hidden; margin: 14px 0 6px; position: relative; }
+.meter > i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--up); border-radius: 999px; }
+.meter-lbl { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-3); font-family: var(--mono); }
+.fc dl { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; margin: 14px 0 0; font-size: 13px; border-top: 1px dashed var(--line); padding-top: 12px; }
+.fc dt { color: var(--ink-3); } .fc dd { margin: 0; font-family: var(--mono); text-align: right; }
+
+.section-title { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 34px 0 12px; }
+.section-title h2 { margin: 0; font-size: 19px; letter-spacing: -.01em; }
+.section-title p { margin: 0; color: var(--ink-3); font-size: 13.5px; }
+
+.seg { display: inline-flex; background: var(--panel-2); border: 1px solid var(--line); border-radius: 9px; padding: 3px; gap: 2px; flex-wrap: wrap; }
+.seg button { border: 0; background: transparent; color: var(--ink-2); padding: 5px 11px; border-radius: 6px; font-size: 13px; font-weight: 500; }
+.seg button.on { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+.chart-box { position: relative; height: 420px; }
+@media (max-width: 640px) { .chart-box { height: 300px; } }
+.chart-box.sm { height: 320px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--ink-2); margin-top: 10px; }
+.legend span::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; background: var(--c); vertical-align: middle; margin-right: 6px; }
+.legend span.box::before { height: 10px; width: 14px; }
+
+.stats { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 860px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+.stat .k { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+.stat .v { font: 600 21px var(--mono); margin-top: 4px; letter-spacing: -.01em; }
+.stat .d { font-size: 12.5px; color: var(--ink-3); margin-top: 2px; }
+
+.two { grid-template-columns: 1.35fr 1fr; }
+@media (max-width: 960px) { .two { grid-template-columns: 1fr; } }
+
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 7px 8px; text-align: right; white-space: nowrap; }
+th { color: var(--ink-3); font-weight: 600; font-size: 12px; border-bottom: 1px solid var(--line); }
+th:first-child, td:first-child { text-align: left; }
+tbody tr + tr td { border-top: 1px solid var(--line); }
+td { font-family: var(--mono); }
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.heat td { text-align: center; font-size: 12px; padding: 7px 4px; border: 2px solid var(--panel); border-radius: 4px; }
+.heat th { text-align: center; }
+.heat td:first-child, .heat th:first-child { text-align: left; }
+.heat tbody tr + tr td { border-top: 2px solid var(--panel); }
+.heat tfoot td { font-weight: 600; border-top: 1px solid var(--line); }
+
+.method { font-size: 14px; color: var(--ink-2); }
+.method h4 { margin: 14px 0 4px; color: var(--ink); font-size: 14px; }
+.method p { margin: 0 0 6px; }
+.disclaimer { margin-top: 26px; padding: 14px 16px; border-radius: 12px; background: var(--neutral-bg); color: var(--ink-2); font-size: 13px; }
+.disclaimer b { color: var(--neutral); }
+footer { border-top: 1px solid var(--line); padding: 18px 0 30px; color: var(--ink-3); font-size: 12.5px; }
+.pill { font: 600 11px var(--mono); padding: 2px 7px; border-radius: 999px; }
+.pill.up { background: var(--up-bg); } .pill.down { background: var(--down-bg); } .pill.neu { background: var(--neutral-bg); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-5 4 3 7-8"/><path d="M14 7h5v5"/><path d="M3 21h18" opacity=".4"/></svg>
+      Oráculo de Ações <small>padrões de 5 anos</small>
+    </div>
+    <div class="spacer"></div>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Alternar tema">◐ Tema</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>O que os últimos 5 anos dizem sobre o futuro de uma ação</h1>
+    <p>Digite o código da ação. O site baixa 5 anos de cotações diárias, procura no histórico os momentos mais parecidos com o atual e projeta o que aconteceu depois deles para o curto, médio e longo prazo.</p>
+    <form class="search" id="searchForm" autocomplete="off">
+      <label class="sr" for="ticker">Código da ação</label>
+      <input id="ticker" placeholder="Ex.: PETR4, VALE3, AAPL, NVDA" spellcheck="false">
+      <button class="btn" type="submit">Analisar</button>
+      <button class="btn ghost" type="button" id="csvBtn">Enviar CSV</button>
+      <input type="file" id="csvFile" accept=".csv,text/csv" hidden>
+    </form>
+    <div class="chips" id="chips"></div>
+    <div class="hint">Ações da B3 recebem “.SA” automaticamente. Use <b>^BVSP</b> para o Ibovespa. Sem internet ou API bloqueada? <a id="demoLink">Ver com dados de demonstração</a>.</div>
+    <div class="status" id="status" role="status"></div>
+  </section>
+
+  <section id="result">
+    <div class="quote-head">
+      <div>
+        <div class="sym" id="qSym"></div>
+        <div class="name" id="qName"></div>
+      </div>
+      <div class="price" id="qPrice"></div>
+      <div class="chg" id="qChg"></div>
+      <div class="spacer"></div>
+      <div class="src-tag" id="qSrc"></div>
+    </div>
+
+    <div class="grid cards-3" id="fcCards"></div>
+
+    <div class="section-title">
+      <h2>Histórico e projeção</h2>
+      <p>Linha azul: mediana da projeção. Faixa: 80% dos cenários.</p>
+    </div>
+    <div class="card">
+      <div class="toolbar">
+        <div class="seg" id="hzSeg"></div>
+        <div class="seg" id="viewSeg"></div>
+      </div>
+      <div class="chart-box"><canvas id="mainChart"></canvas></div>
+      <div class="legend" id="mainLegend"></div>
+    </div>
+
+    <div class="grid stats" style="margin-top:14px" id="stats"></div>
+
+    <div class="section-title">
+      <h2>Padrões encontrados</h2>
+      <p id="anaSub">Momentos do passado mais parecidos com o atual e o que veio depois.</p>
+    </div>
+    <div class="grid two">
+      <div class="card">
+        <div class="toolbar"><div class="seg" id="anaSeg"></div></div>
+        <div class="chart-box sm"><canvas id="anaChart"></canvas></div>
+        <div class="legend" id="anaLegend"></div>
+      </div>
+      <div class="card">
+        <h3>Os análogos mais próximos</h3>
+        <div class="scroll-x"><table id="anaTable"></table></div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2>Sazonalidade</h2>
+      <p>Retorno de cada mês nos últimos anos. Meses que se repetem viram padrão.</p>
+    </div>
+    <div class="card"><div class="scroll-x"><table class="heat" id="heat"></table></div></div>
+
+    <div class="section-title">
+      <h2>O modelo acertaria no passado?</h2>
+      <p>Teste retroativo: o método foi rodado em datas antigas usando só os dados disponíveis em cada data.</p>
+    </div>
+    <div class="grid cards-3" id="btCards"></div>
+
+    <div class="section-title"><h2>Como a previsão é feita</h2></div>
+    <div class="card method">
+      <h4>1. Busca de padrões (análogos históricos) — peso maior</h4>
+      <p>Pegamos o formato dos últimos pregões (20 dias para o curto prazo, 60 para o médio, 120 para o longo) e comparamos, por correlação, com todas as janelas do mesmo tamanho nos 5 anos. Os trechos mais parecidos, sem sobreposição, são os “análogos”. O que aconteceu depois de cada um, ajustado à volatilidade atual, vira um cenário possível. A mediana e os percentis 10 e 90 desses cenários formam a projeção.</p>
+      <h4>2. Simulação Monte Carlo por blocos</h4>
+      <p>Reamostramos blocos de 10 dias de retornos reais da ação para gerar 2.000 caminhos futuros. Isso replica a tendência e a volatilidade típicas do período, sem supor uma distribuição teórica.</p>
+      <h4>3. Tendência de longo prazo</h4>
+      <p>Regressão linear do logaritmo do preço nos 5 anos. Mostra a taxa de crescimento anual “de fundo” e quão bem ela explica o histórico (R²).</p>
+      <h4>4. Sazonalidade</h4>
+      <p>Retorno médio de cada mês do calendário. Entra com peso pequeno no curto e médio prazo.</p>
+      <h4>Combinação</h4>
+      <p>Curto prazo (1 mês): 50% análogos, 30% Monte Carlo, 10% tendência, 10% sazonalidade. Médio (6 meses): 40/30/20/10. Longo (1 ano): 30/35/35/0. A probabilidade de alta combina a fração de análogos e de simulações que terminaram acima do preço atual.</p>
+    </div>
+
+    <div class="disclaimer"><b>Aviso:</b> isto é um exercício estatístico, não recomendação de investimento. Padrões passados não garantem resultados futuros: notícias, balanços, juros e eventos inesperados mudam o rumo de qualquer ação. Veja o teste retroativo acima para saber quanto o método acertou nesta ação.</div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Cotações diárias ajustadas (dividendos e desdobramentos) do Yahoo Finance, buscadas no seu navegador. Os cálculos rodam localmente; nada é enviado a servidores.</div>
+</footer>
+
+<script>
+"use strict";
+/* ============================================================
+   Configuração
+   ============================================================ */
+const HORIZONS = [
+  { key: "short", label: "Curto prazo", span: "1 mês", days: 21, win: 20, k: 15,
+    w: { ana: .5, mc: .3, trend: .1, season: .1 } },
+  { key: "mid", label: "Médio prazo", span: "6 meses", days: 126, win: 60, k: 10,
+    w: { ana: .4, mc: .3, trend: .2, season: .1 } },
+  { key: "long", label: "Longo prazo", span: "1 ano", days: 252, win: 120, k: 8,
+    w: { ana: .3, mc: .35, trend: .35, season: 0 } },
+];
+const QUICK = ["PETR4", "VALE3", "ITUB4", "BBAS3", "WEGE3", "MGLU3", "^BVSP", "AAPL", "MSFT", "NVDA", "TSLA", "AMZN"];
+const MONTHS = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+
+/* ============================================================
+   Utilidades
+   ============================================================ */
+const $ = (id) => document.getElementById(id);
+const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const mean = (a) => a.reduce((s, x) => s + x, 0) / (a.length || 1);
+const std = (a) => { const m = mean(a); return Math.sqrt(a.reduce((s, x) => s + (x - m) ** 2, 0) / Math.max(1, a.length - 1)); };
+const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+const pct = (x, d = 1) => (x >= 0 ? "+" : "") + (x * 100).toFixed(d).replace(".", ",") + "%";
+const pctAbs = (x, d = 1) => (x * 100).toFixed(d).replace(".", ",") + "%";
+let CURRENCY = "BRL";
+const money = (x) => {
+  try { return new Intl.NumberFormat("pt-BR", { style: "currency", currency: CURRENCY, minimumFractionDigits: 2, maximumFractionDigits: x < 1 ? 4 : 2 }).format(x); }
+  catch { return x.toFixed(2); }
+};
+const fmtDate = (t, opts = { day: "2-digit", month: "short", year: "numeric" }) => new Date(t).toLocaleDateString("pt-BR", opts);
+const cls = (x, eps = 0) => (x > eps ? "up" : x < -eps ? "down" : "neu");
+
+function wQuantile(values, weights, q) {
+  const idx = values.map((v, i) => i).sort((a, b) => values[a] - values[b]);
+  const total = weights.reduce((s, w) => s + w, 0);
+  let acc = 0;
+  for (const i of idx) { acc += weights[i]; if (acc >= q * total) return values[i]; }
+  return values[idx[idx.length - 1]];
+}
+function quantile(sorted, q) {
+  const pos = (sorted.length - 1) * q, lo = Math.floor(pos), hi = Math.ceil(pos);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (pos - lo);
+}
+function mulberry32(seed) {
+  return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+}
+function addBusinessDays(t, n) {
+  const out = []; const d = new Date(t);
+  while (out.length < n) { d.setDate(d.getDate() + 1); const wd = d.getDay(); if (wd !== 0 && wd !== 6) out.push(d.getTime()); }
+  return out;
+}
+function corr(a, b) {
+  const n = a.length; let ma = 0, mb = 0;
+  for (let i = 0; i < n; i++) { ma += a[i]; mb += b[i]; }
+  ma /= n; mb /= n;
+  let sab = 0, saa = 0, sbb = 0;
+  for (let i = 0; i < n; i++) { const x = a[i] - ma, y = b[i] - mb; sab += x * y; saa += x * x; sbb += y * y; }
+  return saa && sbb ? sab / Math.sqrt(saa * sbb) : 0;
+}
+
+/* ============================================================
+   Busca de dados (Yahoo Finance com proxies CORS de reserva)
+   ============================================================ */
+function normalizeSymbol(raw) {
+  let s = raw.trim().toUpperCase().replace(/\s+/g, "");
+  if (!s) return s;
+  if (s === "IBOV" || s === "IBOVESPA") return "^BVSP";
+  if (/^[A-Z]{4}\d{1,2}F?$/.test(s) && !s.includes(".")) s += ".SA";
+  return s;
+}
+function proxied(url) {
+  const e = encodeURIComponent(url);
+  return [
+    { name: "Yahoo Finance", url },
+    { name: "Yahoo Finance via corsproxy.io", url: "https://corsproxy.io/?url=" + e },
+    { name: "Yahoo Finance via allorigins", url: "https://api.allorigins.win/raw?url=" + e },
+    { name: "Yahoo Finance via codetabs", url: "https://api.codetabs.com/v1/proxy?quest=" + e },
+    { name: "Yahoo Finance via thingproxy", url: "https://thingproxy.freeboard.io/fetch/" + url },
+  ];
+}
+async function fetchWithTimeout(url, ms = 12000) {
+  const ctl = new AbortController(); const id = setTimeout(() => ctl.abort(), ms);
+  try { return await fetch(url, { signal: ctl.signal }); } finally { clearTimeout(id); }
+}
+function parseYahoo(json) {
+  if (json?.chart?.error) throw new Error(json.chart.error.description || "Código não encontrado");
+  const r = json?.chart?.result?.[0];
+  if (!r || !r.timestamp) throw new Error("Resposta sem dados");
+  const adj = r.indicators?.adjclose?.[0]?.adjclose;
+  const close = r.indicators?.quote?.[0]?.close;
+  const series = adj && adj.some((x) => x != null) ? adj : close;
+  const dates = [], prices = [];
+  r.timestamp.forEach((t, i) => { const p = series[i]; if (p != null && isFinite(p) && p > 0) { dates.push(t * 1000); prices.push(p); } });
+  const m = r.meta || {};
+  return { dates, prices, rawLast: close?.[close.length - 1] ?? null, symbol: m.symbol, name: m.longName || m.shortName || m.symbol, currency: m.currency || "USD" };
+}
+async function fetchHistory(symbol) {
+  const cacheKey = "oraculo:" + symbol + ":" + new Date().toISOString().slice(0, 10);
+  try { const c = localStorage.getItem(cacheKey); if (c) return { ...JSON.parse(c), source: "Yahoo Finance (cache de hoje)" }; } catch {}
+  const errors = [];
+  for (const host of ["query1", "query2"]) {
+    const url = `https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=5y&interval=1d&events=div%2Csplits&includeAdjustedClose=true`;
+    for (const p of proxied(url)) {
+      try {
+        setStatus("info", `<span class="spinner"></span>Buscando 5 anos de cotações de <b>${symbol}</b>… (${p.name})`);
+        const res = await fetchWithTimeout(p.url);
+        const text = await res.text();
+        let json; try { json = JSON.parse(text); } catch { throw new Error("HTTP " + res.status); }
+        const data = parseYahoo(json);
+        if (data.prices.length < 200) throw new Error("Histórico curto demais (" + data.prices.length + " pregões)");
+        try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch {}
+        return { ...data, source: p.name };
+      } catch (e) {
+        errors.push(p.name + ": " + e.message);
+        if (/não encontrado|not found|No data/i.test(e.message)) throw new Error(`Código “${symbol}” não encontrado no Yahoo Finance.`);
+      }
+    }
+  }
+  console.warn(errors);
+  throw new Error("Não foi possível baixar as cotações (todas as fontes falharam). Tente de novo em instantes, envie um CSV ou use os dados de demonstração.");
+}
+
+function parseCSV(text, filename) {
+  const lines = text.replace(/\r/g, "").split("\n").filter((l) => l.trim());
+  if (lines.length < 2) throw new Error("CSV vazio");
+  const delim = (lines[0].match(/;/g) || []).length > (lines[0].match(/,/g) || []).length ? ";" : ",";
+  const head = lines[0].split(delim).map((h) => h.replace(/"/g, "").trim().toLowerCase());
+  const di = head.findIndex((h) => /^(date|data|datetime|time)$/.test(h));
+  let ci = head.findIndex((h) => /adj\.?\s*close|ajust/.test(h));
+  if (ci < 0) ci = head.findIndex((h) => /^(close|fechamento|último|ultimo|price|preço|preco)$/.test(h));
+  if (di < 0 || ci < 0) throw new Error("O CSV precisa ter colunas de data (Date/Data) e fechamento (Close/Adj Close/Fechamento).");
+  const rows = [];
+  for (const line of lines.slice(1)) {
+    const c = line.split(delim).map((x) => x.replace(/"/g, "").trim());
+    let ds = c[di], ps = c[ci];
+    if (!ds || !ps) continue;
+    let t;
+    const br = ds.match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})/);
+    if (br) t = Date.UTC(+br[3], +br[2] - 1, +br[1]); else t = Date.parse(ds);
+    if (delim === ";" || /^\d{1,3}(\.\d{3})*,\d+$/.test(ps)) ps = ps.replace(/\./g, "").replace(",", ".");
+    const p = parseFloat(ps);
+    if (isFinite(t) && isFinite(p) && p > 0) rows.push([t, p]);
+  }
+  rows.sort((a, b) => a[0] - b[0]);
+  const cut = rows.length ? rows[rows.length - 1][0] - 5 * 365.25 * 864e5 : 0;
+  const r = rows.filter((x) => x[0] >= cut);
+  if (r.length < 200) throw new Error("O CSV tem poucos pregões (" + r.length + "). São necessários pelo menos 200, idealmente 5 anos.");
+  const name = filename.replace(/\.csv$/i, "");
+  return { dates: r.map((x) => x[0]), prices: r.map((x) => x[1]), symbol: name.toUpperCase(), name, currency: "BRL", source: "Arquivo CSV enviado" };
+}
+
+function demoData() {
+  const rnd = mulberry32(42);
+  const gauss = () => { let u = 0, v = 0; while (!u) u = rnd(); while (!v) v = rnd(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  const end = new Date(); end.setHours(0, 0, 0, 0);
+  const start = new Date(end); start.setFullYear(start.getFullYear() - 5);
+  const dates = [], prices = []; let p = 24, regime = 0.0004, vol = 0.019;
+  for (const d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+    if (d.getDay() === 0 || d.getDay() === 6) continue;
+    if (rnd() < 0.006) regime = (rnd() - 0.42) * 0.003;
+    if (rnd() < 0.01) vol = 0.012 + rnd() * 0.02;
+    const season = [0.0008, 0.0004, -0.0006, 0.0005, -0.0007, -0.0002, 0.0006, -0.0004, -0.0008, 0.0007, 0.001, 0.0009][d.getMonth()];
+    p *= Math.exp(regime + season + vol * gauss());
+    dates.push(d.getTime()); prices.push(p);
+  }
+  return { dates, prices, symbol: "DEMO3", name: "Empresa Demonstração S.A. (dados sintéticos)", currency: "BRL", source: "Dados sintéticos de demonstração" };
+}
+
+/* ============================================================
+   Modelos
+   ============================================================ */
+function logReturns(p) { const r = new Array(p.length).fill(0); for (let i = 1; i < p.length; i++) r[i] = Math.log(p[i] / p[i - 1]); return r; }
+
+// Busca de padrões: encontra janelas parecidas com a atual e replica o que veio depois.
+function analogForecast(r, end, hz, opts = {}) {
+  const { win: W, days: H, k: K } = hz;
+  const cum = (s, e) => { const out = new Array(e - s + 1); let acc = 0; for (let i = s; i <= e; i++) { acc += r[i]; out[i - s] = acc; } return out; };
+  const qStart = end - W + 1;
+  if (qStart < 1) return null;
+  const q = cum(qStart, end);
+  const qVol = std(r.slice(qStart, end + 1)) || 1e-6;
+  const lastCand = end - H - (opts.gap ?? 0);
+  const cands = [];
+  for (let e = W; e <= lastCand; e++) {
+    const c = cum(e - W + 1, e);
+    cands.push({ e, c: corr(q, c) });
+  }
+  if (cands.length < K * 3) return null;
+  cands.sort((a, b) => b.c - a.c);
+  const picked = [];
+  const minSep = Math.max(5, Math.floor(W / 2));
+  for (const c of cands) {
+    if (picked.length >= K) break;
+    if (c.c <= 0) break;
+    if (picked.every((p) => Math.abs(p.e - c.e) >= minSep)) picked.push(c);
+  }
+  if (picked.length < 3) return null;
+  const analogs = picked.map((p) => {
+    const aVol = std(r.slice(p.e - W + 1, p.e + 1)) || 1e-6;
+    const scale = clamp(qVol / aVol, 0.5, 2);
+    const fut = []; let acc = 0;
+    for (let h = 1; h <= H; h++) { acc += r[p.e + h]; fut.push(acc * scale); }
+    const past = cum(p.e - W + 1, p.e);
+    return { e: p.e, corr: p.c, scale, fut, past, weight: p.c * p.c };
+  });
+  const ws = analogs.map((a) => a.weight);
+  const p10 = [], p50 = [], p90 = [];
+  for (let h = 0; h < H; h++) {
+    const v = analogs.map((a) => a.fut[h]);
+    p10.push(wQuantile(v, ws, 0.1)); p50.push(wQuantile(v, ws, 0.5)); p90.push(wQuantile(v, ws, 0.9));
+  }
+  const totW = ws.reduce((s, x) => s + x, 0);
+  const probUp = analogs.reduce((s, a) => s + (a.fut[H - 1] > 0 ? a.weight : 0), 0) / totW;
+  const meanEnd = analogs.reduce((s, a) => s + a.fut[H - 1] * a.weight, 0) / totW;
+  return { analogs, q, p10, p50, p90, probUp, meanEnd, medEnd: p50[H - 1] };
+}
+
+// Monte Carlo com reamostragem de blocos de retornos reais.
+function monteCarlo(r, H, nPaths = 2000, block = 10, seed = 7) {
+  const rets = r.slice(1);
+  const rnd = mulberry32(seed);
+  const n = rets.length;
+  const ends = new Float64Array(nPaths);
+  const byDay = Array.from({ length: H }, () => new Float64Array(nPaths));
+  for (let p = 0; p < nPaths; p++) {
+    let acc = 0, h = 0;
+    while (h < H) {
+      const s = Math.floor(rnd() * (n - block));
+      for (let b = 0; b < block && h < H; b++, h++) { acc += rets[s + b]; byDay[h][p] = acc; }
+    }
+    ends[p] = acc;
+  }
+  const p10 = [], p50 = [], p90 = [];
+  for (let h = 0; h < H; h++) {
+    const s = Array.from(byDay[h]).sort((a, b) => a - b);
+    p10.push(quantile(s, .1)); p50.push(quantile(s, .5)); p90.push(quantile(s, .9));
+  }
+  let up = 0; for (const e of ends) if (e > 0) up++;
+  return { p10, p50, p90, probUp: up / nPaths, medEnd: p50[H - 1] };
+}
+
+// Tendência: regressão linear do log-preço.
+function trendModel(prices) {
+  const y = prices.map(Math.log), n = y.length, xs = [...Array(n).keys()];
+  const mx = mean(xs), my = mean(y);
+  let sxy = 0, sxx = 0, sst = 0;
+  for (let i = 0; i < n; i++) { sxy += (xs[i] - mx) * (y[i] - my); sxx += (xs[i] - mx) ** 2; sst += (y[i] - my) ** 2; }
+  const slope = sxy / sxx, icpt = my - slope * mx;
+  let sse = 0; for (let i = 0; i < n; i++) sse += (y[i] - (icpt + slope * i)) ** 2;
+  const fair = Math.exp(icpt + slope * (n - 1));
+  return { slope, annual: Math.exp(slope * 252) - 1, r2: 1 - sse / sst, fair, dev: prices[n - 1] / fair - 1 };
+}
+
+// Sazonalidade: retorno de cada mês, por ano.
+function seasonality(dates, prices) {
+  const byYM = new Map();
+  dates.forEach((t, i) => { const d = new Date(t); const key = d.getFullYear() * 12 + d.getMonth(); if (!byYM.has(key)) byYM.set(key, { first: i, last: i }); else byYM.get(key).last = i; });
+  const keys = [...byYM.keys()].sort((a, b) => a - b);
+  const table = {}; const perMonth = Array.from({ length: 12 }, () => []);
+  keys.forEach((key, j) => {
+    const { last } = byYM.get(key);
+    const prevLast = j > 0 ? byYM.get(keys[j - 1]).last : null;
+    if (prevLast == null || keys[j - 1] !== key - 1) return;
+    const ret = prices[last] / prices[prevLast] - 1;
+    const y = Math.floor(key / 12), m = key % 12;
+    (table[y] ||= {})[m] = ret;
+    const lastDate = new Date(dates[dates.length - 1]);
+    const partial = y === lastDate.getFullYear() && m === lastDate.getMonth();
+    if (!partial) perMonth[m].push(Math.log(1 + ret));
+  });
+  const avg = perMonth.map((a) => (a.length ? mean(a) : 0));
+  const hit = perMonth.map((a) => (a.length ? a.filter((x) => x > 0).length / a.length : 0.5));
+  return { table, avg, hit, count: perMonth.map((a) => a.length) };
+}
+function seasonalProjection(season, lastDate, H) {
+  const futureDates = addBusinessDays(lastDate, H);
+  const counts = {}; futureDates.forEach((t) => { const m = new Date(t).getMonth(); counts[m] = (counts[m] || 0) + 1; });
+  let s = 0; for (const m in counts) s += season.avg[m] * (counts[m] / 21);
+  return s;
+}
+
+// Indicadores técnicos
+function sma(p, n) { const out = new Array(p.length).fill(null); let s = 0; for (let i = 0; i < p.length; i++) { s += p[i]; if (i >= n) s -= p[i - n]; if (i >= n - 1) out[i] = s / n; } return out; }
+function rsi(p, n = 14) {
+  let g = 0, l = 0;
+  for (let i = 1; i <= n; i++) { const d = p[i] - p[i - 1]; if (d > 0) g += d; else l -= d; }
+  g /= n; l /= n;
+  for (let i = n + 1; i < p.length; i++) { const d = p[i] - p[i - 1]; g = (g * (n - 1) + Math.max(d, 0)) / n; l = (l * (n - 1) + Math.max(-d, 0)) / n; }
+  return l === 0 ? 100 : 100 - 100 / (1 + g / l);
+}
+function maxDrawdown(p) { let peak = p[0], mdd = 0; for (const x of p) { peak = Math.max(peak, x); mdd = Math.min(mdd, x / peak - 1); } return mdd; }
+
+// Teste retroativo do método de padrões
+function backtest(r, prices, hz) {
+  const n = prices.length, H = hz.days;
+  const startT = hz.win + H + Math.max(hz.k * 3, 150);
+  const endT = n - 1 - H;
+  if (endT - startT < 20) return null;
+  const step = Math.max(3, Math.floor((endT - startT) / 70));
+  let hits = 0, total = 0, upCount = 0, errAbs = 0, inBand = 0;
+  for (let t = startT; t <= endT; t += step) {
+    const f = analogForecast(r, t, hz);
+    if (!f) continue;
+    const actual = Math.log(prices[t + H] / prices[t]);
+    const pred = f.medEnd;
+    if (Math.sign(pred) === Math.sign(actual)) hits++;
+    if (actual > 0) upCount++;
+    if (actual >= f.p10[H - 1] && actual <= f.p90[H - 1]) inBand++;
+    errAbs += Math.abs(Math.exp(pred) - Math.exp(actual));
+    total++;
+  }
+  if (!total) return null;
+  return { hitRate: hits / total, baseUp: upCount / total, total, mae: errAbs / total, coverage: inBand / total };
+}
+
+/* ============================================================
+   Análise completa
+   ============================================================ */
+function analyze(data) {
+  const { dates, prices } = data;
+  const r = logReturns(prices);
+  const n = prices.length, last = prices[n - 1];
+  const trend = trendModel(prices);
+  const season = seasonality(dates, prices);
+  const out = { data, r, trend, season, horizons: {} };
+  const mcFull = monteCarlo(r, 252);
+  for (const hz of HORIZONS) {
+    const H = hz.days;
+    const ana = analogForecast(r, n - 1, hz);
+    const mc = { p10: mcFull.p10.slice(0, H), p50: mcFull.p50.slice(0, H), p90: mcFull.p90.slice(0, H), medEnd: mcFull.p50[H - 1] };
+    { // probabilidade de alta do MC neste horizonte (aproximada pela posição de 0 entre quantis)
+      const lo = mc.p10[H - 1], md = mc.p50[H - 1], hi = mc.p90[H - 1];
+      mc.probUp = 0 <= lo ? 0.9 : 0 >= hi ? 0.1 : 0 <= md ? 0.5 + 0.4 * (md / (md - lo || 1)) : 0.5 - 0.4 * (-md / (hi - md || 1));
+    }
+    const trendRet = trend.slope * H;
+    const seasonRet = seasonalProjection(season, dates[n - 1], H);
+    const w = { ...hz.w };
+    if (!ana) { w.mc += w.ana; w.ana = 0; }
+    const comb = (anaV, mcV, trV, seV) => w.ana * (anaV ?? 0) + w.mc * mcV + w.trend * trV + w.season * seV;
+    const path50 = [], path10 = [], path90 = [];
+    for (let h = 0; h < H; h++) {
+      const frac = (h + 1) / H;
+      const tr = trendRet * frac, se = seasonRet * frac;
+      path50.push(comb(ana?.p50[h], mc.p50[h], tr, se));
+      // faixa: mistura das faixas de análogos e MC, centrada na mediana combinada
+      const lowSpread = (ana ? (w.ana * (ana.p50[h] - ana.p10[h])) : 0) + (w.mc + w.trend + w.season + (ana ? 0 : 0)) * (mc.p50[h] - mc.p10[h]);
+      const highSpread = (ana ? (w.ana * (ana.p90[h] - ana.p50[h])) : 0) + (w.mc + w.trend + w.season) * (mc.p90[h] - mc.p50[h]);
+      const norm = ana ? 1 : (w.mc + w.trend + w.season);
+      path10.push(path50[h] - lowSpread / norm); path90.push(path50[h] + highSpread / norm);
+    }
+    const pAna = ana ? ana.probUp : null;
+    const probUp = pAna == null ? mc.probUp : (w.ana * pAna + (1 - w.ana) * mc.probUp);
+    const ret = Math.exp(path50[H - 1]) - 1;
+    const bt = backtest(r, prices, hz);
+    let agree = null;
+    if (ana) { const ups = ana.analogs.filter((a) => a.fut[H - 1] > 0).length; agree = Math.max(ups, ana.analogs.length - ups) / ana.analogs.length; }
+    out.horizons[hz.key] = {
+      hz, ana, mc, trendRet, seasonRet, probUp, ret, bt, agree,
+      target: last * Math.exp(path50[H - 1]), lo: last * Math.exp(path10[H - 1]), hi: last * Math.exp(path90[H - 1]),
+      path50, path10, path90, futureDates: addBusinessDays(dates[n - 1], H),
+    };
+  }
+  // Estatísticas
+  const yrs = (dates[n - 1] - dates[0]) / (365.25 * 864e5);
+  const ma50 = sma(prices, 50), ma200 = sma(prices, 200);
+  const r1y = n > 252 ? prices[n - 1] / prices[n - 253] - 1 : null;
+  out.stats = {
+    total: last / prices[0] - 1, cagr: Math.pow(last / prices[0], 1 / yrs) - 1, years: yrs,
+    vol: std(r.slice(-252)) * Math.sqrt(252), volAll: std(r.slice(1)) * Math.sqrt(252),
+    mdd: maxDrawdown(prices), rsi: rsi(prices), ma50, ma200,
+    vsMa200: ma200[n - 1] ? last / ma200[n - 1] - 1 : null, r1y,
+    hi52: Math.max(...prices.slice(-252)), lo52: Math.min(...prices.slice(-252)),
+  };
+  return out;
+}
+
+/* ============================================================
+   Renderização
+   ============================================================ */
+let STATE = null, mainChart = null, anaChart = null, curHz = "short", curView = "2y", curAna = "short";
+
+function setStatus(kind, html) {
+  const el = $("status");
+  if (!kind) { el.className = "status"; el.innerHTML = ""; return; }
+  el.className = "status show " + kind; el.innerHTML = html;
+}
+
+function verdict(probUp, ret) {
+  if (probUp >= 0.6 && ret > 0) return { c: "up", t: "▲ Tendência de alta" };
+  if (probUp <= 0.4 && ret < 0) return { c: "down", t: "▼ Tendência de queda" };
+  if (ret > 0.01 && probUp >= 0.52) return { c: "up", t: "↗ Leve viés de alta" };
+  if (ret < -0.01 && probUp <= 0.48) return { c: "down", t: "↘ Leve viés de queda" };
+  return { c: "neu", t: "◆ Neutro / lateral" };
+}
+function confidence(f) {
+  let score = 0;
+  if (f.bt) score += clamp((f.bt.hitRate - 0.5) * 4, -1, 1);
+  if (f.agree != null) score += (f.agree - 0.5) * 2;
+  score += Math.abs(f.probUp - 0.5) * 2;
+  return score > 1.1 ? "Alta" : score > 0.5 ? "Média" : "Baixa";
+}
+
+function renderHeader() {
+  const { data } = STATE; const p = data.prices, n = p.length;
+  CURRENCY = data.currency || "BRL";
+  $("qSym").textContent = data.symbol;
+  $("qName").textContent = data.name || data.symbol;
+  $("qPrice").textContent = money(p[n - 1]);
+  const d1 = p[n - 1] / p[n - 2] - 1;
+  $("qChg").innerHTML = `<span class="${cls(d1)}">${pct(d1, 2)}</span> <span style="color:var(--ink-3)">no último pregão · ${fmtDate(data.dates[n - 1])}</span>`;
+  $("qSrc").textContent = `${n.toLocaleString("pt-BR")} pregões · ${fmtDate(data.dates[0], { month: "short", year: "numeric" })} a ${fmtDate(data.dates[n - 1], { month: "short", year: "numeric" })} · Fonte: ${data.source}`;
+}
+
+function renderForecastCards() {
+  $("fcCards").innerHTML = HORIZONS.map((hz) => {
+    const f = STATE.horizons[hz.key]; const v = verdict(f.probUp, f.ret);
+    const conf = confidence(f);
+    return `<div class="card fc">
+      <h3>${hz.label} · ${hz.span}</h3>
+      <div class="sub">até ${fmtDate(f.futureDates[f.futureDates.length - 1])} (${hz.days} pregões)</div>
+      <div class="verdict ${v.c}">${v.t}</div>
+      <div><span class="target">${money(f.target)}</span><span class="ret ${cls(f.ret)}">${pct(f.ret)}</span></div>
+      <div class="range">Faixa provável: ${money(f.lo)} – ${money(f.hi)}</div>
+      <div class="meter" aria-label="Probabilidade de alta"><i style="width:${(f.probUp * 100).toFixed(0)}%"></i></div>
+      <div class="meter-lbl"><span>Alta ${pctAbs(f.probUp, 0)}</span><span>Queda ${pctAbs(1 - f.probUp, 0)}</span></div>
+      <dl>
+        <dt>Padrões (mediana dos análogos)</dt><dd class="${f.ana ? cls(f.ana.medEnd) : ""}">${f.ana ? pct(Math.exp(f.ana.medEnd) - 1) : "—"}</dd>
+        <dt>Monte Carlo (mediana)</dt><dd class="${cls(f.mc.medEnd)}">${pct(Math.exp(f.mc.medEnd) - 1)}</dd>
+        <dt>Tendência de 5 anos</dt><dd class="${cls(f.trendRet)}">${pct(Math.exp(f.trendRet) - 1)}</dd>
+        <dt>Sazonalidade</dt><dd class="${cls(f.seasonRet)}">${pct(Math.exp(f.seasonRet) - 1)}</dd>
+        <dt>Acerto histórico de direção</dt><dd>${f.bt ? pctAbs(f.bt.hitRate, 0) : "—"}</dd>
+        <dt>Confiança</dt><dd>${conf}</dd>
+      </dl>
+    </div>`;
+  }).join("");
+}
+
+function segButtons(el, items, current, onPick) {
+  el.innerHTML = items.map(([k, l]) => `<button type="button" data-k="${k}" class="${k === current ? "on" : ""}">${l}</button>`).join("");
+  el.onclick = (e) => { const b = e.target.closest("button"); if (!b) return; [...el.children].forEach((c) => c.classList.toggle("on", c === b)); onPick(b.dataset.k); };
+}
+
+function baseChartOptions() {
+  const grid = css("--line"), tick = css("--ink-3");
+  return {
+    responsive: true, maintainAspectRatio: false, animation: false, normalized: true,
+    interaction: { mode: "index", intersect: false },
+    plugins: {
+      legend: { display: false },
+      tooltip: { backgroundColor: css("--panel"), titleColor: css("--ink"), bodyColor: css("--ink-2"), borderColor: grid, borderWidth: 1, padding: 10,
+        titleFont: { family: "IBM Plex Sans", weight: "600" }, bodyFont: { family: "IBM Plex Mono", size: 12 } },
+    },
+    scales: {
+      x: { type: "linear", grid: { color: grid, drawTicks: false }, border: { display: false }, ticks: { color: tick, maxTicksLimit: 8, font: { family: "IBM Plex Mono", size: 11 }, padding: 6 } },
+      y: { grid: { color: grid, drawTicks: false }, border: { display: false }, ticks: { color: tick, font: { family: "IBM Plex Mono", size: 11 }, padding: 6 } },
+    },
+  };
+}
+
+function renderMainChart() {
+  const { data, stats } = STATE; const f = STATE.horizons[curHz];
+  const n = data.prices.length;
+  const days = { "1y": 252, "2y": 504, "5y": n }[curView] || n;
+  const s = Math.max(0, n - days);
+  const xy = (arr, from = s) => arr.slice(from).map((y, i) => ({ x: data.dates[from + i], y }));
+  const last = data.prices[n - 1], t0 = data.dates[n - 1];
+  const fut = (path) => [{ x: t0, y: last }, ...path.map((v, i) => ({ x: f.futureDates[i], y: last * Math.exp(v) }))];
+  const accent = css("--accent");
+  const ds = [
+    { label: "Preço", data: xy(data.prices), borderColor: css("--ink"), borderWidth: 1.6, pointRadius: 0, tension: 0 },
+    { label: "Média 50", data: xy(stats.ma50).filter((p) => p.y != null), borderColor: "#e08a1e", borderWidth: 1.2, pointRadius: 0, borderDash: [] },
+    { label: "Média 200", data: xy(stats.ma200).filter((p) => p.y != null), borderColor: "#9b59d0", borderWidth: 1.2, pointRadius: 0 },
+    { label: "Cenário otimista (P90)", data: fut(f.path90), borderColor: "transparent", pointRadius: 0, fill: "+1", backgroundColor: css("--band") },
+    { label: "Cenário pessimista (P10)", data: fut(f.path10), borderColor: "transparent", pointRadius: 0, fill: false },
+    { label: "Projeção (mediana)", data: fut(f.path50), borderColor: accent, borderWidth: 2.4, pointRadius: 0, borderDash: [6, 4] },
+  ];
+  const opts = baseChartOptions();
+  const span = f.futureDates[f.futureDates.length - 1] - data.dates[s];
+  opts.scales.x.min = data.dates[s];
+  opts.scales.x.max = f.futureDates[f.futureDates.length - 1];
+  opts.scales.x.ticks.callback = (v) => fmtDate(v, span > 400 * 864e5 ? { month: "short", year: "2-digit" } : { day: "2-digit", month: "short" });
+  opts.scales.y.ticks.callback = (v) => money(v);
+  opts.plugins.tooltip.callbacks = {
+    title: (items) => fmtDate(items[0].parsed.x),
+    label: (c) => ` ${c.dataset.label}: ${money(c.parsed.y)}`,
+  };
+  opts.plugins.tooltip.filter = (c) => c.dataset.label !== "";
+  if (mainChart) mainChart.destroy();
+  mainChart = new Chart($("mainChart"), { type: "line", data: { datasets: ds }, options: opts });
+  $("mainLegend").innerHTML = `
+    <span style="--c:${css("--ink")}">Preço ajustado</span>
+    <span style="--c:#e08a1e">Média 50 dias</span>
+    <span style="--c:#9b59d0">Média 200 dias</span>
+    <span style="--c:${accent}">Projeção ${f.hz.label.toLowerCase()} (mediana)</span>
+    <span class="box" style="--c:${css("--band")}">Faixa P10–P90</span>`;
+}
+
+function renderStats() {
+  const s = STATE.stats, t = STATE.trend;
+  const items = [
+    ["Retorno em 5 anos", pct(s.total), `${pct(s.cagr)} ao ano (CAGR)`, cls(s.total)],
+    ["Retorno em 12 meses", s.r1y == null ? "—" : pct(s.r1y), `Mín. ${money(s.lo52)} · Máx. ${money(s.hi52)}`, cls(s.r1y ?? 0)],
+    ["Volatilidade anual", pctAbs(s.vol), `Média de 5 anos: ${pctAbs(s.volAll)}`, ""],
+    ["Maior queda (drawdown)", pctAbs(s.mdd), "Do topo ao fundo em 5 anos", "down"],
+    ["Tendência de fundo", pct(t.annual) + "/ano", `R² ${t.r2.toFixed(2).replace(".", ",")} · ${t.r2 > .6 ? "tendência consistente" : t.r2 > .3 ? "tendência moderada" : "pouca tendência"}`, cls(t.annual)],
+    ["Preço vs. tendência", pct(t.dev), t.dev > .15 ? "Acima da linha de tendência" : t.dev < -.15 ? "Abaixo da linha de tendência" : "Perto da linha de tendência", cls(-t.dev, .15)],
+    ["RSI (14)", s.rsi.toFixed(0), s.rsi > 70 ? "Sobrecomprado" : s.rsi < 30 ? "Sobrevendido" : "Zona neutra", s.rsi > 70 ? "down" : s.rsi < 30 ? "up" : ""],
+    ["Preço vs. média 200", s.vsMa200 == null ? "—" : pct(s.vsMa200), s.vsMa200 == null ? "" : s.vsMa200 > 0 ? "Acima: tendência primária de alta" : "Abaixo: tendência primária de baixa", cls(s.vsMa200 ?? 0)],
+  ];
+  $("stats").innerHTML = items.map(([k, v, d, c]) => `<div class="card stat"><div class="k">${k}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`).join("");
+}
+
+function renderAnalogs() {
+  const f = STATE.horizons[curAna]; const { data } = STATE;
+  const ana = f.ana;
+  if (anaChart) { anaChart.destroy(); anaChart = null; }
+  if (!ana) {
+    $("anaTable").innerHTML = `<tr><td>Histórico insuficiente para este horizonte.</td></tr>`;
+    $("anaLegend").innerHTML = ""; return;
+  }
+  const W = f.hz.win, H = f.hz.days;
+  $("anaSub").textContent = `Os ${ana.analogs.length} trechos mais parecidos com os últimos ${W} pregões e os ${H} pregões seguintes a cada um.`;
+  const pal = ["#e08a1e", "#9b59d0", "#2aa198", "#d33682", "#6c9a1f", "#cb4b16", "#268bd2", "#b58900", "#859900", "#6c71c4", "#dc322f", "#2f9e9e", "#a0522d", "#708090", "#c71585"];
+  const ds = [];
+  ana.analogs.forEach((a, i) => {
+    const pts = [...a.past.map((y, j) => ({ x: j - W + 1, y: (Math.exp(y - a.past[W - 1]) - 1) * 100 })),
+      ...a.fut.map((y, j) => ({ x: j + 1, y: (Math.exp(y) - 1) * 100 }))];
+    ds.push({ label: fmtDate(data.dates[a.e]), data: pts, borderColor: pal[i % pal.length] + "88", borderWidth: 1, pointRadius: 0 });
+  });
+  ds.push({ label: "Mediana dos análogos", data: [{ x: 0, y: 0 }, ...ana.p50.map((y, j) => ({ x: j + 1, y: (Math.exp(y) - 1) * 100 }))], borderColor: css("--accent"), borderWidth: 3, pointRadius: 0, borderDash: [6, 4] });
+  ds.push({ label: "Agora", data: ana.q.map((y, j) => ({ x: j - W + 1, y: (Math.exp(y - ana.q[W - 1]) - 1) * 100 })), borderColor: css("--ink"), borderWidth: 3, pointRadius: 0 });
+  const opts = baseChartOptions();
+  opts.interaction = { mode: "nearest", intersect: false };
+  opts.scales.x.min = -W + 1; opts.scales.x.max = H;
+  opts.scales.x.ticks.callback = (v) => (v === 0 ? "hoje" : (v > 0 ? "+" : "") + v + "d");
+  opts.scales.y.ticks.callback = (v) => v.toFixed(0) + "%";
+  opts.plugins.tooltip.callbacks = { title: (it) => (it[0].parsed.x === 0 ? "Hoje" : (it[0].parsed.x > 0 ? "+" : "") + it[0].parsed.x + " pregões"), label: (c) => ` ${c.dataset.label}: ${pct(c.parsed.y / 100)}` };
+  anaChart = new Chart($("anaChart"), { type: "line", data: { datasets: ds }, options: opts,
+    plugins: [{ id: "zero", beforeDatasetsDraw(ch) { const { ctx, chartArea: a, scales } = ch; const x = scales.x.getPixelForValue(0); ctx.save(); ctx.strokeStyle = css("--ink-3"); ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.moveTo(x, a.top); ctx.lineTo(x, a.bottom); ctx.stroke(); ctx.restore(); } }] });
+  $("anaLegend").innerHTML = `<span style="--c:${css("--ink")}">Padrão atual (últimos ${W} pregões)</span><span style="--c:#e08a1e">Análogos do passado</span><span style="--c:${css("--accent")}">Mediana do que veio depois</span>`;
+  const rows = ana.analogs.map((a) => {
+    const end = Math.exp(a.fut[H - 1] / a.scale) - 1;
+    return `<tr><td>${fmtDate(data.dates[a.e])}</td><td>${(a.corr * 100).toFixed(0)}%</td><td class="${cls(end)}">${pct(end)}</td><td>${money(data.prices[a.e])}</td></tr>`;
+  }).join("");
+  $("anaTable").innerHTML = `<thead><tr><th>Data do padrão</th><th>Semelhança</th><th>${H} pregões depois</th><th>Preço na época</th></tr></thead><tbody>${rows}</tbody>`;
+}
+
+function renderSeason() {
+  const { table, avg, hit, count } = STATE.season;
+  const years = Object.keys(table).map(Number).sort();
+  const color = (x) => {
+    if (x == null) return "";
+    const a = clamp(Math.abs(x) / 0.12, 0.08, 1);
+    const c = x >= 0 ? css("--up") : css("--down");
+    return `background:color-mix(in srgb, ${c} ${Math.round(a * 55)}%, transparent);`;
+  };
+  const head = `<thead><tr><th>Ano</th>${MONTHS.map((m) => `<th>${m}</th>`).join("")}<th>Ano</th></tr></thead>`;
+  const body = years.map((y) => {
+    const row = table[y]; let acc = 1, any = false;
+    const cells = MONTHS.map((_, m) => { const v = row[m]; if (v != null) { acc *= 1 + v; any = true; } return `<td style="${color(v)}">${v == null ? "" : pct(v, 1)}</td>`; }).join("");
+    const yr = any ? acc - 1 : null;
+    return `<tr><td>${y}</td>${cells}<td style="${color(yr)}"><b>${yr == null ? "" : pct(yr, 1)}</b></td></tr>`;
+  }).join("");
+  const foot = `<tfoot><tr><td>Média</td>${avg.map((v, m) => `<td style="${color(count[m] ? Math.exp(v) - 1 : null)}">${count[m] ? pct(Math.exp(v) - 1, 1) : ""}</td>`).join("")}<td></td></tr>
+    <tr><td>Meses de alta</td>${hit.map((h, m) => `<td>${count[m] ? Math.round(h * count[m]) + "/" + count[m] : ""}</td>`).join("")}<td></td></tr></tfoot>`;
+  $("heat").innerHTML = head + `<tbody>${body}</tbody>` + foot;
+}
+
+function renderBacktest() {
+  $("btCards").innerHTML = HORIZONS.map((hz) => {
+    const b = STATE.horizons[hz.key].bt;
+    if (!b) return `<div class="card"><h3>${hz.label} · ${hz.span}</h3><p class="sub">Histórico insuficiente para testar este horizonte.</p></div>`;
+    const edge = b.hitRate - Math.max(b.baseUp, 1 - b.baseUp);
+    const tag = edge > 0.05 ? ["up", "Supera o acaso"] : edge > -0.03 ? ["neu", "Próximo do acaso"] : ["down", "Pior que o acaso"];
+    return `<div class="card stat">
+      <h3>${hz.label} · ${hz.span}</h3>
+      <div class="v">${pctAbs(b.hitRate, 0)} <span class="pill ${tag[0]}">${tag[1]}</span></div>
+      <div class="d">de acerto na direção em ${b.total} testes. Referência ingênua (“sempre ${b.baseUp >= .5 ? "alta" : "queda"}”): ${pctAbs(Math.max(b.baseUp, 1 - b.baseUp), 0)}.</div>
+      <div class="d">O preço real caiu dentro da faixa prevista em ${pctAbs(b.coverage, 0)} das vezes. Erro médio: ${pctAbs(b.mae, 1)}.</div>
+    </div>`;
+  }).join("");
+}
+
+function renderAll() {
+  renderHeader(); renderForecastCards(); renderStats(); renderSeason(); renderBacktest();
+  segButtons($("hzSeg"), HORIZONS.map((h) => [h.key, `${h.label} (${h.span})`]), curHz, (k) => { curHz = k; renderMainChart(); });
+  segButtons($("viewSeg"), [["1y", "1A"], ["2y", "2A"], ["5y", "5A"]], curView, (k) => { curView = k; renderMainChart(); });
+  segButtons($("anaSeg"), HORIZONS.map((h) => [h.key, h.span]), curAna, (k) => { curAna = k; renderAnalogs(); });
+  renderMainChart(); renderAnalogs();
+  $("result").classList.add("show");
+}
+
+async function run(loader) {
+  try {
+    const data = await loader();
+    setStatus("info", `<span class="spinner"></span>Procurando padrões em ${data.prices.length.toLocaleString("pt-BR")} pregões…`);
+    await new Promise((r) => setTimeout(r, 30));
+    STATE = { ...analyze(data) };
+    setStatus(data.source.includes("sintéticos") ? "warn" : null, "Você está vendo <b>dados sintéticos de demonstração</b>, não uma ação real.");
+    renderAll();
+    $("result").scrollIntoView({ behavior: "smooth", block: "start" });
+  } catch (e) {
+    console.error(e);
+    setStatus("err", e.message || String(e));
+  }
+}
+
+/* ============================================================
+   Eventos
+   ============================================================ */
+$("chips").innerHTML = QUICK.map((q) => `<button type="button" class="chip" data-s="${q}">${q}</button>`).join("");
+$("chips").onclick = (e) => { const b = e.target.closest(".chip"); if (!b) return; $("ticker").value = b.dataset.s; $("searchForm").requestSubmit(); };
+$("searchForm").onsubmit = (e) => {
+  e.preventDefault();
+  const sym = normalizeSymbol($("ticker").value);
+  if (!sym) { $("ticker").focus(); return; }
+  try { history.replaceState(null, "", "#" + encodeURIComponent(sym)); } catch {}
+  run(() => fetchHistory(sym));
+};
+$("demoLink").onclick = () => run(async () => demoData());
+$("csvBtn").onclick = () => $("csvFile").click();
+$("csvFile").onchange = (e) => {
+  const file = e.target.files[0]; if (!file) return;
+  const rd = new FileReader();
+  rd.onload = () => run(async () => parseCSV(rd.result, file.name));
+  rd.readAsText(file); e.target.value = "";
+};
+$("themeBtn").onclick = () => {
+  const root = document.documentElement;
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+  try { localStorage.setItem("oraculo:theme", root.dataset.theme); } catch {}
+  if (STATE) { renderMainChart(); renderAnalogs(); renderSeason(); }
+};
+try { const t = localStorage.getItem("oraculo:theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+if (location.hash.length > 1) { $("ticker").value = decodeURIComponent(location.hash.slice(1)); $("searchForm").requestSubmit(); }
+</script>
+</body>
+</html>
